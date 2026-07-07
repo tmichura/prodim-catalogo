@@ -1,0 +1,101 @@
+---
+import ProductCard from "./ProductCard.astro";
+import type { Producto } from "../lib/products";
+
+interface Props {
+  productos: Producto[];
+  titulo?: string;
+}
+
+const { productos, titulo = "Productos destacados" } = Astro.props;
+---
+
+{productos.length > 0 && (
+  <section class="mx-auto max-w-7xl px-4 py-10">
+    <h2 class="mb-4 font-display text-lg font-bold text-ink-900 sm:text-xl">{titulo}</h2>
+
+    <div class="relative">
+      <button
+        type="button"
+        id="featured-prev"
+        aria-label="Anterior"
+        class="focus-ring absolute -left-3 top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-ink-200 bg-white text-ink-800 shadow-card hover:bg-ink-50 sm:flex"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div
+        id="featured-track"
+        class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2"
+        style="scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        {productos.map((producto) => (
+          <div class="w-64 shrink-0 snap-start sm:w-72">
+            <ProductCard producto={producto} />
+          </div>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        id="featured-next"
+        aria-label="Siguiente"
+        class="focus-ring absolute -right-3 top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-ink-200 bg-white text-ink-800 shadow-card hover:bg-ink-50 sm:flex"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </section>
+)}
+
+<style>
+  #featured-track::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<script>
+  const track = document.getElementById("featured-track");
+  const prevBtn = document.getElementById("featured-prev");
+  const nextBtn = document.getElementById("featured-next");
+
+  if (track) {
+    const PASO = 300;
+    const AUTOPLAY_MS = 4000;
+    let autoplayId: number | undefined;
+
+    function avanzar(): void {
+      const alFinal = track!.scrollLeft + track!.clientWidth >= track!.scrollWidth - 5;
+      if (alFinal) {
+        track!.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        track!.scrollBy({ left: PASO, behavior: "smooth" });
+      }
+    }
+
+    function iniciarAutoplay(): void {
+      detenerAutoplay();
+      autoplayId = window.setInterval(avanzar, AUTOPLAY_MS);
+    }
+
+    function detenerAutoplay(): void {
+      if (autoplayId) window.clearInterval(autoplayId);
+    }
+
+    nextBtn?.addEventListener("click", () => {
+      avanzar();
+      iniciarAutoplay();
+    });
+
+    prevBtn?.addEventListener("click", () => {
+      track!.scrollBy({ left: -PASO, behavior: "smooth" });
+      iniciarAutoplay();
+    });
+
+    iniciarAutoplay();
+  }
+</script>

@@ -1,0 +1,46 @@
+---
+import ProductCard from "./ProductCard.astro";
+import type { Producto } from "../lib/products";
+
+interface Props {
+  productos: Producto[];
+}
+
+const { productos } = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl px-4 py-6">
+  <h2 id="categoria-actual" class="hidden mb-1 font-display text-lg font-bold text-ink-900 sm:text-xl"></h2>
+
+  <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+    <p class="text-xs text-ink-400">
+      Mostrando <span id="results-count" class="font-mono font-semibold text-ink-700">{productos.length}</span>
+      de <span class="font-mono">{productos.length}</span> productos
+    </p>
+
+    <label class="flex items-center gap-2 text-xs text-ink-500">
+      Ordenar por
+      <select
+        id="sort-select"
+        class="focus-ring rounded-md border border-ink-200 bg-white px-2 py-1.5 text-xs font-medium text-ink-700"
+      >
+        <option value="relevancia">Relevancia</option>
+        <option value="precio-asc">Precio: menor a mayor</option>
+        <option value="precio-desc">Precio: mayor a menor</option>
+        <option value="nombre-asc">Nombre: A-Z</option>
+        <option value="nombre-desc">Nombre: Z-A</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="product-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {productos.map((producto) => (
+      <ProductCard producto={producto} />
+    ))}
+  </div>
+
+  <div id="no-results" class="hidden py-16 text-center text-ink-400">
+    <p class="font-display text-lg font-semibold text-ink-600">No encontramos productos</p>
+    <p class="mt-1 text-sm">Probá con otra categoría o con otro término de búsqueda.</p>
+  </div>
+</section>

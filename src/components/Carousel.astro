@@ -1,0 +1,126 @@
+---
+interface Slide {
+  imagen: string;
+  alt: string;
+  /** Link opcional al hacer clic en la imagen (ej. una promo que lleva a /productos) */
+  href?: string;
+}
+
+// Placeholders: reemplazá estas rutas por tus diseños en public/images/banners/
+const slides: Slide[] = [
+  { imagen: "/images/banner1.jpg", alt: "Promoción Prodim 1", href: "/productos" },
+  { imagen: "/images/banner2.jpg", alt: "Promoción Prodim 2", href: "/productos" },
+  { imagen: "/images/banner3.jpg", alt: "Promoción Prodim 3", href: "/productos" },
+];
+---
+
+<section id="carousel" class="relative mx-auto w-full max-w-7xl overflow-hidden bg-ink-100 sm:rounded-lg sm:mt-4">
+  <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+    {slides.map((slide, i) => (
+      <a
+        href={slide.href || "#"}
+        class="carousel-slide relative aspect-[89/25] w-full shrink-0"
+        data-index={i}
+      >
+        <img
+          src={slide.imagen}
+          alt={slide.alt}
+          class="h-full w-full object-contain"
+          loading={i === 0 ? "eager" : "lazy"}
+        />
+      </a>
+    ))}
+  </div>
+
+  <!-- Flechas -->
+  <button
+    type="button"
+    id="carousel-prev"
+    aria-label="Anterior"
+    class="focus-ring absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:h-10 sm:w-10"
+  >
+    <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button
+    type="button"
+    id="carousel-next"
+    aria-label="Siguiente"
+    class="focus-ring absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:h-10 sm:w-10"
+  >
+    <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Puntitos -->
+  <div id="carousel-dots" class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+    {slides.map((_, i) => (
+      <button
+        type="button"
+        class="carousel-dot h-2 w-2 rounded-full bg-white/60 transition-all"
+        data-index={i}
+        aria-label={`Ir a la imagen ${i + 1}`}
+      ></button>
+    ))}
+  </div>
+</section>
+
+<script>
+  const track = document.getElementById("carousel-track") as HTMLElement | null;
+  const slides = Array.from(document.querySelectorAll<HTMLElement>(".carousel-slide"));
+  const dots = Array.from(document.querySelectorAll<HTMLButtonElement>(".carousel-dot"));
+  const prevBtn = document.getElementById("carousel-prev");
+  const nextBtn = document.getElementById("carousel-next");
+
+  if (track && slides.length > 0) {
+    let current = 0;
+    let autoplayId: number | undefined;
+    const AUTOPLAY_MS = 5000;
+
+    function irA(index: number): void {
+      current = (index + slides.length) % slides.length;
+      track!.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle("bg-white", i === current));
+      dots.forEach((dot, i) => dot.classList.toggle("bg-white/60", i !== current));
+    }
+
+    function siguiente(): void {
+      irA(current + 1);
+    }
+
+    function anterior(): void {
+      irA(current - 1);
+    }
+
+    function iniciarAutoplay(): void {
+      detenerAutoplay();
+      autoplayId = window.setInterval(siguiente, AUTOPLAY_MS);
+    }
+
+    function detenerAutoplay(): void {
+      if (autoplayId) window.clearInterval(autoplayId);
+    }
+
+    nextBtn?.addEventListener("click", () => {
+      siguiente();
+      iniciarAutoplay();
+    });
+
+    prevBtn?.addEventListener("click", () => {
+      anterior();
+      iniciarAutoplay();
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        irA(parseInt(dot.dataset.index || "0", 10));
+        iniciarAutoplay();
+      });
+    });
+
+    irA(0);
+    iniciarAutoplay();
+  }
+</script>

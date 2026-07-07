@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import NavBar from "../components/NavBar.astro";
+import ProductGrid from "../components/ProductGrid.astro";
+import CartDrawer from "../components/CartDrawer.astro";
+import Footer from "../components/Footer.astro";
+import { getProductos } from "../lib/products";
+
+const productos = getProductos();
+---
+
+<Layout title="Prodim · Catálogo de productos">
+  <Header />
+  <NavBar activo="catalogo" />
+
+  <main>
+    <ProductGrid productos={productos} />
+  </main>
+
+  <CartDrawer />
+
+  <Footer />
+
+  <script src="../scripts/header-dropdown.ts"></script>
+  <script src="../scripts/mobile-search.ts"></script>
+  <script src="../scripts/catalog-filter.ts"></script>
+  <script src="../scripts/cart.ts"></script>
+</Layout>

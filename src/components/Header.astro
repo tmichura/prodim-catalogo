@@ -1,0 +1,193 @@
+---
+import { getProductos, getCategorias, getSuperCategorias } from "../lib/products";
+
+const productos = getProductos();
+const categorias = getCategorias(productos);
+const superCategorias = getSuperCategorias(categorias);
+---
+
+<header class="sticky top-0 z-40 border-b border-blue-600/20 text-white" style="background-color: rgb(11, 157, 207);">
+  <div class="relative mx-auto flex max-w-7xl items-center gap-2 px-4 py-3.5">
+    <!-- Dropdown de categorías -->
+    <div class="relative">
+      <button
+        type="button"
+        id="category-dropdown-btn"
+        class="focus-ring flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm font-garet font-semibold text-white transition-colors hover:bg-white/15"
+        aria-haspopup="menu"
+        aria-expanded="false"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+        <span class="hidden sm:inline">Categorías</span>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div
+        id="category-dropdown"
+        class="absolute left-0 top-full mt-2 hidden max-h-[70vh] w-56 overflow-y-auto overscroll-contain rounded-md border border-ink-200 bg-white shadow-lg"
+        role="menu"
+      >
+        <button
+          type="button"
+          data-categoria="todas"
+          class="category-chip active w-full px-4 py-2.5 text-left text-sm font-medium text-ink-700 transition-colors hover:bg-ink-50"
+        >
+          TODAS
+        </button>
+
+        {superCategorias.map((super_) => (
+          <div class="super-categoria border-t border-ink-100">
+            <button
+              type="button"
+              class="super-categoria-toggle flex w-full items-center justify-between px-4 py-2.5 text-left text-sm font-semibold text-ink-800 transition-colors hover:bg-ink-50"
+              aria-expanded="false"
+            >
+              {super_.nombre}
+              <svg class="super-categoria-arrow h-3.5 w-3.5 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="super-categoria-panel hidden bg-ink-50/50">
+              {super_.categorias.map((cat) => (
+                <button
+                  type="button"
+                  data-categoria={cat.slug}
+                  class="category-chip w-full py-2 pl-7 pr-4 text-left text-sm font-medium text-ink-700 transition-colors hover:bg-ink-100"
+                >
+                  {cat.nombre}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Logo: lleva a la Home. En mobile ocupa el espacio flexible entre el
+         dropdown y el ícono de búsqueda, centrado dentro de ese hueco; en
+         desktop vuelve al flujo normal (ancho fijo, pegado al dropdown). -->
+    <a
+      href="/"
+      class="focus-ring flex flex-1 items-center justify-center sm:flex-none sm:block"
+      aria-label="Ir al inicio"
+    >
+      <img src="/logo.png" alt="Prodim" class="h-8 w-auto sm:h-12" />
+    </a>
+
+    <!-- Ícono de búsqueda: solo mobile, abre el buscador expandido en la topbar. -->
+    <button
+      type="button"
+      id="search-toggle"
+      class="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-white/20 bg-white/10 text-white sm:hidden"
+      aria-label="Buscar"
+    >
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+
+    <!-- Buscador: inline en desktop, overlay de pantalla completa en mobile -->
+    <div id="search-wrapper" class="relative hidden flex-1 sm:block">
+      <svg
+        class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Buscar…"
+        class="focus-ring w-full rounded-md border border-gray-300 bg-white py-2.5 pl-9 pr-11 text-sm text-gray-900 placeholder:text-gray-400 sm:pr-3"
+      />
+      <button
+        type="button"
+        id="search-close"
+        aria-label="Cerrar búsqueda"
+        class="focus-ring absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md text-ink-500 hover:bg-ink-100 sm:hidden"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Carrito -->
+    <button
+      type="button"
+      id="open-cart"
+      class="focus-ring relative flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm font-garet font-semibold text-white transition-colors hover:bg-white/15 shrink-0"
+      aria-haspopup="dialog"
+      aria-controls="cart-drawer"
+    >
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="hidden sm:inline">Pedido</span>
+      <span
+        id="cart-count"
+        class="flex h-5 min-w-5 items-center justify-center rounded-full bg-yellow-300 px-1 font-mono text-[11px] font-bold text-gray-900"
+      >0</span>
+    </button>
+  </div>
+</header>
+
+<style>
+  .category-chip.active {
+    @apply bg-ink-100 text-ink-900 font-semibold;
+  }
+
+  .category-chip:not(.active):hover {
+    @apply bg-ink-50;
+  }
+
+  .super-categoria-toggle.open .super-categoria-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* Oculta la "x" nativa del navegador en type="search" para que no se
+     superponga con nuestro botón de cerrar personalizado */
+  #search-input::-webkit-search-cancel-button,
+  #search-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Buscador expandido dentro de la topbar (no cubre toda la pantalla), solo en mobile */
+  @media (max-width: 639px) {
+    #search-wrapper.search-overlay-active {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      background: rgb(11, 157, 207);
+      padding: 0.875rem 1rem;
+      transform: scaleX(0.9);
+      opacity: 0;
+      transform-origin: right center;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    }
+    #search-wrapper.search-overlay-active.search-overlay-open {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+</style>

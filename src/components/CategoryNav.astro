@@ -1,0 +1,60 @@
+---
+import type { Categoria } from "../lib/products";
+
+interface Props {
+  categorias: Categoria[];
+  totalProductos: number;
+}
+
+const { categorias, totalProductos } = Astro.props;
+---
+
+<div class="sticky top-[64px] z-30 border-b border-ink-100 bg-paper/95 backdrop-blur">
+  <div class="mx-auto max-w-7xl px-4 py-3">
+    <!-- Buscador -->
+    <div class="relative mb-3">
+      <svg
+        class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      >
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Buscar por nombre o código…"
+        class="focus-ring w-full rounded-md border border-ink-200 bg-white py-2.5 pl-9 pr-3 text-sm text-ink-900 placeholder:text-ink-400"
+      />
+    </div>
+
+    <!-- Chips de categoría, scroll horizontal -->
+    <div class="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1" id="category-nav">
+      <button
+        type="button"
+        data-categoria="todas"
+        class="category-chip active shrink-0 rounded-full border border-ink-200 px-3.5 py-1.5 text-xs font-medium text-ink-700 transition-colors"
+      >
+        Todas <span class="stencil-tag opacity-60">{totalProductos}</span>
+      </button>
+      {categorias.map((cat) => (
+        <button
+          type="button"
+          data-categoria={cat.slug}
+          class="category-chip shrink-0 rounded-full border border-ink-200 px-3.5 py-1.5 text-xs font-medium text-ink-700 transition-colors"
+        >
+          <span class="stencil-tag mr-1 opacity-60">{String(cat.orden).padStart(2, "0")}</span>{cat.nombre}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .category-chip.active {
+    @apply border-ink-800 bg-ink-800 text-white;
+  }
+  .category-chip.active .stencil-tag {
+    @apply text-batch-400 opacity-100;
+  }
+</style>

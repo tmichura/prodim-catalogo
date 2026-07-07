@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import NavBar from "../components/NavBar.astro";
+import CartDrawer from "../components/CartDrawer.astro";
+import Footer from "../components/Footer.astro";
+
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "";
+const whatsappUrl = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}` : "#";
+---
+
+<Layout title="Prodim · Quiénes somos" description="Conocé a Prodim, fabricantes y distribuidores de productos químicos de limpieza industrial.">
+  <Header />
+  <NavBar activo="quienes-somos" />
+
+  <main>
+    <section class="mx-auto max-w-3xl px-4 py-14">
+      <span class="stencil-tag">PRODIM · QUÍMICOS INDUSTRIALES</span>
+      <h1 class="mt-3 font-display text-2xl font-bold text-ink-900 sm:text-3xl">Quiénes somos</h1>
+
+      <p class="mt-6 text-sm leading-relaxed text-ink-600 sm:text-base">
+        Prodim es una empresa dedicada a la fabricación y distribución de productos químicos de
+        limpieza industrial y doméstica. Trabajamos con más de 600 productos entre detergentes,
+        lavandinas, desodorantes, ceras, aromatizantes y línea automotor, ofreciendo escalas de
+        precio según el volumen de compra para adaptarnos a comercios, distribuidores y grandes
+        consumidores.
+      </p>
+
+      <p class="mt-4 text-sm leading-relaxed text-ink-600 sm:text-base">
+        Nuestro compromiso es la calidad constante de fórmula y la atención directa: cada pedido
+        se coordina personalmente por WhatsApp, sin intermediarios, para asegurar disponibilidad,
+        forma de entrega y condiciones de pago claras.
+      </p>
+
+      <div class="mt-10 rounded-lg border border-ink-100 bg-ink-50/50 p-6">
+        <h2 class="font-display text-lg font-semibold text-ink-900">¿Querés hacer un pedido?</h2>
+        <p class="mt-2 text-sm text-ink-500">
+          Recorré el catálogo completo y armá tu pedido, o escribinos directamente por WhatsApp.
+        </p>
+        <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="/productos"
+            class="focus-ring w-full rounded-md bg-ink-800 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-ink-700 sm:w-auto"
+          >
+            Ver catálogo completo
+          </a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="focus-ring w-full rounded-md border border-ink-200 px-6 py-3 text-center text-sm font-semibold text-ink-800 transition-colors hover:bg-ink-50 sm:w-auto"
+          >
+            Escribirnos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <CartDrawer />
+
+  <Footer />
+
+  <script src="../scripts/header-dropdown.ts"></script>
+  <script src="../scripts/mobile-search.ts"></script>
+  <script src="../scripts/cart.ts"></script>
+</Layout>

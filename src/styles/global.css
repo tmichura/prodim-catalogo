@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&display=swap");
+
+/* Garet font — agregá los archivos en public/fonts/garet/ */
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Heavy.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-paper text-ink-900 font-body antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    @apply bg-batch-400/60 text-ink-900;
+  }
+  /* Respeta preferencia de reducir movimiento */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Numeración "estarcida" tipo bidón industrial, usada en las categorías */
+  .stencil-tag {
+    @apply font-garet text-[11px] tracking-widest text-ink-500;
+  }
+
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-batch-500 focus-visible:ring-offset-2 focus-visible:ring-offset-paper;
+  }
+
+  /* Resalta la escala de precio elegida automáticamente según la cantidad cargada */
+  .escala-row--active {
+    @apply bg-ink-800 text-white;
+  }
+
+  /* Input number spinners más grandes en mobile */
+  /* Webkit spinners (Chrome, Safari, Edge) */
+  .qty-input::-webkit-outer-spin-button,
+  .qty-input::-webkit-inner-spin-button {
+    @apply opacity-100 cursor-pointer;
+  }
+
+  @media (max-width: 768px) {
+    .qty-input::-webkit-outer-spin-button,
+    .qty-input::-webkit-inner-spin-button {
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "nombre": "SUELTOS",
+    "categorias": [
+      "ceras-sueltas",
+      "cloro-y-lavandinas-sueltos",
+      "cremas-enjuague-sueltos",
+      "detergentes-sueltos",
+      "jabones-liquidos-sueltos",
+      "jabones-para-manos-sueltos",
+      "shampoos-sueltos",
+      "suavizantes-para-ropa-suelto"
+    ]
+  },
+  {
+    "nombre": "ENVASADOS",
+    "categorias": [
+      "ceras-envasadas",
+      "cloro-y-lavandinas-envasados",
+      "cremas-enjuague-envasada",
+      "desengrasantes-envasados",
+      "detergentes-envasados",
+      "jabones-envasados",
+      "perfumes-ropa-envasados",
+      "shampoos-envasados",
+      "suavizantes-envasados"
+    ]
+  },
+  {
+    "nombre": "AUTOMOTOR",
+    "categorias": ["cosmetica-automotor", "cuidados-para-el-auto"]
+  },
+  {
+    "nombre": "TEXTIL Y AROMATIZANTES",
+    "categorias": ["aromatizante-textil-concentr", "cosmetica-textil", "difusores-y-aromatizantes"]
+  },
+  {
+    "nombre": "ACCESORIOS DE LIMPIEZA",
+    "categorias": [
+      "bolsas",
+      "cabos",
+      "escobas-y-escobillones",
+      "esponjas-y-estropajos",
+      "palas",
+      "plumeros",
+      "rejillas-y-repasadores",
+      "secadores",
+      "trapos-articulos-para-piso",
+      "envases",
+      "plasticos",
+      "papeles-y-rollos"
+    ]
+  },
+  {
+    "nombre": "OTROS",
+    "categorias": [
+      "desodorantes-x-1-lt",
+      "desodorantes-x-250-cc",
+      "desengrasantes-y-limpiadores",
+      "productos-concentrados-hogar",
+      "cloro-para-piletas",
+      "piletas",
+      "venenos",
+      "varios"
+    ]
+  }
+]
