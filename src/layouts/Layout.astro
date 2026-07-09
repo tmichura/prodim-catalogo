@@ -10,6 +10,9 @@ const {
   title = "Prodim · Productos Químicos",
   description = "Prodim: fabricación y distribución de productos químicos de limpieza industrial y doméstica. Más de 600 productos, con precios según volumen de compra.",
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL("/og-image.jpg", Astro.site);
 ---
 
 <!doctype html>
@@ -18,8 +21,24 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
     <title>{title}</title>
+
+    <!-- Open Graph: la tarjeta que se ve al compartir el link por WhatsApp/redes -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Prodim" />
+
+    <!-- Twitter/X usa sus propias etiquetas, aunque tomen los mismos valores -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
   </head>
   <body class="min-h-screen">
     <slot />
