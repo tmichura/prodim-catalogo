@@ -24,9 +24,12 @@
   }
   body {
     @apply bg-paper text-ink-900 font-body antialiased;
-    /* Ojo: NO poner overflow-x acá también — si html y body tienen
-       overflow seteado a la vez, Chrome rompe position:sticky de los
-       hijos (el header deja de quedar pegado arriba al scrollear). */
+    /* "clip" (no "hidden") a propósito: bloquea el desborde horizontal
+       igual que "hidden", pero sin crear un contenedor de scroll propio
+       — por eso no rompe el position:sticky del header/navbar como sí
+       lo hacía "overflow-x: hidden" acá. Mobile Safari/Chrome necesitan
+       este bloqueo también en el body (no alcanza con solo el <html>). */
+    overflow-x: clip;
   }
   ::selection {
     @apply bg-batch-400/60 text-ink-900;
