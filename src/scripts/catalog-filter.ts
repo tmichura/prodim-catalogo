@@ -39,12 +39,12 @@ function mostrarCategoriaActual(): void {
   if (!categoriaActualEl) return;
 
   if (categoriaActiva === "todas") {
-    categoriaActualEl.textContent = "Catálogo";
+    categoriaActualEl.textContent = "Tienda";
     return;
   }
 
   const chip = chips.find((c) => (c.dataset.categoria || "todas") === categoriaActiva);
-  categoriaActualEl.textContent = chip?.textContent?.trim() || "Catálogo";
+  categoriaActualEl.textContent = chip?.textContent?.trim() || "Tienda";
 }
 
 mostrarCategoriaActual();
