@@ -96,8 +96,9 @@ const superCategorias = getSuperCategorias(categorias);
 
     <!-- Buscador: inline en desktop, overlay de pantalla completa en mobile -->
     <div id="search-wrapper" class="relative hidden flex-1 sm:block">
+      <!-- Lupa decorativa: solo desktop -->
       <svg
-        class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400"
+        class="pointer-events-none absolute left-3 top-1/2 hidden h-4 w-4 -translate-y-1/2 text-gray-400 sm:block"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -106,17 +107,32 @@ const superCategorias = getSuperCategorias(categorias);
         <circle cx="11" cy="11" r="7"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
+
+      <!-- Flecha para salir del buscador: solo mobile -->
+      <button
+        type="button"
+        id="search-back"
+        aria-label="Salir del buscador"
+        class="focus-ring absolute left-1 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md text-ink-500 hover:bg-ink-100 sm:hidden"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
       <input
         id="search-input"
         type="search"
         placeholder="Buscar…"
-        class="focus-ring w-full rounded-md border border-gray-300 bg-white py-2.5 pl-9 pr-11 text-sm text-gray-900 placeholder:text-gray-400 sm:pr-3"
+        class="focus-ring w-full rounded-md border border-gray-300 bg-white py-2.5 pl-9 pr-9 text-sm text-gray-900 placeholder:text-gray-400"
       />
+
+      <!-- Borra el texto escrito: aparece cuando hay algo escrito, en mobile y desktop -->
       <button
         type="button"
-        id="search-close"
-        aria-label="Cerrar búsqueda"
-        class="focus-ring absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md text-ink-500 hover:bg-ink-100 sm:hidden"
+        id="search-clear"
+        aria-label="Borrar búsqueda"
+        class="focus-ring absolute right-2 top-1/2 hidden h-7 w-7 -translate-y-1/2 flex items-center justify-center rounded-md text-ink-500 hover:bg-ink-100"
       >
         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -129,7 +145,7 @@ const superCategorias = getSuperCategorias(categorias);
     <button
       type="button"
       id="open-cart"
-      class="focus-ring relative flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm font-garet font-semibold text-white transition-colors hover:bg-white/15 shrink-0"
+      class="focus-ring relative flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm font-garet font-semibold text-white transition-colors hover:bg-white/15 shrink-0 sm:ml-auto"
       aria-haspopup="dialog"
       aria-controls="cart-drawer"
     >

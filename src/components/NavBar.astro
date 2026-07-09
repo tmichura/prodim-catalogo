@@ -13,14 +13,16 @@ const links = [
 ];
 ---
 
-<nav class="sticky top-[64px] z-30 border-b border-ink-100 bg-white">
+<nav class="sticky top-[var(--header-height,64px)] z-30 border-b border-ink-100 bg-white">
   <div class="mx-auto grid max-w-7xl grid-cols-4">
     {links.map((link) => (
       <a
         href={link.href}
         class:list={[
-          "focus-ring flex items-center justify-center border-r border-ink-100 px-2 py-3 text-center text-xs font-semibold uppercase tracking-wide text-ink-600 transition-colors last:border-r-0 hover:bg-ink-50 sm:text-sm",
-          { "bg-ink-800 text-white hover:bg-ink-800": activo === link.id },
+          "focus-ring flex items-center justify-center border-r border-ink-100 px-2 py-3 text-center text-xs font-semibold uppercase tracking-wide transition-colors last:border-r-0 sm:text-sm",
+          activo === link.id
+            ? "bg-[#202E76] text-white hover:bg-[#202E76]"
+            : "text-[#202E76] hover:bg-ink-50",
         ]}
       >
         {link.label}

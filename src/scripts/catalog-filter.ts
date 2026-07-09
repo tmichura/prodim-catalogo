@@ -26,8 +26,8 @@ let categoriaActiva = categoriaInicial;
 if (searchInput && queryInicial) searchInput.value = queryInicial;
 chips.forEach((c) => c.classList.toggle("active", (c.dataset.categoria || "todas") === categoriaActiva));
 
-// Si la categoría activa vive dentro de una súper categoría (Sueltos, Envasados...),
-// abrimos ese grupo del acordeón para que se vea resaltada.
+// Si la categoría activa vive dentro de una súper categoría (Sueltos, Envasados...)
+// de la barra lateral, abrimos ese grupo del acordeón para que se vea resaltada.
 const chipActivo = chips.find((c) => (c.dataset.categoria || "todas") === categoriaActiva);
 const panelPadre = chipActivo?.closest(".super-categoria-panel");
 if (panelPadre) {
@@ -39,13 +39,12 @@ function mostrarCategoriaActual(): void {
   if (!categoriaActualEl) return;
 
   if (categoriaActiva === "todas") {
-    categoriaActualEl.classList.add("hidden");
+    categoriaActualEl.textContent = "Catálogo";
     return;
   }
 
   const chip = chips.find((c) => (c.dataset.categoria || "todas") === categoriaActiva);
-  categoriaActualEl.textContent = chip?.textContent?.trim() || "";
-  categoriaActualEl.classList.remove("hidden");
+  categoriaActualEl.textContent = chip?.textContent?.trim() || "Catálogo";
 }
 
 mostrarCategoriaActual();
@@ -54,15 +53,19 @@ function normalizar(texto: string): string {
   return texto
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/\p{Mn}/gu, ""); // saca acentos (marcas diacríticas tras la normalización NFD)
 }
 
 function aplicarFiltros(): void {
   const query = normalizar(searchInput?.value.trim() || "");
+  const buscando = query !== "";
   let visibles = 0;
 
   for (const card of cards) {
-    const coincideCategoria = categoriaActiva === "todas" || card.dataset.categoria === categoriaActiva;
+    // Al buscar, se busca en TODO el catálogo sin importar la categoría
+    // elegida en la barra lateral (no tiene sentido limitar la búsqueda
+    // a la categoría en la que el usuario está parado).
+    const coincideCategoria = buscando || categoriaActiva === "todas" || card.dataset.categoria === categoriaActiva;
     const coincideBusqueda =
       query === "" ||
       normalizar(card.dataset.nombre || "").includes(query) ||
@@ -117,3 +120,14 @@ searchInput?.addEventListener("input", aplicarFiltros);
 sortSelect?.addEventListener("change", aplicarOrden);
 
 aplicarFiltros();
+
+// ---------- Acordeón de súper categorías en la barra lateral ----------
+
+Array.from(document.querySelectorAll<HTMLButtonElement>(".super-categoria-toggle")).forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const panel = toggle.nextElementSibling as HTMLElement | null;
+    const abierto = toggle.classList.toggle("open");
+    panel?.classList.toggle("hidden", !abierto);
+    toggle.setAttribute("aria-expanded", String(abierto));
+  });
+});

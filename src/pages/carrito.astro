@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
 
   <main>
     <section class="mx-auto max-w-3xl px-4 py-10">
-      <h1 class="font-display text-2xl font-bold text-ink-900">Tu pedido</h1>
+      <h1 class="font-display text-2xl font-bold text-[#202E76]">Tu pedido</h1>
 
       <!-- Lista de ítems -->
       <div id="cart-items" class="mt-6 space-y-3">
@@ -19,16 +19,8 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Estado vacío -->
-      <div id="cart-empty" class="hidden flex-col items-center justify-center gap-2 py-16 text-center text-ink-400">
-        <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="9" cy="21" r="1"></circle>
-          <circle cx="20" cy="21" r="1"></circle>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
-        <p class="text-sm">Todavía no agregaste productos.</p>
-        <a href="/productos" class="focus-ring mt-2 rounded-md bg-ink-800 px-4 py-2 text-sm font-semibold text-white hover:bg-ink-700">
-          Ver catálogo
-        </a>
+      <div id="cart-empty" class="hidden items-center justify-center py-16 text-center text-ink-400">
+        <p class="text-sm">Carrito vacío</p>
       </div>
 
       <!-- Datos de contacto + total + WhatsApp -->
@@ -86,10 +78,12 @@ import Footer from "../components/Footer.astro";
           <button type="button" class="qty-decrease focus-ring h-8 w-8 rounded border border-ink-200 text-base font-semibold leading-none text-ink-600 hover:bg-ink-50 md:h-6 md:w-6 md:text-sm">−</button>
           <span class="item-cantidad w-6 text-center font-mono text-sm"></span>
           <button type="button" class="qty-increase focus-ring h-8 w-8 rounded border border-ink-200 text-base font-semibold leading-none text-ink-600 hover:bg-ink-50 md:h-6 md:w-6 md:text-sm">+</button>
-          <button type="button" class="item-remove focus-ring ml-auto text-xs font-medium text-ink-400 hover:text-red-600">Quitar</button>
         </div>
       </div>
-      <div class="font-mono text-sm font-semibold text-ink-900 item-subtotal shrink-0"></div>
+      <div class="flex shrink-0 flex-col items-end justify-between gap-2">
+        <div class="font-mono text-sm font-semibold text-ink-900 item-subtotal"></div>
+        <button type="button" class="item-remove focus-ring text-xs font-medium text-ink-400 hover:text-red-600">Quitar</button>
+      </div>
     </div>
   </template>
 

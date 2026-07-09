@@ -21,6 +21,9 @@ jobs:
 
       - name: Generar el sitio (build)
         run: npm run build
+        env:
+          PUBLIC_WHATSAPP_NUMBER: ${{ secrets.PUBLIC_WHATSAPP_NUMBER }}
+          PUBLIC_EMPRESA_NOMBRE: ${{ secrets.PUBLIC_EMPRESA_NOMBRE }}
 
       - name: Subir por FTP a cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

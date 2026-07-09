@@ -17,7 +17,7 @@
   aria-labelledby="cart-title"
 >
   <div class="flex items-center justify-between border-b border-ink-100 px-5 py-4">
-    <h2 id="cart-title" class="font-display text-lg font-semibold text-ink-900">Tu pedido</h2>
+    <h2 id="cart-title" class="font-display text-lg font-semibold text-[#202E76]">Tu pedido</h2>
     <button
       type="button"
       id="close-cart"
@@ -37,13 +37,8 @@
   </div>
 
   <!-- Estado vacío -->
-  <div id="cart-empty" class="hidden flex-1 flex-col items-center justify-center gap-2 px-5 text-center text-ink-400">
-    <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <circle cx="9" cy="21" r="1"></circle>
-      <circle cx="20" cy="21" r="1"></circle>
-      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-    </svg>
-    <p class="text-sm">Todavía no agregaste productos.</p>
+  <div id="cart-empty" class="hidden flex-1 flex items-center justify-center px-5 text-center text-ink-400">
+    <p class="text-sm">Carrito vacío</p>
   </div>
 
   <!-- Footer: datos de contacto + total + WhatsApp -->
@@ -100,9 +95,19 @@
         <button type="button" class="qty-decrease focus-ring h-8 w-8 rounded border border-ink-200 text-base font-semibold leading-none text-ink-600 hover:bg-ink-50 md:h-6 md:w-6 md:text-sm">−</button>
         <span class="item-cantidad w-6 text-center font-mono text-sm"></span>
         <button type="button" class="qty-increase focus-ring h-8 w-8 rounded border border-ink-200 text-base font-semibold leading-none text-ink-600 hover:bg-ink-50 md:h-6 md:w-6 md:text-sm">+</button>
-        <button type="button" class="item-remove focus-ring ml-auto text-xs font-medium text-ink-400 hover:text-red-600">Quitar</button>
       </div>
     </div>
-    <div class="font-mono text-sm font-semibold text-ink-900 item-subtotal shrink-0"></div>
+    <div class="flex shrink-0 flex-col items-end justify-between gap-2">
+      <div class="font-mono text-sm font-semibold text-ink-900 item-subtotal"></div>
+      <button type="button" class="item-remove focus-ring text-xs font-medium text-ink-400 hover:text-red-600">Quitar</button>
+    </div>
   </div>
 </template>
+
+<!-- Leyenda breve al agregar un producto en mobile (en vez de abrir el carrito) -->
+<div
+  id="cart-toast"
+  class="pointer-events-none fixed left-1/2 top-4 z-[60] w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 -translate-y-4 rounded-md bg-ink-800 px-4 py-3 text-center text-sm font-medium text-white opacity-0 shadow-drawer transition-all duration-200 ease-out"
+  role="status"
+  aria-live="polite"
+></div>

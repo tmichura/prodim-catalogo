@@ -5,9 +5,11 @@ import NavBar from "../components/NavBar.astro";
 import ProductGrid from "../components/ProductGrid.astro";
 import CartDrawer from "../components/CartDrawer.astro";
 import Footer from "../components/Footer.astro";
-import { getProductos } from "../lib/products";
+import { getProductos, getCategorias, getSuperCategorias } from "../lib/products";
 
 const productos = getProductos();
+const categorias = getCategorias(productos);
+const superCategorias = getSuperCategorias(categorias);
 ---
 
 <Layout title="Prodim · Catálogo de productos">
@@ -15,7 +17,7 @@ const productos = getProductos();
   <NavBar activo="catalogo" />
 
   <main>
-    <ProductGrid productos={productos} />
+    <ProductGrid productos={productos} superCategorias={superCategorias} />
   </main>
 
   <CartDrawer />

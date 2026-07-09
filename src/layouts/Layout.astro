@@ -23,5 +23,30 @@ const {
   </head>
   <body class="min-h-screen">
     <slot />
+
+    <script>
+      // El header cambia de alto según el breakpoint (el logo mide distinto
+      // en mobile/desktop). El NavBar necesita saber esa altura real para
+      // pegarse justo debajo, si no queda un salto/superposición al scrollear.
+      function actualizarAlturaHeader(): void {
+        const header = document.querySelector("header");
+        if (!header) return;
+        document.documentElement.style.setProperty("--header-height", `${header.offsetHeight}px`);
+
+        // Header + NavBar juntos: lo usa la barra lateral flotante del catálogo
+        // para saber a qué altura "pegarse" sin quedar tapada por ninguno de los dos.
+        const nav = document.querySelector("nav");
+        const topbarsHeight = header.offsetHeight + (nav?.offsetHeight || 0);
+        document.documentElement.style.setProperty("--topbars-height", `${topbarsHeight + 16}px`);
+      }
+
+      actualizarAlturaHeader();
+      window.addEventListener("resize", actualizarAlturaHeader);
+
+      // Si las fuentes (Garet, Comfortaa) tardan en cargar, el header puede
+      // cambiar de alto después de la primera medición, dejando un hueco/línea
+      // entre el header y el NavBar. Recalculamos cuando terminan de cargar.
+      document.fonts?.ready.then(actualizarAlturaHeader);
+    </script>
   </body>
 </html>

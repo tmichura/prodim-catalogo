@@ -3,7 +3,8 @@
 // catalog-filter.ts, no hay lógica de filtrado duplicada acá).
 const toggleBtn = document.getElementById("search-toggle");
 const wrapper = document.getElementById("search-wrapper");
-const closeBtn = document.getElementById("search-close");
+const backBtn = document.getElementById("search-back");
+const clearBtn = document.getElementById("search-clear");
 const input = document.getElementById("search-input") as HTMLInputElement | null;
 
 function abrirBusqueda(): void {
@@ -25,8 +26,23 @@ function cerrarBusqueda(): void {
   }, 200);
 }
 
+function actualizarBotonBorrar(): void {
+  if (!input || !clearBtn) return;
+  clearBtn.classList.toggle("hidden", input.value.length === 0);
+}
+
 toggleBtn?.addEventListener("click", abrirBusqueda);
-closeBtn?.addEventListener("click", cerrarBusqueda);
+backBtn?.addEventListener("click", cerrarBusqueda);
+
+clearBtn?.addEventListener("click", () => {
+  if (!input) return;
+  input.value = "";
+  input.dispatchEvent(new Event("input", { bubbles: true }));
+  input.focus();
+  actualizarBotonBorrar();
+});
+
+input?.addEventListener("input", actualizarBotonBorrar);
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && wrapper?.classList.contains("search-overlay-open")) {

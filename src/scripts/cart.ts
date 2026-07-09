@@ -183,7 +183,27 @@ const els = {
   clearBtn: document.getElementById("clear-cart"),
   clienteInput: document.getElementById("cliente-nombre") as HTMLInputElement | null,
   template: document.getElementById("cart-item-template") as HTMLTemplateElement | null,
+  toast: document.getElementById("cart-toast"),
 };
+
+const ES_MOBILE = () => window.matchMedia("(max-width: 639px)").matches;
+
+let toastTimeoutId: number | undefined;
+
+function mostrarToast(mensaje: string): void {
+  if (!els.toast) return;
+
+  els.toast.textContent = mensaje;
+  window.clearTimeout(toastTimeoutId);
+
+  els.toast.classList.remove("opacity-0", "-translate-y-4");
+  els.toast.classList.add("opacity-100", "translate-y-0");
+
+  toastTimeoutId = window.setTimeout(() => {
+    els.toast?.classList.add("opacity-0", "-translate-y-4");
+    els.toast?.classList.remove("opacity-100", "translate-y-0");
+  }, 2000);
+}
 
 let cart: Cart = loadCart();
 
@@ -286,7 +306,13 @@ document.addEventListener("click", (e) => {
   btn.classList.add("!bg-batch-500", "!text-ink-900");
   window.setTimeout(() => btn.classList.remove("!bg-batch-500", "!text-ink-900"), 350);
 
-  openDrawer();
+  // En mobile no abrimos el carrito (tapa toda la pantalla); mostramos
+  // una leyenda breve en su lugar para no interrumpir la navegación.
+  if (ES_MOBILE()) {
+    mostrarToast(`Se agregó ${producto.nombre}`);
+  } else {
+    openDrawer();
+  }
 });
 
 // ---------- Controles dentro del carrito (qty, quitar) ----------
