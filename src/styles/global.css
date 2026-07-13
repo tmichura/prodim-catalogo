@@ -30,6 +30,9 @@
        lo hacía "overflow-x: hidden" acá. Mobile Safari/Chrome necesitan
        este bloqueo también en el body (no alcanza con solo el <html>). */
     overflow-x: clip;
+    /* Patrón sutil con el isologo en vez del blanco liso */
+    background-image: url("/images/fondo-patron.jpg");
+    background-repeat: repeat;
   }
   ::selection {
     @apply bg-batch-400/60 text-ink-900;
