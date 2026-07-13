@@ -315,7 +315,7 @@
         "CODIGO": 100,
         "NOMBRE": "CLORO CONCENTRADO",
         "CATEGORIA": "CLORO Y LAVANDINAS SUELTOS",
-        "PRECIO1": "LT x $570 c/lt",
+        "PRECIO1": "5LT x $570 c/lt",
         "PRECIO2": "200LT x $487 c/lt",
         "PRECIO3": "1000LT x $456 c/lt"
     },
@@ -323,7 +323,7 @@
         "CODIGO": 10,
         "NOMBRE": "HIPOCLORITO SODIO 100GR/LT (VENTA X KG)",
         "CATEGORIA": "CLORO Y LAVANDINAS SUELTOS",
-        "PRECIO1": "KG x $713 c/kg",
+        "PRECIO1": "5KG x $713 c/kg",
         "PRECIO2": "200KG x $609 c/kg",
         "PRECIO3": "1000KG x $570 c/kg"
     },
@@ -331,7 +331,7 @@
         "CODIGO": 101,
         "NOMBRE": "LAVANDINA EN GEL",
         "CATEGORIA": "CLORO Y LAVANDINAS SUELTOS",
-        "PRECIO1": "LT x $990 c/lt",
+        "PRECIO1": "5LT x $990 c/lt",
         "PRECIO2": "20LT x $891 c/lt",
         "PRECIO3": "60LT x $743 c/lt"
     },
@@ -730,23 +730,39 @@
     {
         "CODIGO": 516,
         "NOMBRE": "AMARILLO DESENGRASANTE ULTRA X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $11220 c/u",
         "PRECIO2": "4U x $10098 c/u",
         "PRECIO3": "12U x $9537 c/u"
     },
     {
+        "CODIGO": 123,
+        "NOMBRE": "DESENGRASANTE CONCENTRADO MULTIUSO 1 + 9",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $11550 c/u",
+        "PRECIO2": "2U x $10395 c/u",
+        "PRECIO3": "5U x $9240 c/u"
+    },
+    {
         "CODIGO": 5221,
         "NOMBRE": "DESENGRASANTE MULTIUSO BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $9900 c/u",
         "PRECIO2": "4U x $8910 c/u",
         "PRECIO3": "12U x $8415 c/u"
     },
     {
+        "CODIGO": 54,
+        "NOMBRE": "DESENGRASANTE NH3",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $12375 c/u",
+        "PRECIO2": "5U x $10890 c/u",
+        "PRECIO3": ""
+    },
+    {
         "CODIGO": 5203,
         "NOMBRE": "DESENGRASANTE PROCE BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $9900 c/u",
         "PRECIO2": "4U x $8910 c/u",
         "PRECIO3": "12U x $8415 c/u"
@@ -754,7 +770,7 @@
     {
         "CODIGO": 4160,
         "NOMBRE": "DESENGRASANTE PROCE X 2 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $4324 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
@@ -762,7 +778,7 @@
     {
         "CODIGO": 511,
         "NOMBRE": "DESODORANTE PARA PISOS BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "4U x $4158 c/u",
         "PRECIO3": "12U x $3927 c/u"
@@ -770,127 +786,15 @@
     {
         "CODIGO": 412,
         "NOMBRE": "FLUIDO ACAROINA X 1 LT",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "LT x $6955 c/lt",
         "PRECIO2": "",
         "PRECIO3": ""
     },
     {
-        "CODIGO": 5211,
-        "NOMBRE": "LIMPIADOR CREMOSO CITRICO BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $16500 c/u",
-        "PRECIO2": "2U x $14850 c/u",
-        "PRECIO3": "4U x $13200 c/u"
-    },
-    {
-        "CODIGO": 146,
-        "NOMBRE": "LIMPIADOR CREMOSO X 1 LT AROMA CITRICO",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $4277 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 5204,
-        "NOMBRE": "LIMPIADOR LISO CLASICO BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $4950 c/u",
-        "PRECIO2": "4U x $4455 c/u",
-        "PRECIO3": "12U x $4208 c/u"
-    },
-    {
-        "CODIGO": 5233,
-        "NOMBRE": "LIMPIAVIDRIOS BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $14801 c/u",
-        "PRECIO2": "4U x $13320 c/u",
-        "PRECIO3": "12U x $12580 c/u"
-    },
-    {
-        "CODIGO": 490,
-        "NOMBRE": "LIMPIAVIDRIOS X 1 LT LPU",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $3589 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 1002,
-        "NOMBRE": "QUITAMANCHAS TIPO TREN BIDON X 5 LTS",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "U x $11385 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 21,
-        "NOMBRE": "QUITAMANCHAS TIPO TREN LPU",
-        "CATEGORIA": "DESENGRASANTES ENVASADOS",
-        "PRECIO1": "LT x $2904 c/lt",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 551,
-        "NOMBRE": "AMARILLO DESENGRASANTE ULTRA",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "LT x $1515 c/lt",
-        "PRECIO2": "40LT x $1181 c/lt",
-        "PRECIO3": "100LT x $1015 c/lt"
-    },
-    {
-        "CODIGO": 123,
-        "NOMBRE": "DESENGRASANTE CONCENTRADO MULTIUSO 1 + 9",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $11550 c/u",
-        "PRECIO2": "2U x $10395 c/u",
-        "PRECIO3": "5U x $9240 c/u"
-    },
-    {
-        "CODIGO": 122,
-        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $2640 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 54,
-        "NOMBRE": "DESENGRASANTE NH3",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $12375 c/u",
-        "PRECIO2": "5U x $10890 c/u",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 51,
-        "NOMBRE": "DESENGRASANTE TIPO PROCE CON AMONIACO",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "LT x $1188 c/lt",
-        "PRECIO2": "40LT x $927 c/lt",
-        "PRECIO3": "100LT x $796 c/lt"
-    },
-    {
-        "CODIGO": 480,
-        "NOMBRE": "FLIT INSECTICIDA LIQUIDO",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "LT x $6435 c/lt",
-        "PRECIO2": "10LT x $6049 c/lt",
-        "PRECIO3": "20LT x $5727 c/lt"
-    },
-    {
-        "CODIGO": 48,
-        "NOMBRE": "FLUIDO ACAROINA",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "LT x $6278 c/lt",
-        "PRECIO2": "10LT x $5901 c/lt",
-        "PRECIO3": "20LT x $5587 c/lt"
-    },
-    {
         "CODIGO": 2194,
         "NOMBRE": "LIMPIADOR ALCOHOLICO 70 % 1 LT",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $3630 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
@@ -898,58 +802,122 @@
     {
         "CODIGO": 2191,
         "NOMBRE": "LIMPIADOR ALCOHOLICO 70 % 5 LTS",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $15428 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
     },
     {
-        "CODIGO": 50,
-        "NOMBRE": "LIMPIADOR CREMOSO AROMA CITRICO",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "LT x $2406 c/lt",
-        "PRECIO2": "10LT x $2093 c/lt",
-        "PRECIO3": "20LT x $1756 c/lt"
+        "CODIGO": 5211,
+        "NOMBRE": "LIMPIADOR CREMOSO CITRICO BIDON X 5 LTS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $16500 c/u",
+        "PRECIO2": "2U x $14850 c/u",
+        "PRECIO3": "4U x $13200 c/u"
+    },
+    {
+        "CODIGO": 146,
+        "NOMBRE": "LIMPIADOR CREMOSO X 1 LT AROMA CITRICO",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $4277 c/u",
+        "PRECIO2": "",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 5204,
+        "NOMBRE": "LIMPIADOR LISO CLASICO BIDON X 5 LTS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $4950 c/u",
+        "PRECIO2": "4U x $4455 c/u",
+        "PRECIO3": "12U x $4208 c/u"
+    },
+    {
+        "CODIGO": 5233,
+        "NOMBRE": "LIMPIAVIDRIOS BIDON X 5 LTS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $14801 c/u",
+        "PRECIO2": "4U x $13320 c/u",
+        "PRECIO3": "12U x $12580 c/u"
     },
     {
         "CODIGO": 49,
         "NOMBRE": "LIMPIAVIDRIOS CONCENTRADO X 1 LT",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "2U x $7673 c/u",
         "PRECIO3": "4U x $7095 c/u"
     },
     {
+        "CODIGO": 490,
+        "NOMBRE": "LIMPIAVIDRIOS X 1 LT LPU",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $3589 c/u",
+        "PRECIO2": "",
+        "PRECIO3": ""
+    },
+    {
         "CODIGO": 308,
-        "NOMBRE": "LIQUIDO PARA INODOROS QUIMICOS",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
+        "NOMBRE": "LIQUIDO INODOROS QUMICOS X 1 LT (1+9)",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "LT x $19800 c/lt",
         "PRECIO2": "10LT x $17820 c/lt",
         "PRECIO3": "20LT x $14850 c/lt"
     },
     {
-        "CODIGO": 59,
-        "NOMBRE": "LISOF CLASICO X 1 LT BACTERICIDA LIMPIA",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $15629 c/u",
-        "PRECIO2": "5U x $13753 c/u",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 759,
-        "NOMBRE": "LISOF CLASICO X 250 BACTERICIDA LIMPIADO",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $5940 c/u",
-        "PRECIO2": "2U x $5346 c/u",
-        "PRECIO3": ""
-    },
-    {
-        "CODIGO": 1265,
-        "NOMBRE": "WASHING MACHINE PASTILLA PARA LAVARROPAS",
-        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
-        "PRECIO1": "U x $910 c/u",
+        "CODIGO": 1002,
+        "NOMBRE": "QUITAMANCHAS TIPO TREN BIDON X 5 LTS",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $11385 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
+    },
+    {
+        "CODIGO": 21,
+        "NOMBRE": "QUITAMANCHAS TIPO TREN LPU",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "LT x $2904 c/lt",
+        "PRECIO2": "",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 551,
+        "NOMBRE": "AMARILLO DESENGRASANTE ULTRA",
+        "CATEGORIA": "DESENGRASANTES SUELTOS",
+        "PRECIO1": "5LT x $1515 c/lt",
+        "PRECIO2": "40LT x $1181 c/lt",
+        "PRECIO3": "100LT x $1015 c/lt"
+    },
+    {
+        "CODIGO": 51,
+        "NOMBRE": "DESENGRASANTE TIPO PROCE CON AMONIACO",
+        "CATEGORIA": "DESENGRASANTES SUELTOS",
+        "PRECIO1": "5LT x $1188 c/lt",
+        "PRECIO2": "40LT x $927 c/lt",
+        "PRECIO3": "100LT x $796 c/lt"
+    },
+    {
+        "CODIGO": 480,
+        "NOMBRE": "FLIT INSECTICIDA LIQUIDO",
+        "CATEGORIA": "DESENGRASANTES SUELTOS",
+        "PRECIO1": "5LT x $6435 c/lt",
+        "PRECIO2": "10LT x $6049 c/lt",
+        "PRECIO3": "20LT x $5727 c/lt"
+    },
+    {
+        "CODIGO": 48,
+        "NOMBRE": "FLUIDO ACAROINA",
+        "CATEGORIA": "DESENGRASANTES SUELTOS",
+        "PRECIO1": "5LT x $6278 c/lt",
+        "PRECIO2": "10LT x $5901 c/lt",
+        "PRECIO3": "20LT x $5587 c/lt"
+    },
+    {
+        "CODIGO": 50,
+        "NOMBRE": "LIMPIADOR CREMOSO AROMA CITRICO",
+        "CATEGORIA": "DESENGRASANTES SUELTOS",
+        "PRECIO1": "5LT x $2406 c/lt",
+        "PRECIO2": "10LT x $2093 c/lt",
+        "PRECIO3": "20LT x $1756 c/lt"
     },
     {
         "CODIGO": 70,
@@ -1133,6 +1101,14 @@
         "CATEGORIA": "DESODORANTES X 1 LT",
         "PRECIO1": "U x $8415 c/u",
         "PRECIO2": "5U x $7405 c/u",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 59,
+        "NOMBRE": "LISOF CLASICO X 1 LT BACTERICIDA LIMPIA",
+        "CATEGORIA": "DESODORANTES X 1 LT",
+        "PRECIO1": "U x $15629 c/u",
+        "PRECIO2": "5U x $13753 c/u",
         "PRECIO3": ""
     },
     {
@@ -1320,6 +1296,22 @@
         "PRECIO3": ""
     },
     {
+        "CODIGO": 759,
+        "NOMBRE": "LISOF CLASICO X 250 BACTERICIDA LIMPIADO",
+        "CATEGORIA": "DESODORANTES X 250 CC",
+        "PRECIO1": "U x $5940 c/u",
+        "PRECIO2": "2U x $5346 c/u",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 122,
+        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
+        "CATEGORIA": "DETERGENTES ENVASADOS",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": ""
+    },
+    {
         "CODIGO": 276,
         "NOMBRE": "DETERGENTE BIDON X 5LTS ESPECIAL SUPER",
         "CATEGORIA": "DETERGENTES ENVASADOS",
@@ -1387,7 +1379,7 @@
         "CODIGO": 7,
         "NOMBRE": "DETERGENTE 30% PLUS NATURAL",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "KG x $3375 c/kg",
+        "PRECIO1": "5KG x $3375 c/kg",
         "PRECIO2": "20KG x $3150 c/kg",
         "PRECIO3": "100KG x $2700 c/kg"
     },
@@ -1395,7 +1387,7 @@
         "CODIGO": 5,
         "NOMBRE": "DETERGENTE 30% PLUS VERDE SODICO",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "KG x $3375 c/kg",
+        "PRECIO1": "5KG x $3375 c/kg",
         "PRECIO2": "20KG x $3150 c/kg",
         "PRECIO3": "100KG x $2700 c/kg"
     },
@@ -1427,7 +1419,7 @@
         "CODIGO": 2,
         "NOMBRE": "DETERGENTE MAGIC ESPECIAL 30% VERDE",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "KG x $3960 c/kg",
+        "PRECIO1": "5KG x $3960 c/kg",
         "PRECIO2": "20KG x $3696 c/kg",
         "PRECIO3": "100KG x $3168 c/kg"
     },
@@ -1707,7 +1699,7 @@
         "CODIGO": 316,
         "NOMBRE": "JABON LIQUIDO P/MANOS DOVE",
         "CATEGORIA": "JABONES PARA MANOS SUELTOS",
-        "PRECIO1": "LT x $1111 c/lt",
+        "PRECIO1": "5LT x $1111 c/lt",
         "PRECIO2": "10LT x $1022 c/lt",
         "PRECIO3": "20LT x $889 c/lt"
     },
@@ -1715,7 +1707,7 @@
         "CODIGO": 314,
         "NOMBRE": "JABON LIQUIDO PARA MANOS BRISA",
         "CATEGORIA": "JABONES PARA MANOS SUELTOS",
-        "PRECIO1": "LT x $757 c/lt",
+        "PRECIO1": "5LT x $757 c/lt",
         "PRECIO2": "10LT x $697 c/lt",
         "PRECIO3": "20LT x $606 c/lt"
     },
@@ -1723,7 +1715,7 @@
         "CODIGO": 318,
         "NOMBRE": "JABON LIQUIDO PARA MANOS COCO",
         "CATEGORIA": "JABONES PARA MANOS SUELTOS",
-        "PRECIO1": "LT x $1010 c/lt",
+        "PRECIO1": "5LT x $1010 c/lt",
         "PRECIO2": "10LT x $929 c/lt",
         "PRECIO3": "20LT x $808 c/lt"
     },
@@ -1731,7 +1723,7 @@
         "CODIGO": 315,
         "NOMBRE": "JABON LIQUIDO PARA MANOS FLOWER",
         "CATEGORIA": "JABONES PARA MANOS SUELTOS",
-        "PRECIO1": "LT x $1010 c/lt",
+        "PRECIO1": "5LT x $1010 c/lt",
         "PRECIO2": "10LT x $929 c/lt",
         "PRECIO3": "20LT x $808 c/lt"
     },
@@ -1739,7 +1731,7 @@
         "CODIGO": 38,
         "NOMBRE": "JABON LIQUIDO PARA MANOS FRUTAL",
         "CATEGORIA": "JABONES PARA MANOS SUELTOS",
-        "PRECIO1": "LT x $1010 c/lt",
+        "PRECIO1": "5LT x $1010 c/lt",
         "PRECIO2": "10LT x $929 c/lt",
         "PRECIO3": "20LT x $808 c/lt"
     },
@@ -4781,6 +4773,14 @@
         "CATEGORIA": "VARIOS",
         "PRECIO1": "U x $1014 c/u",
         "PRECIO2": "6U x $760 c/u",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 1265,
+        "NOMBRE": "WASHING MACHINE PASTILLA PARA LAVARROPAS",
+        "CATEGORIA": "VARIOS",
+        "PRECIO1": "U x $910 c/u",
+        "PRECIO2": "",
         "PRECIO3": ""
     },
     {
