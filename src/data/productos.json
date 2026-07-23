@@ -299,9 +299,9 @@
         "CODIGO": 5280,
         "NOMBRE": "LAVANDINA CONCENTRADA BIDON X 5 LTS",
         "CATEGORIA": "CLORO Y LAVANDINAS ENVASADOS",
-        "PRECIO1": "U x $4620 c/u",
-        "PRECIO2": "4U x $4158 c/u",
-        "PRECIO3": "12U x $3927 c/u"
+        "PRECIO1": "U x $5544 c/u",
+        "PRECIO2": "4U x $4990 c/u",
+        "PRECIO3": "12U x $4712 c/u"
     },
     {
         "CODIGO": 5230,
@@ -315,17 +315,17 @@
         "CODIGO": 100,
         "NOMBRE": "CLORO CONCENTRADO",
         "CATEGORIA": "CLORO Y LAVANDINAS SUELTOS",
-        "PRECIO1": "5LT x $570 c/lt",
-        "PRECIO2": "200LT x $487 c/lt",
-        "PRECIO3": "1000LT x $456 c/lt"
+        "PRECIO1": "5LT x $510 c/lt",
+        "PRECIO2": "200LT x $436 c/lt",
+        "PRECIO3": "1000LT x $408 c/lt"
     },
     {
         "CODIGO": 10,
         "NOMBRE": "HIPOCLORITO SODIO 100GR/LT (VENTA X KG)",
         "CATEGORIA": "CLORO Y LAVANDINAS SUELTOS",
-        "PRECIO1": "5KG x $713 c/kg",
-        "PRECIO2": "200KG x $609 c/kg",
-        "PRECIO3": "1000KG x $570 c/kg"
+        "PRECIO1": "5KG x $627 c/kg",
+        "PRECIO2": "200KG x $536 c/kg",
+        "PRECIO3": "1000KG x $502 c/kg"
     },
     {
         "CODIGO": 101,
@@ -523,7 +523,7 @@
         "CODIGO": 56,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 EXTERIOR IMPORTA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $3630 c/u",
+        "PRECIO1": "U x $3960 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
     },
@@ -555,9 +555,9 @@
         "CODIGO": 44,
         "NOMBRE": "REVIVIDOR C/SILICONAS EXTERIOR IMPORTADA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "LT x $11550 c/lt",
-        "PRECIO2": "2LT x $9240 c/lt",
-        "PRECIO3": "5LT x $8085 c/lt"
+        "PRECIO1": "LT x $12210 c/lt",
+        "PRECIO2": "2LT x $9768 c/lt",
+        "PRECIO3": "5LT x $8547 c/lt"
     },
     {
         "CODIGO": 55,
@@ -761,7 +761,7 @@
     },
     {
         "CODIGO": 5203,
-        "NOMBRE": "DESENGRASANTE PROCE BIDON X 5 LTS",
+        "NOMBRE": "DESENGRASANTE PROCE CREMOSO BIDON X 5 LT",
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $9900 c/u",
         "PRECIO2": "4U x $8910 c/u",
@@ -881,7 +881,7 @@
     },
     {
         "CODIGO": 551,
-        "NOMBRE": "AMARILLO DESENGRASANTE ULTRA",
+        "NOMBRE": "AMARILLO DESENGRASANTE ULTRA PRO IND",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
         "PRECIO1": "5LT x $1515 c/lt",
         "PRECIO2": "40LT x $1181 c/lt",
@@ -889,7 +889,7 @@
     },
     {
         "CODIGO": 51,
-        "NOMBRE": "DESENGRASANTE TIPO PROCE CON AMONIACO",
+        "NOMBRE": "DESENGRASANTE PROCE AMONIACAL CREMOSO",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
         "PRECIO1": "5LT x $1188 c/lt",
         "PRECIO2": "40LT x $927 c/lt",
@@ -1313,7 +1313,7 @@
     },
     {
         "CODIGO": 276,
-        "NOMBRE": "DETERGENTE BIDON X 5LTS ESPECIAL SUPER",
+        "NOMBRE": "DETERGENTE BIDON X 5LTS ESPECIAL MAGIC",
         "CATEGORIA": "DETERGENTES ENVASADOS",
         "PRECIO1": "U x $12375 c/u",
         "PRECIO2": "4U x $11138 c/u",
@@ -1601,7 +1601,7 @@
     },
     {
         "CODIGO": 810,
-        "NOMBRE": "JABON P/ROPA CONC, AZUL BALDE X 10 LTS",
+        "NOMBRE": "CONCENTRADO JABON P/ROPA AZUL BALDE X 10",
         "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
         "PRECIO1": "U x $29700 c/u",
         "PRECIO2": "",
@@ -1609,7 +1609,7 @@
     },
     {
         "CODIGO": 812,
-        "NOMBRE": "JABON P/ROPA CONC, BLANCO BALDE X 10 LTS",
+        "NOMBRE": "CONCENTRADO JABON P/ROPA BLANCO BALD X10",
         "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
         "PRECIO1": "U x $29700 c/u",
         "PRECIO2": "",
@@ -1617,7 +1617,7 @@
     },
     {
         "CODIGO": 811,
-        "NOMBRE": "JABON P/ROPA CONC, VERDE BALDE X 10 LTS",
+        "NOMBRE": "CONCENTRADO JABON P/ROPA VERDE BALDE X10",
         "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
         "PRECIO1": "U x $29700 c/u",
         "PRECIO2": "",
@@ -1656,6 +1656,14 @@
         "PRECIO3": "60LT x $809 c/lt"
     },
     {
+        "CODIGO": 602,
+        "NOMBRE": "JABON LIQUIDO SKY P ESQUIPY BAJA ESPUMA",
+        "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
+        "PRECIO1": "5LT x $1155 c/lt",
+        "PRECIO2": "20LT x $924 c/lt",
+        "PRECIO3": "60LT x $809 c/lt"
+    },
+    {
         "CODIGO": 39,
         "NOMBRE": "JABON LIQUIDO SUPER MATIC BAJA ESPU",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
@@ -1665,19 +1673,11 @@
     },
     {
         "CODIGO": 600,
-        "NOMBRE": "JABON LIQUIDO TIPO ARY ULTRA NUEVO PERFU",
+        "NOMBRE": "JABON LIQUIDO TIPO ARY ULTRA",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
-        "PRECIO1": "5LT x $1188 c/lt",
-        "PRECIO2": "20LT x $950 c/lt",
-        "PRECIO3": "60LT x $832 c/lt"
-    },
-    {
-        "CODIGO": 602,
-        "NOMBRE": "JABON LIQUIDO TIPO ESQUIPY BAJA ESPUMA",
-        "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
-        "PRECIO1": "5LT x $1155 c/lt",
-        "PRECIO2": "20LT x $924 c/lt",
-        "PRECIO3": "60LT x $809 c/lt"
+        "PRECIO1": "5LT x $1287 c/lt",
+        "PRECIO2": "20LT x $1030 c/lt",
+        "PRECIO3": "60LT x $901 c/lt"
     },
     {
         "CODIGO": 605,
@@ -2008,32 +2008,32 @@
         "PRECIO3": "20LT x $792 c/lt"
     },
     {
-        "CODIGO": 801,
-        "NOMBRE": "SUAVIZANTE CON, ROSA BALDE X 10 LTS",
-        "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
-        "PRECIO1": "U x $29700 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
-    },
-    {
         "CODIGO": 800,
-        "NOMBRE": "SUAVIZANTE CONC, AZUL BALDE X 10 LTS",
+        "NOMBRE": "CONCENTRADO SUAVIZANTE AZUL BALDE X 10",
         "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
         "PRECIO1": "U x $29700 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
     },
     {
-        "CODIGO": 5245,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS \"52\"",
+        "CODIGO": 801,
+        "NOMBRE": "CONCENTRADO SUAVIZANTE ROSA BALDE X 10",
+        "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
+        "PRECIO1": "U x $29700 c/u",
+        "PRECIO2": "",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 5212,
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LT CARICIAS DE BEBE",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "4U x $7425 c/u",
         "PRECIO3": "12U x $7013 c/u"
     },
     {
-        "CODIGO": 5212,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS CARICIAS DE BB",
+        "CODIGO": 5245,
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS \"52\" NUBE CELES",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "4U x $7425 c/u",
@@ -2041,7 +2041,7 @@
     },
     {
         "CODIGO": 5219,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS COMFY",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS COMFY FLOR MAGI",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $6435 c/u",
         "PRECIO2": "4U x $5792 c/u",
@@ -2049,7 +2049,7 @@
     },
     {
         "CODIGO": 5223,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS DAUNIE",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS DAUNIE FLOR VAL",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $6435 c/u",
         "PRECIO2": "4U x $5792 c/u",
@@ -2057,7 +2057,7 @@
     },
     {
         "CODIGO": 514,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS KERU",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS KERU VIOLE SILV",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $5940 c/u",
         "PRECIO2": "4U x $5346 c/u",
@@ -2073,19 +2073,11 @@
     },
     {
         "CODIGO": 313,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS PERLADO",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS PERLADO JAZMINE",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $5940 c/u",
         "PRECIO2": "4U x $5346 c/u",
         "PRECIO3": "12U x $5049 c/u"
-    },
-    {
-        "CODIGO": 5208,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS PRIMAVERAL",
-        "CATEGORIA": "SUAVIZANTES ENVASADOS",
-        "PRECIO1": "U x $5257 c/u",
-        "PRECIO2": "",
-        "PRECIO3": ""
     },
     {
         "CODIGO": 5201,
@@ -2097,7 +2089,7 @@
     },
     {
         "CODIGO": 5222,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS SUNNY",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS SUNNY SOL DE VE",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $6435 c/u",
         "PRECIO2": "4U x $5792 c/u",
@@ -2105,7 +2097,7 @@
     },
     {
         "CODIGO": 5207,
-        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS VIVEX \"K\"",
+        "NOMBRE": "SUAVIZANTE BIDON X 5 LTS VIVEX K",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $7260 c/u",
         "PRECIO2": "4U x $6534 c/u",
@@ -2113,7 +2105,7 @@
     },
     {
         "CODIGO": 1856,
-        "NOMBRE": "SUAVIZANTE TRIPLE DAUNIE X 5 LTS",
+        "NOMBRE": "SUAVIZANTE TRIPLE DAUNIE X 5 LTS FLO INT",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8745 c/u",
         "PRECIO2": "4U x $7871 c/u",
@@ -2144,16 +2136,8 @@
         "PRECIO3": ""
     },
     {
-        "CODIGO": 28,
-        "NOMBRE": "SUAVIZANTE PARA ROPA VIVEX \"K\"",
-        "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $917 c/lt",
-        "PRECIO2": "20LT x $834 c/lt",
-        "PRECIO3": "60LT x $642 c/lt"
-    },
-    {
         "CODIGO": 26,
-        "NOMBRE": "SUAVIZANTE PARA ROPA 52 CELESTE",
+        "NOMBRE": "SUAVIZANTE PARA ROPA 52 NUBE CELESTE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $1013 c/lt",
         "PRECIO2": "20LT x $922 c/lt",
@@ -2161,7 +2145,7 @@
     },
     {
         "CODIGO": 22,
-        "NOMBRE": "SUAVIZANTE PARA ROPA CARICIAS BB",
+        "NOMBRE": "SUAVIZANTE PARA ROPA CARICIAS DE BEBE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $980 c/lt",
         "PRECIO2": "20LT x $892 c/lt",
@@ -2169,7 +2153,7 @@
     },
     {
         "CODIGO": 27,
-        "NOMBRE": "SUAVIZANTE PARA ROPA COMFY",
+        "NOMBRE": "SUAVIZANTE PARA ROPA COMFY FLORES MAGICA",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $818 c/lt",
         "PRECIO2": "20LT x $745 c/lt",
@@ -2177,7 +2161,7 @@
     },
     {
         "CODIGO": 41,
-        "NOMBRE": "SUAVIZANTE PARA ROPA DAUNIE",
+        "NOMBRE": "SUAVIZANTE PARA ROPA DAUNIE FLORES VALLE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $720 c/lt",
         "PRECIO2": "20LT x $655 c/lt",
@@ -2185,7 +2169,7 @@
     },
     {
         "CODIGO": 29,
-        "NOMBRE": "SUAVIZANTE PARA ROPA KERU",
+        "NOMBRE": "SUAVIZANTE PARA ROPA KERU VIOLETAS SILVE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $655 c/lt",
         "PRECIO2": "20LT x $596 c/lt",
@@ -2201,19 +2185,11 @@
     },
     {
         "CODIGO": 42,
-        "NOMBRE": "SUAVIZANTE PARA ROPA PERLADO BLANCO",
+        "NOMBRE": "SUAVIZANTE PARA ROPA PERLADO JAZMINES",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $753 c/lt",
         "PRECIO2": "20LT x $686 c/lt",
         "PRECIO3": "60LT x $527 c/lt"
-    },
-    {
-        "CODIGO": 24,
-        "NOMBRE": "SUAVIZANTE PARA ROPA PRIMAVERAL",
-        "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $588 c/lt",
-        "PRECIO2": "20LT x $535 c/lt",
-        "PRECIO3": "60LT x $412 c/lt"
     },
     {
         "CODIGO": 23,
@@ -2225,11 +2201,19 @@
     },
     {
         "CODIGO": 25,
-        "NOMBRE": "SUAVIZANTE PARA ROPA SUNNY",
+        "NOMBRE": "SUAVIZANTE PARA ROPA SUNNY SOL DE VERANO",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $751 c/lt",
         "PRECIO2": "20LT x $684 c/lt",
         "PRECIO3": "60LT x $526 c/lt"
+    },
+    {
+        "CODIGO": 28,
+        "NOMBRE": "SUAVIZANTE PARA ROPA VIVEX K",
+        "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
+        "PRECIO1": "5LT x $917 c/lt",
+        "PRECIO2": "20LT x $834 c/lt",
+        "PRECIO3": "60LT x $642 c/lt"
     },
     {
         "CODIGO": 410,
