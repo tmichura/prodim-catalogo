@@ -2305,7 +2305,7 @@
     },
     {
         "CODIGO": 113,
-        "NOMBRE": "CABO MADERA C/ROSCA 1,30",
+        "NOMBRE": "CABO MADERA C/ROSCA 1,20/1,30",
         "CATEGORIA": "CABOS",
         "PRECIO1": "U x $1101 c/u",
         "PRECIO2": "6U x $826 c/u",
@@ -2315,8 +2315,8 @@
         "CODIGO": 115,
         "NOMBRE": "CABO MADERA C/ROSCA 1,50 MTS",
         "CATEGORIA": "CABOS",
-        "PRECIO1": "U x $1334 c/u",
-        "PRECIO2": "6U x $1001 c/u",
+        "PRECIO1": "U x $1488 c/u",
+        "PRECIO2": "6U x $1116 c/u",
         "PRECIO3": ""
     },
     {
@@ -2627,8 +2627,8 @@
         "CODIGO": 1335,
         "NOMBRE": "REPUESTO MAX AROMA",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $2610 c/u",
-        "PRECIO2": "2U x $2349 c/u",
+        "PRECIO1": "U x $2600 c/u",
+        "PRECIO2": "2U x $2340 c/u",
         "PRECIO3": ""
     },
     {
@@ -2992,11 +2992,27 @@
         "PRECIO3": ""
     },
     {
+        "CODIGO": 148,
+        "NOMBRE": "ESCOBILLON FIBRA ANDALUZ",
+        "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
+        "PRECIO1": "U x $2485 c/u",
+        "PRECIO2": "6U x $1864 c/u",
+        "PRECIO3": ""
+    },
+    {
         "CODIGO": 299,
         "NOMBRE": "ESCOBILLON FIBRA FANTASIA ECONOMICO",
         "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
         "PRECIO1": "U x $1818 c/u",
         "PRECIO2": "6U x $1363 c/u",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 136,
+        "NOMBRE": "ESCOBILLON FIBRA MAGNETICO",
+        "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "6U x $1980 c/u",
         "PRECIO3": ""
     },
     {
