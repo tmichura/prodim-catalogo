@@ -1403,9 +1403,9 @@
         "CODIGO": 4,
         "NOMBRE": "DETERGENTE LAVAVAJILLAS VERDE",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "10LT x $693 c/lt",
-        "PRECIO2": "20LT x $624 c/lt",
-        "PRECIO3": "60LT x $554 c/lt"
+        "PRECIO1": "10LT x $545 c/lt",
+        "PRECIO2": "20LT x $490 c/lt",
+        "PRECIO3": "60LT x $436 c/lt"
     },
     {
         "CODIGO": 3502,
@@ -2051,9 +2051,9 @@
         "CODIGO": 5219,
         "NOMBRE": "SUAVIZANTE BIDON X 5 LTS COMFY FLOR MAGI",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
-        "PRECIO1": "U x $6435 c/u",
-        "PRECIO2": "4U x $5792 c/u",
-        "PRECIO3": "12U x $5470 c/u"
+        "PRECIO1": "U x $6831 c/u",
+        "PRECIO2": "4U x $6148 c/u",
+        "PRECIO3": "12U x $5806 c/u"
     },
     {
         "CODIGO": 5223,
@@ -2171,9 +2171,9 @@
         "CODIGO": 41,
         "NOMBRE": "SUAVIZANTE PARA ROPA DAUNIE FLORES VALLE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $720 c/lt",
-        "PRECIO2": "20LT x $655 c/lt",
-        "PRECIO3": "60LT x $504 c/lt"
+        "PRECIO1": "5LT x $786 c/lt",
+        "PRECIO2": "20LT x $715 c/lt",
+        "PRECIO3": "60LT x $550 c/lt"
     },
     {
         "CODIGO": 29,
@@ -2219,9 +2219,9 @@
         "CODIGO": 28,
         "NOMBRE": "SUAVIZANTE PARA ROPA VIVEX K",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $917 c/lt",
-        "PRECIO2": "20LT x $834 c/lt",
-        "PRECIO3": "60LT x $642 c/lt"
+        "PRECIO1": "5LT x $949 c/lt",
+        "PRECIO2": "20LT x $864 c/lt",
+        "PRECIO3": "60LT x $665 c/lt"
     },
     {
         "CODIGO": 410,
@@ -2363,8 +2363,8 @@
         "CODIGO": 2245,
         "NOMBRE": "BOLSA RESIDUOS PARA AUTO",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $480 c/u",
-        "PRECIO2": "6U x $360 c/u",
+        "PRECIO1": "U x $520 c/u",
+        "PRECIO2": "6U x $390 c/u",
         "PRECIO3": ""
     },
     {
@@ -2603,9 +2603,9 @@
         "CODIGO": 1349,
         "NOMBRE": "ESEN CONC P/ DIFUSOR VICTORIA X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u"
+        "PRECIO1": "U x $10032 c/u",
+        "PRECIO2": "2U x $9530 c/u",
+        "PRECIO3": "10U x $9029 c/u"
     },
     {
         "CODIGO": 1344,
@@ -2651,7 +2651,7 @@
         "CODIGO": 128,
         "NOMBRE": "ATOMIZADOR SPRAY X 200 CC",
         "CATEGORIA": "ENVASES",
-        "PRECIO1": "U x $1003 c/u",
+        "PRECIO1": "U x $941 c/u",
         "PRECIO2": "",
         "PRECIO3": ""
     },
@@ -3195,48 +3195,48 @@
         "CODIGO": 351,
         "NOMBRE": "BOLSON PAPEL HIG DESNUDO BLANCO 30 X 60M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $10595 c/u",
-        "PRECIO2": "6U x $10171 c/u",
+        "PRECIO1": "U x $11310 c/u",
+        "PRECIO2": "6U x $10858 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 352,
         "NOMBRE": "BOLSON PAPEL HIG DESNUDO BLANCO 30 X 90M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $14292 c/u",
-        "PRECIO2": "6U x $13720 c/u",
+        "PRECIO1": "U x $15000 c/u",
+        "PRECIO2": "6U x $14400 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 350,
         "NOMBRE": "BOLSON PAPEL HIG DESNUDO BLANCO 48 X 60M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $16680 c/u",
-        "PRECIO2": "6U x $16013 c/u",
+        "PRECIO1": "U x $17640 c/u",
+        "PRECIO2": "6U x $16934 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 381,
         "NOMBRE": "BOLSON PAPEL HIG INDIV FLOR 30 X 80M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $15720 c/u",
-        "PRECIO2": "6U x $15091 c/u",
+        "PRECIO1": "U x $16800 c/u",
+        "PRECIO2": "6U x $16128 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 379,
         "NOMBRE": "BOLSON PAPEL HIG KUKI 48 X 40M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $13080 c/u",
-        "PRECIO2": "6U x $12557 c/u",
+        "PRECIO1": "U x $13800 c/u",
+        "PRECIO2": "6U x $13248 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 353,
         "NOMBRE": "BOLSON PAPEL HIGIENICO SEMIB 8 X 300M",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $13800 c/u",
-        "PRECIO2": "6U x $13248 c/u",
+        "PRECIO1": "U x $14640 c/u",
+        "PRECIO2": "6U x $14054 c/u",
         "PRECIO3": ""
     },
     {
@@ -3267,8 +3267,8 @@
         "CODIGO": 193,
         "NOMBRE": "PACK X 3 UNID, ROLLO DE COCINA CARTABELL",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $1750 c/u",
-        "PRECIO2": "6U x $1680 c/u",
+        "PRECIO1": "U x $1792 c/u",
+        "PRECIO2": "6U x $1720 c/u",
         "PRECIO3": ""
     },
     {
@@ -3283,8 +3283,8 @@
         "CODIGO": 355,
         "NOMBRE": "ROLLO BOBINA MANOS 400 MTS DOBLE HOJA",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $12874 c/u",
-        "PRECIO2": "3U x $11973 c/u",
+        "PRECIO1": "U x $13020 c/u",
+        "PRECIO2": "3U x $12109 c/u",
         "PRECIO3": ""
     },
     {
@@ -3307,24 +3307,24 @@
         "CODIGO": 553,
         "NOMBRE": "TOALLAS INTERCALADAS BEIGE X 2500",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $13260 c/u",
-        "PRECIO2": "6U x $12730 c/u",
+        "PRECIO1": "U x $13650 c/u",
+        "PRECIO2": "6U x $13104 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 554,
         "NOMBRE": "TOALLAS INTERCALADAS BLANCA X 2500",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $14875 c/u",
-        "PRECIO2": "6U x $14280 c/u",
+        "PRECIO1": "U x $15625 c/u",
+        "PRECIO2": "6U x $15000 c/u",
         "PRECIO3": ""
     },
     {
         "CODIGO": 186,
         "NOMBRE": "UNIDAD PAPEL HIGIENCO KUKI INDIVIDUAL",
         "CATEGORIA": "PAPELES Y ROLLOS",
-        "PRECIO1": "U x $384 c/u",
-        "PRECIO2": "10U x $288 c/u",
+        "PRECIO1": "U x $400 c/u",
+        "PRECIO2": "10U x $300 c/u",
         "PRECIO3": ""
     },
     {
@@ -4688,6 +4688,14 @@
         "PRECIO3": ""
     },
     {
+        "CODIGO": 1417,
+        "NOMBRE": "MOTEADOS GUANTES TRABAJO",
+        "CATEGORIA": "VARIOS",
+        "PRECIO1": "U x $960 c/u",
+        "PRECIO2": "6U x $720 c/u",
+        "PRECIO3": ""
+    },
+    {
         "CODIGO": 2145,
         "NOMBRE": "NAFTALINA ECO BLANCA X 200 GR,",
         "CATEGORIA": "VARIOS",
@@ -4749,6 +4757,14 @@
         "CATEGORIA": "VARIOS",
         "PRECIO1": "U x $3367 c/u",
         "PRECIO2": "6U x $2525 c/u",
+        "PRECIO3": ""
+    },
+    {
+        "CODIGO": 202,
+        "NOMBRE": "PERCARBONATO DE SODIO X 1 KG",
+        "CATEGORIA": "VARIOS",
+        "PRECIO1": "U x $13200 c/u",
+        "PRECIO2": "",
         "PRECIO3": ""
     },
     {
