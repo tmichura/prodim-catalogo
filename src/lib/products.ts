@@ -9,6 +9,7 @@ export interface ProductoRaw {
   precio1: string;
   precio2: string;
   precio3: string;
+  dilucion: string;
 }
 
 // El sistema de facturación a veces exporta las claves en MAYÚSCULAS
@@ -26,6 +27,7 @@ function normalizarRaw(raw: Record<string, unknown>): ProductoRaw {
     precio1: String(lower.precio1 ?? ""),
     precio2: String(lower.precio2 ?? ""),
     precio3: String(lower.precio3 ?? ""),
+    dilucion: String(lower.dilucion ?? "").trim(),
   };
 }
 
@@ -37,6 +39,8 @@ export interface Producto {
   categoriaSlug: string;
   /** Escalas de precio ya parseadas y filtradas (solo las que existen) */
   escalas: EscalaPrecio[];
+  /** Dilución sugerida (ej. "1:10"), vacío si el producto no se diluye */
+  dilucion: string;
 }
 
 export function slugify(text: string): string {
@@ -60,6 +64,7 @@ function buildProducto(rawInput: Record<string, unknown>): Producto {
     categoria: raw.categoria,
     categoriaSlug: slugify(raw.categoria),
     escalas,
+    dilucion: raw.dilucion,
   };
 }
 

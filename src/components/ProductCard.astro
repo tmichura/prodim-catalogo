@@ -54,6 +54,10 @@ const payload = JSON.stringify({
       {producto.nombre}
     </h3>
 
+    {producto.dilucion && (
+      <p class="stencil-tag text-batch-600">DILUCIÓN {producto.dilucion}</p>
+    )}
+
     <!-- Ficha de precios por escala, tipo hoja técnica. Tocar una escala suma
          su cantidad al pedido; la escala activa se resalta sola según la
          cantidad cargada (ver src/scripts/cart.ts). -->
