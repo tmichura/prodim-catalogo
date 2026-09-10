@@ -4,28 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Paleta "planta industrial": teal profundo (tanques, seguridad)
-        // + verde-lima concentrado (color real de detergentes/desengrasantes).
+        // Paleta oficial de marca (ver "Identidad visual - Prodim"):
+        // azul #2F5DA8, crema #FEF4EA, teal #3EBDC4, menta #AAE9D6, amarillo #FBDC08.
+        // La escala "ink" es el azul de marca con tintes/sombras alrededor
+        // (ink-700 = #2F5DA8 exacto); "batch" es el teal de marca (batch-500 = #3EBDC4 exacto).
         ink: {
-          50: "#f2f7f6",
-          100: "#dfece9",
-          200: "#b9d6d0",
-          300: "#8cb9b0",
-          400: "#5c948a",
-          500: "#3c766c",
-          600: "#2a5d55",
-          700: "#204a44",
-          800: "#173733",
-          900: "#0e2422",
-          950: "#081615",
+          50: "#f2f6fc",
+          100: "#e2ebf8",
+          200: "#c4d4ee",
+          300: "#98b4e1",
+          400: "#608cd2",
+          500: "#386fc7",
+          600: "#3466b7",
+          700: "#2F5DA8",
+          800: "#244b89",
+          900: "#183562",
+          950: "#0f213e",
         },
         batch: {
-          // acento "lima concentrado"
-          400: "#c7ec3f",
-          500: "#b3db22",
-          600: "#93b81a",
+          400: "#70d1db",
+          500: "#3EBDC4",
+          600: "#2e939e",
         },
-        paper: "#f7f7f4",
+        mint: "#AAE9D6",
+        sun: "#FBDC08",
+        paper: "#FEF4EA",
       },
       fontFamily: {
         display: ["'Garet'", "system-ui", "sans-serif"],
