@@ -3,8 +3,9 @@ name: Build y despliegue a cPanel
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - "data-source/**"
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -12,6 +13,29 @@ jobs:
     steps:
       - name: Descargar el código
         uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias de Python
+        run: pip install -r scripts/requirements.txt
+
+      - name: Generar productos.json desde el CSV
+        run: python scripts/generar_productos.py
+
+      - name: Commitear productos.json si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/productos.json
+          if git diff --cached --quiet; then
+            echo "productos.json no cambió, nada para commitear."
+          else
+            git commit -m "Actualiza productos.json desde el CSV en data-source/csv"
+            git push
+          fi
 
       - name: Instalar Node.js
         uses: actions/setup-node@v4

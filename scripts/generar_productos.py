@@ -79,14 +79,18 @@ def formatear_dilucion(valor):
 
 
 def procesar():
+    # Este script corre en CADA push a main (no solo cuando cambia el CSV),
+    # así que la ausencia de CSV es un estado normal, no un error: no hay
+    # nada para regenerar y el deploy debe seguir con el productos.json
+    # que ya está en el repo.
     if not os.path.isdir(CSV_DIR):
-        print(f"No existe la carpeta {CSV_DIR}")
-        sys.exit(1)
+        print(f"No existe la carpeta {CSV_DIR}, no se tocó productos.json.")
+        return
 
     archivos_csv = [f for f in os.listdir(CSV_DIR) if f.lower().endswith(".csv")]
     if not archivos_csv:
-        print(f"No se encontró ningún CSV en {CSV_DIR}")
-        sys.exit(1)
+        print(f"Todavía no hay ningún CSV en {CSV_DIR}, no se tocó productos.json.")
+        return
 
     dataframes = []
     for archivo in archivos_csv:
