@@ -28,6 +28,13 @@
     ]
   },
   {
+    "nombre": "DESODORANTES DE PISO",
+    "categorias": [
+      "desodorantes-x-1-lt",
+      "desodorantes-x-250-cc"
+    ]
+  },
+  {
     "nombre": "AUTOMOTOR",
     "categorias": ["cosmetica-automotor", "cuidados-para-el-auto"]
   },
@@ -55,13 +62,16 @@
   {
     "nombre": "OTROS",
     "categorias": [
-      "desodorantes-x-1-lt",
-      "desodorantes-x-250-cc",
-      "productos-concentrados-hogar",
-      "cloro-para-piletas",
-      "piletas",
       "venenos",
-      "varios"
+      "varios",
+      "productos-concentrados-hogar"
+    ]
+  }
+  {
+    "nombre": "PILETAS",
+    "categorias": [
+      "cloro-para-piletas",
+      "piletas"
     ]
   }
 ]
