@@ -3,6 +3,8 @@ name: Build y despliegue a cPanel
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "data-source/**"
 
 jobs:
   build-and-deploy:
