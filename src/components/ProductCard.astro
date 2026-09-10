@@ -1,8 +1,7 @@
 ---
 import { formatARS } from "../lib/pricing";
 import type { Producto } from "../lib/products";
-import { existsSync } from "fs";
-import { join } from "path";
+import { resolverImagenProducto } from "../lib/images";
 
 interface Props {
   producto: Producto;
@@ -11,9 +10,7 @@ interface Props {
 const { producto } = Astro.props;
 const groupName = `escala-${producto.codigo}`;
 
-// Verificar si existe imagen para este producto
-const imagePath = join(process.cwd(), "public", "images", "productos", `${producto.codigo}.jpg`);
-const tieneImagen = existsSync(imagePath);
+const imagenProducto = resolverImagenProducto(producto.codigo);
 
 // Payload que la card expone para que el JS del carrito lo lea sin
 // tener que volver a parsear nada ni pegarle al DOM de más.
@@ -39,10 +36,10 @@ const payload = JSON.stringify({
     <span class="stencil-tag truncate pl-2 text-ink-400">{producto.categoria.replace(/^\d+\*\s*/, "")}</span>
   </div>
 
-  {tieneImagen && (
+  {imagenProducto && (
     <div class="aspect-square w-full overflow-hidden bg-white p-3">
       <img
-        src={`/images/productos/${producto.codigo}.jpg`}
+        src={imagenProducto}
         alt={producto.nombre}
         class="h-full w-full rounded-3xl object-contain"
       />

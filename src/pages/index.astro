@@ -7,12 +7,7 @@ import FeaturedCarousel from "../components/FeaturedCarousel.astro";
 import CartDrawer from "../components/CartDrawer.astro";
 import Footer from "../components/Footer.astro";
 import { getProductos } from "../lib/products";
-import { existsSync } from "fs";
-import { join } from "path";
-
-function tieneImagen(codigo: number): boolean {
-  return existsSync(join(process.cwd(), "public", "images", "productos", `${codigo}.jpg`));
-}
+import { resolverImagenProducto } from "../lib/images";
 
 const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "";
 const mensajeRevendedores = encodeURIComponent(
@@ -31,7 +26,7 @@ function ordenDeCategoria(categoria: string): number {
 
 const productos = getProductos();
 const productosDestacados = productos
-  .filter((p) => ordenDeCategoria(p.categoria) > 14 && tieneImagen(p.codigo))
+  .filter((p) => ordenDeCategoria(p.categoria) > 14 && resolverImagenProducto(p.codigo) !== null)
   .sort(() => Math.random() - 0.5)
   .slice(0, 10);
 ---
