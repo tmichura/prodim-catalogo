@@ -5,7 +5,7 @@
       "ceras-sueltas",
       "cloro-y-lavandinas-sueltos",
       "cremas-enjuague-sueltos",
-      "desengrasantes-y-limpiadores",
+      "desengrasantes-sueltos",
       "detergentes-sueltos",
       "jabones-liquidos-sueltos",
       "jabones-para-manos-sueltos",
@@ -19,7 +19,7 @@
       "ceras-envasadas",
       "cloro-y-lavandinas-envasados",
       "cremas-enjuague-envasada",
-      "desengrasantes-envasados",
+      "deseng-y-otros-envasados",
       "detergentes-envasados",
       "jabones-envasados",
       "perfumes-ropa-envasados",
@@ -53,7 +53,7 @@
       "plumeros",
       "rejillas-y-repasadores",
       "secadores",
-      "trapos-articulos-para-piso",
+      "trapos-y-art-para-piso",
       "envases",
       "plasticos",
       "papeles-y-rollos"
@@ -72,6 +72,13 @@
     "categorias": [
       "cloro-para-piletas",
       "piletas"
+    ]
+  },
+  {
+    "nombre": "CONCENTRADOS",
+    "categorias": [
+      "jabones-liquidos-concentrado",
+      "suavizantes-concentrados"
     ]
   }
 ]
