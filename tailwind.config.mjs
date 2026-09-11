@@ -28,7 +28,10 @@ export default {
         },
         mint: "#AAE9D6",
         sun: "#FBDC08",
-        paper: "#FEF4EA",
+        // Gris muy claro (no la crema de marca): el color de fondo real de
+        // la página, igual al tono que ya se veía con el patrón de fondo
+        // encima, ahora sin el patrón.
+        paper: "#FCFCFC",
       },
       fontFamily: {
         display: ["'Garet'", "system-ui", "sans-serif"],
