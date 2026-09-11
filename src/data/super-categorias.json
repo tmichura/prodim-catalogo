@@ -28,15 +28,18 @@
     ]
   },
   {
+    "nombre": "CONCENTRADOS",
+    "categorias": [
+      "jabones-liquidos-concentrado",
+      "suavizantes-concentrados"
+    ]
+  },
+  {
     "nombre": "DESODORANTES DE PISO",
     "categorias": [
       "desodorantes-x-1-lt",
       "desodorantes-x-250-cc"
     ]
-  },
-  {
-    "nombre": "AUTOMOTOR",
-    "categorias": ["cosmetica-automotor", "cuidados-para-el-auto"]
   },
   {
     "nombre": "TEXTIL Y AROMATIZANTES",
@@ -60,12 +63,8 @@
     ]
   },
   {
-    "nombre": "OTROS",
-    "categorias": [
-      "venenos",
-      "varios",
-      "productos-concentrados-hogar"
-    ]
+    "nombre": "AUTOMOTOR",
+    "categorias": ["cosmetica-automotor", "cuidados-para-el-auto"]
   },
   {
     "nombre": "PILETAS",
@@ -75,10 +74,11 @@
     ]
   },
   {
-    "nombre": "CONCENTRADOS",
+    "nombre": "OTROS",
     "categorias": [
-      "jabones-liquidos-concentrado",
-      "suavizantes-concentrados"
+      "venenos",
+      "varios",
+      "productos-concentrados-hogar"
     ]
   }
 ]
