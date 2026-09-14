@@ -329,16 +329,25 @@
         "CATEGORIA": "CLORO Y LAVANDINAS ENVASADOS",
         "PRECIO1": "U x $6600 c/u",
         "PRECIO2": "4U x $5610 c/u",
-        "PRECIO3": "",
+        "PRECIO3": "20U x $5280 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5281,
+        "NOMBRE": "LAVANDINA 25 G/LT BIDON X 5 LTS",
+        "CATEGORIA": "CLORO Y LAVANDINAS ENVASADOS",
+        "PRECIO1": "U x $3960 c/u",
+        "PRECIO2": "4U x $3564 c/u",
+        "PRECIO3": "40U x $2891 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 5280,
-        "NOMBRE": "LAVANDINA CONCENTRADA BIDON X 5 LTS",
+        "NOMBRE": "LAVANDINA 50 G/LT CONC, BIDON X 5 LTS",
         "CATEGORIA": "CLORO Y LAVANDINAS ENVASADOS",
         "PRECIO1": "U x $5544 c/u",
         "PRECIO2": "4U x $4990 c/u",
-        "PRECIO3": "12U x $4712 c/u",
+        "PRECIO3": "40U x $4047 c/u",
         "DILUCION": ""
     },
     {
@@ -824,7 +833,7 @@
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $11220 c/u",
         "PRECIO2": "4U x $10098 c/u",
-        "PRECIO3": "12U x $9537 c/u",
+        "PRECIO3": "12U x $7820 c/u",
         "DILUCION": ""
     },
     {
@@ -842,7 +851,7 @@
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $9900 c/u",
         "PRECIO2": "4U x $8910 c/u",
-        "PRECIO3": "12U x $8415 c/u",
+        "PRECIO3": "12U x $7306 c/u",
         "DILUCION": ""
     },
     {
@@ -860,7 +869,7 @@
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $9900 c/u",
         "PRECIO2": "4U x $8910 c/u",
-        "PRECIO3": "12U x $8415 c/u",
+        "PRECIO3": "12U x $7306 c/u",
         "DILUCION": ""
     },
     {
@@ -1481,7 +1490,7 @@
         "CATEGORIA": "DETERGENTES ENVASADOS",
         "PRECIO1": "U x $12375 c/u",
         "PRECIO2": "4U x $11138 c/u",
-        "PRECIO3": "12U x $10519 c/u",
+        "PRECIO3": "12U x $8663 c/u",
         "DILUCION": ""
     },
     {
@@ -1490,7 +1499,7 @@
         "CATEGORIA": "DETERGENTES ENVASADOS",
         "PRECIO1": "U x $7095 c/u",
         "PRECIO2": "4U x $6386 c/u",
-        "PRECIO3": "12U x $6031 c/u",
+        "PRECIO3": "12U x $5115 c/u",
         "DILUCION": ""
     },
     {
@@ -1508,7 +1517,7 @@
         "CATEGORIA": "DETERGENTES ENVASADOS",
         "PRECIO1": "U x $10824 c/u",
         "PRECIO2": "4U x $9742 c/u",
-        "PRECIO3": "12U x $9200 c/u",
+        "PRECIO3": "12U x $7577 c/u",
         "DILUCION": ""
     },
     {
@@ -1587,9 +1596,9 @@
         "CODIGO": 3502,
         "NOMBRE": "DETERGENTE MAGIC ESPECIAL 10% VERDE",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "10LT x $2450 c/lt",
-        "PRECIO2": "20LT x $2205 c/lt",
-        "PRECIO3": "60LT x $1960 c/lt",
+        "PRECIO1": "10LT x $1815 c/lt",
+        "PRECIO2": "20LT x $1634 c/lt",
+        "PRECIO3": "60LT x $1452 c/lt",
         "DILUCION": ""
     },
     {
@@ -1605,9 +1614,9 @@
         "CODIGO": 500,
         "NOMBRE": "DETERGENTE VERDE 10 %",
         "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "10LT x $2138 c/lt",
-        "PRECIO2": "20LT x $1925 c/lt",
-        "PRECIO3": "60LT x $1711 c/lt",
+        "PRECIO1": "10LT x $1584 c/lt",
+        "PRECIO2": "20LT x $1426 c/lt",
+        "PRECIO3": "60LT x $1267 c/lt",
         "DILUCION": ""
     },
     {
@@ -1625,7 +1634,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $4752 c/u",
         "PRECIO2": "4U x $4277 c/u",
-        "PRECIO3": "12U x $4039 c/u",
+        "PRECIO3": "12U x $3802 c/u",
         "DILUCION": ""
     },
     {
@@ -1634,7 +1643,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $8910 c/u",
         "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $7574 c/u",
+        "PRECIO3": "12U x $7128 c/u",
         "DILUCION": ""
     },
     {
@@ -1643,7 +1652,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $7425 c/u",
         "PRECIO2": "4U x $6683 c/u",
-        "PRECIO3": "12U x $6311 c/u",
+        "PRECIO3": "12U x $5569 c/u",
         "DILUCION": ""
     },
     {
@@ -1661,7 +1670,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $6831 c/u",
         "PRECIO2": "4U x $6148 c/u",
-        "PRECIO3": "12U x $5806 c/u",
+        "PRECIO3": "12U x $5123 c/u",
         "DILUCION": ""
     },
     {
@@ -1679,7 +1688,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $7425 c/u",
         "PRECIO2": "4U x $6683 c/u",
-        "PRECIO3": "12U x $6311 c/u",
+        "PRECIO3": "12U x $5940 c/u",
         "DILUCION": ""
     },
     {
@@ -1688,7 +1697,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $5940 c/u",
         "PRECIO2": "4U x $5346 c/u",
-        "PRECIO3": "12U x $5049 c/u",
+        "PRECIO3": "12U x $4752 c/u",
         "DILUCION": ""
     },
     {
@@ -1724,7 +1733,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $8910 c/u",
         "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $7574 c/u",
+        "PRECIO3": "12U x $7128 c/u",
         "DILUCION": ""
     },
     {
@@ -1733,7 +1742,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $7425 c/u",
         "PRECIO2": "4U x $6683 c/u",
-        "PRECIO3": "12U x $6311 c/u",
+        "PRECIO3": "12U x $5569 c/u",
         "DILUCION": ""
     },
     {
@@ -1742,7 +1751,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $9207 c/u",
         "PRECIO2": "4U x $8286 c/u",
-        "PRECIO3": "12U x $7826 c/u",
+        "PRECIO3": "12U x $6905 c/u",
         "DILUCION": ""
     },
     {
@@ -1751,7 +1760,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $8910 c/u",
         "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $7574 c/u",
+        "PRECIO3": "12U x $6683 c/u",
         "DILUCION": ""
     },
     {
@@ -1760,7 +1769,7 @@
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $8910 c/u",
         "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $7574 c/u",
+        "PRECIO3": "12U x $6683 c/u",
         "DILUCION": ""
     },
     {
@@ -2172,7 +2181,7 @@
         "CODIGO": 340,
         "NOMBRE": "CHAMPU BIDON X 5 LTS PH NEUTRO",
         "CATEGORIA": "SHAMPOOS ENVASADOS",
-        "PRECIO1": "U x $4950 c/u",
+        "PRECIO1": "U x $5693 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -2291,7 +2300,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "4U x $7425 c/u",
-        "PRECIO3": "12U x $7013 c/u",
+        "PRECIO3": "12U x $6188 c/u",
         "DILUCION": ""
     },
     {
@@ -2300,7 +2309,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "4U x $7425 c/u",
-        "PRECIO3": "12U x $7013 c/u",
+        "PRECIO3": "12U x $6188 c/u",
         "DILUCION": ""
     },
     {
@@ -2309,7 +2318,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $6831 c/u",
         "PRECIO2": "4U x $6148 c/u",
-        "PRECIO3": "12U x $5806 c/u",
+        "PRECIO3": "12U x $5465 c/u",
         "DILUCION": ""
     },
     {
@@ -2318,7 +2327,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $6435 c/u",
         "PRECIO2": "4U x $5792 c/u",
-        "PRECIO3": "12U x $5470 c/u",
+        "PRECIO3": "12U x $5148 c/u",
         "DILUCION": ""
     },
     {
@@ -2327,7 +2336,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $5940 c/u",
         "PRECIO2": "4U x $5346 c/u",
-        "PRECIO3": "12U x $5049 c/u",
+        "PRECIO3": "12U x $4752 c/u",
         "DILUCION": ""
     },
     {
@@ -2336,16 +2345,16 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8250 c/u",
         "PRECIO2": "4U x $7425 c/u",
-        "PRECIO3": "12U x $7013 c/u",
+        "PRECIO3": "12U x $6188 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 313,
         "NOMBRE": "SUAVIZANTE BIDON X 5 LTS PERLADO JAZMINE",
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
-        "PRECIO1": "U x $5940 c/u",
-        "PRECIO2": "4U x $5346 c/u",
-        "PRECIO3": "12U x $5049 c/u",
+        "PRECIO1": "U x $6930 c/u",
+        "PRECIO2": "4U x $6237 c/u",
+        "PRECIO3": "12U x $5544 c/u",
         "DILUCION": ""
     },
     {
@@ -2354,7 +2363,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $7260 c/u",
         "PRECIO2": "4U x $6534 c/u",
-        "PRECIO3": "12U x $6171 c/u",
+        "PRECIO3": "12U x $5808 c/u",
         "DILUCION": ""
     },
     {
@@ -2372,7 +2381,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $8745 c/u",
         "PRECIO2": "4U x $7871 c/u",
-        "PRECIO3": "12U x $7433 c/u",
+        "PRECIO3": "12U x $6996 c/u",
         "DILUCION": ""
     },
     {
@@ -2381,7 +2390,7 @@
         "CATEGORIA": "SUAVIZANTES ENVASADOS",
         "PRECIO1": "U x $7260 c/u",
         "PRECIO2": "4U x $6534 c/u",
-        "PRECIO3": "12U x $6171 c/u",
+        "PRECIO3": "12U x $5808 c/u",
         "DILUCION": ""
     },
     {
@@ -2449,7 +2458,7 @@
     },
     {
         "CODIGO": 29,
-        "NOMBRE": "SUAVIZANTE PARA ROPA KERU VIOLETAS SILVE",
+        "NOMBRE": "SUAVIZANTE PARA ROPA KERU VIOL, SILVESTR",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
         "PRECIO1": "5LT x $655 c/lt",
         "PRECIO2": "20LT x $596 c/lt",
@@ -2469,9 +2478,9 @@
         "CODIGO": 42,
         "NOMBRE": "SUAVIZANTE PARA ROPA PERLADO JAZMINES",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $753 c/lt",
-        "PRECIO2": "20LT x $686 c/lt",
-        "PRECIO3": "60LT x $527 c/lt",
+        "PRECIO1": "5LT x $852 c/lt",
+        "PRECIO2": "20LT x $775 c/lt",
+        "PRECIO3": "60LT x $596 c/lt",
         "DILUCION": ""
     },
     {
@@ -2982,7 +2991,7 @@
         "CODIGO": 128,
         "NOMBRE": "ATOMIZADOR SPRAY X 200 CC",
         "CATEGORIA": "ENVASES",
-        "PRECIO1": "U x $941 c/u",
+        "PRECIO1": "U x $1003 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
