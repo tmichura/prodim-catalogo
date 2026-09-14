@@ -143,7 +143,7 @@ function buildWhatsAppMessage(cart: Cart, clienteNombre: string): string {
     const subtotal = item.precioUnitario * item.cantidad;
     return [
       `${i + 1}. *${item.nombre}* (Cód. ${item.codigo})`,
-      `   Cantidad: ${item.cantidad} ${item.unidad}  →  Subtotal: ${formatARS(subtotal)}`,
+      `   Cantidad: ${item.cantidad} ${item.unidad}  →  Precio unitario: ${formatARS(item.precioUnitario)}/${item.unidad}  →  Subtotal: ${formatARS(subtotal)}`,
     ].join("\n");
   });
 
