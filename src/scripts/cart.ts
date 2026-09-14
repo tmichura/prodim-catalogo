@@ -6,7 +6,7 @@
 import type { EscalaPrecio } from "../lib/pricing";
 import { formatARS } from "../lib/pricing";
 
-const STORAGE_KEY = "prodim:cart:v1";
+const STORAGE_KEY = "prodim:cart:v2";
 const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "";
 const EMPRESA_NOMBRE = import.meta.env.PUBLIC_EMPRESA_NOMBRE || "Prodim";
 
@@ -18,7 +18,7 @@ interface ProductoPayload {
 }
 
 interface CartItem {
-  /** codigo + etiqueta de escala, identifica una línea única del pedido */
+  /** codigo del producto, una única línea por producto en el pedido */
   key: string;
   codigo: number;
   nombre: string;
@@ -27,6 +27,9 @@ interface CartItem {
   unidad: string;
   precioUnitario: number;
   cantidad: number;
+  /** todas las escalas del producto, para recalcular la escala/precio
+   *  vigente cada vez que cambia la cantidad (ver pickEscala) */
+  escalas: EscalaPrecio[];
 }
 
 type Cart = CartItem[];
@@ -55,12 +58,23 @@ function saveCart(cart: Cart): void {
 // ---------- Operaciones sobre el carrito ----------
 
 function addItem(cart: Cart, producto: ProductoPayload, escala: EscalaPrecio, cantidad: number): Cart {
-  const key = `${producto.codigo}__${escala.etiqueta}`;
+  const key = String(producto.codigo);
   const existente = cart.find((item) => item.key === key);
 
   if (existente) {
-    existente.cantidad += cantidad;
-    return [...cart];
+    const nuevaCantidad = existente.cantidad + cantidad;
+    const nuevaEscala = pickEscala(existente.escalas, nuevaCantidad);
+    return cart.map((item) =>
+      item.key === key
+        ? {
+            ...item,
+            cantidad: nuevaCantidad,
+            etiqueta: nuevaEscala.etiqueta,
+            unidad: nuevaEscala.unidad,
+            precioUnitario: nuevaEscala.precioUnitario,
+          }
+        : item
+    );
   }
 
   return [
@@ -74,13 +88,21 @@ function addItem(cart: Cart, producto: ProductoPayload, escala: EscalaPrecio, ca
       unidad: escala.unidad,
       precioUnitario: escala.precioUnitario,
       cantidad,
+      escalas: producto.escalas,
     },
   ];
 }
 
+/** Cambia la cantidad de una línea y recalcula la escala/precio vigente
+ *  para esa nueva cantidad (una compra puede cruzar un umbral de precio). */
 function updateQty(cart: Cart, key: string, delta: number): Cart {
   return cart
-    .map((item) => (item.key === key ? { ...item, cantidad: item.cantidad + delta } : item))
+    .map((item) => {
+      if (item.key !== key) return item;
+      const cantidad = item.cantidad + delta;
+      const escala = pickEscala(item.escalas, cantidad);
+      return { ...item, cantidad, etiqueta: escala.etiqueta, unidad: escala.unidad, precioUnitario: escala.precioUnitario };
+    })
     .filter((item) => item.cantidad > 0);
 }
 
@@ -227,7 +249,7 @@ function render(): void {
     (root.querySelector(".item-codigo") as HTMLElement).textContent = String(item.codigo);
     (root.querySelector(".item-nombre") as HTMLElement).textContent = item.nombre;
     (root.querySelector(".item-escala") as HTMLElement).textContent =
-      `${item.etiqueta} · ${formatARS(item.precioUnitario)}/${item.unidad}`;
+      `${formatARS(item.precioUnitario)}/${item.unidad}`;
     (root.querySelector(".item-cantidad") as HTMLElement).textContent = String(item.cantidad);
     (root.querySelector(".item-subtotal") as HTMLElement).textContent = formatARS(
       item.precioUnitario * item.cantidad
