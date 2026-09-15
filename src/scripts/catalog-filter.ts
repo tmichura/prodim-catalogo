@@ -56,29 +56,57 @@ function normalizar(texto: string): string {
     .replace(/\p{Mn}/gu, ""); // saca acentos (marcas diacríticas tras la normalización NFD)
 }
 
+// El nombre normalizado y la categoría/código no cambian nunca para una
+// card ya renderizada: se calculan una sola vez acá en vez de en cada
+// tecla que se tipea, que es lo que hacía lenta la búsqueda con ~650
+// productos (normalizar involucra un regex sobre todo el string).
+const cardInfos = cards.map((card) => ({
+  card,
+  categoria: card.dataset.categoria || "",
+  codigo: card.dataset.codigo || "",
+  nombreNormalizado: normalizar(card.dataset.nombre || ""),
+  // Todas arrancan visibles (así las renderiza el servidor, sin "hidden")
+  visible: true,
+}));
+
 function aplicarFiltros(): void {
   const query = normalizar(searchInput?.value.trim() || "");
   const buscando = query !== "";
   let visibles = 0;
 
-  for (const card of cards) {
+  for (const info of cardInfos) {
     // Al buscar, se busca en TODO el catálogo sin importar la categoría
     // elegida en la barra lateral (no tiene sentido limitar la búsqueda
     // a la categoría en la que el usuario está parado).
-    const coincideCategoria = buscando || categoriaActiva === "todas" || card.dataset.categoria === categoriaActiva;
-    const coincideBusqueda =
-      query === "" ||
-      normalizar(card.dataset.nombre || "").includes(query) ||
-      (card.dataset.codigo || "").includes(query);
+    const coincideCategoria = buscando || categoriaActiva === "todas" || info.categoria === categoriaActiva;
+    const coincideBusqueda = query === "" || info.nombreNormalizado.includes(query) || info.codigo.includes(query);
 
     const visible = coincideCategoria && coincideBusqueda;
-    card.classList.toggle("hidden", !visible);
+    // Tocar el DOM (classList) es lo caro acá: fuerza que el navegador
+    // recalcule el layout de la grilla. Solo lo hacemos si el estado de
+    // la card realmente cambió, en vez de re-togglear las ~650 cada vez.
+    if (info.visible !== visible) {
+      info.card.classList.toggle("hidden", !visible);
+      info.visible = visible;
+    }
     if (visible) visibles += 1;
   }
 
   emptyMessage?.classList.toggle("hidden", visibles !== 0);
   if (resultsCount) resultsCount.textContent = String(visibles);
 }
+
+/** Espera una pausa breve en el tipeo antes de filtrar, para no recalcular
+ *  y repintar la grilla en cada tecla mientras se está escribiendo. */
+function debounce<T extends (...args: never[]) => void>(fn: T, esperaMs: number): T {
+  let timeoutId: number | undefined;
+  return ((...args: Parameters<T>) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => fn(...args), esperaMs);
+  }) as T;
+}
+
+const aplicarFiltrosDebounced = debounce(aplicarFiltros, 120);
 
 function aplicarOrden(): void {
   if (!grid) return;
@@ -116,7 +144,7 @@ chips.forEach((chip) => {
   });
 });
 
-searchInput?.addEventListener("input", aplicarFiltros);
+searchInput?.addEventListener("input", aplicarFiltrosDebounced);
 sortSelect?.addEventListener("change", aplicarOrden);
 
 aplicarFiltros();
