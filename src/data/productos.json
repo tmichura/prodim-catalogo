@@ -336,9 +336,9 @@
         "CODIGO": 5281,
         "NOMBRE": "LAVANDINA 25 G/LT BIDON X 5 LTS",
         "CATEGORIA": "CLORO Y LAVANDINAS ENVASADOS",
-        "PRECIO1": "U x $3960 c/u",
-        "PRECIO2": "4U x $3564 c/u",
-        "PRECIO3": "40U x $2891 c/u",
+        "PRECIO1": "40U x $2970 c/u",
+        "PRECIO2": "40U x $2168 c/u",
+        "PRECIO3": "",
         "DILUCION": ""
     },
     {
@@ -606,7 +606,7 @@
         "CODIGO": 57,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 EXTERIOR NACIONA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $2640 c/u",
+        "PRECIO1": "U x $3300 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -642,9 +642,9 @@
         "CODIGO": 55,
         "NOMBRE": "REVIVIDOR C/SILICONAS EXTERIOR NACIONAL",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $8580 c/u",
-        "PRECIO2": "2U x $6864 c/u",
-        "PRECIO3": "5U x $6006 c/u",
+        "PRECIO1": "U x $10560 c/u",
+        "PRECIO2": "2U x $8448 c/u",
+        "PRECIO3": "5U x $7392 c/u",
         "DILUCION": ""
     },
     {
@@ -867,9 +867,9 @@
         "CODIGO": 5203,
         "NOMBRE": "DESENGRASANTE PROCE CREMOSO BIDON X 5 LT",
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "U x $9900 c/u",
-        "PRECIO2": "4U x $8910 c/u",
-        "PRECIO3": "12U x $7306 c/u",
+        "PRECIO1": "U x $10131 c/u",
+        "PRECIO2": "4U x $9118 c/u",
+        "PRECIO3": "12U x $7477 c/u",
         "DILUCION": ""
     },
     {
@@ -879,15 +879,6 @@
         "PRECIO1": "U x $4324 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 511,
-        "NOMBRE": "DESODORANTE PARA PISOS BIDON X 5 LTS",
-        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "U x $4620 c/u",
-        "PRECIO2": "4U x $4158 c/u",
-        "PRECIO3": "12U x $3927 c/u",
         "DILUCION": ""
     },
     {
@@ -1011,9 +1002,9 @@
         "CODIGO": 51,
         "NOMBRE": "DESENGRASANTE PROCE AMONIACAL CREMOSO",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
-        "PRECIO1": "5LT x $1188 c/lt",
-        "PRECIO2": "40LT x $927 c/lt",
-        "PRECIO3": "100LT x $796 c/lt",
+        "PRECIO1": "5LT x $1337 c/lt",
+        "PRECIO2": "40LT x $1042 c/lt",
+        "PRECIO3": "100LT x $895 c/lt",
         "DILUCION": ""
     },
     {
@@ -1476,6 +1467,15 @@
         "DILUCION": "1/4 + 20 AGUA"
     },
     {
+        "CODIGO": 511,
+        "NOMBRE": "DESODORANTE PARA PISOS BIDON X 5 LTS",
+        "CATEGORIA": "DESODORANTES X 5 LTS",
+        "PRECIO1": "U x $4620 c/u",
+        "PRECIO2": "4U x $4158 c/u",
+        "PRECIO3": "12U x $3927 c/u",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 122,
         "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
         "CATEGORIA": "DETERGENTES ENVASADOS",
@@ -1506,9 +1506,9 @@
         "CODIGO": 5205,
         "NOMBRE": "DETERGENTE BIDON X 5LTS ROSA NACARADO",
         "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $10230 c/u",
-        "PRECIO2": "4U x $9207 c/u",
-        "PRECIO3": "12U x $8696 c/u",
+        "PRECIO1": "U x $7986 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
         "DILUCION": ""
     },
     {
@@ -1674,6 +1674,15 @@
         "DILUCION": ""
     },
     {
+        "CODIGO": 5226,
+        "NOMBRE": "JABON LIQ P/ROPA BIDON X 5 LTS KERU",
+        "CATEGORIA": "JABONES ENVASADOS",
+        "PRECIO1": "U x $5999 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 5227,
         "NOMBRE": "JABON LIQ P/ROPA BIDON X 5 LTS PREMIUM T",
         "CATEGORIA": "JABONES ENVASADOS",
@@ -1809,31 +1818,31 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 810,
-        "NOMBRE": "CONCENTRADO JABON P/ROPA AZUL BALDE X 10",
-        "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
-        "PRECIO1": "U x $29700 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": "1 + 40 AGUA"
-    },
-    {
         "CODIGO": 812,
-        "NOMBRE": "CONCENTRADO JABON P/ROPA BLANCO BALD X10",
+        "NOMBRE": "JABON LIQUDO BALDE CONC 10 KG BLANCO JET",
         "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
         "PRECIO1": "U x $34650 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": "1 + 40 AGUA"
+        "DILUCION": "RINDE 50 LTS"
     },
     {
-        "CODIGO": 811,
-        "NOMBRE": "CONCENTRADO JABON P/ROPA VERDE BALDE X10",
+        "CODIGO": 810,
+        "NOMBRE": "JABON LIQUIDO BALDE CONC, 10 KG AZUL ACT",
         "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
         "PRECIO1": "U x $29700 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": "1 + 40 AGUA"
+        "DILUCION": "RINDE 50 LTS"
+    },
+    {
+        "CODIGO": 811,
+        "NOMBRE": "JABON LIQUIDO BALDE CONC, 10 KG VERDE AR",
+        "CATEGORIA": "JABONES LIQUIDOS CONCENTRADO",
+        "PRECIO1": "U x $29700 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": "RINDE 50 LTS"
     },
     {
         "CODIGO": 601,
@@ -2268,31 +2277,40 @@
         "DILUCION": ""
     },
     {
+        "CODIGO": 800,
+        "NOMBRE": "SUAVIZANTE BALDE CONC 10 KG AZUL ACTIVE",
+        "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
+        "PRECIO1": "U x $29700 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": "RINDE 30 LTS"
+    },
+    {
+        "CODIGO": 801,
+        "NOMBRE": "SUAVIZANTE BALDE CONC 10 KG DAUNIE ROSA",
+        "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
+        "PRECIO1": "U x $29700 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": "RINDE 50 LTS"
+    },
+    {
         "CODIGO": 802,
-        "NOMBRE": "CONCENTR, SUAVIZANTE P/30LTS AZUL ACTIVE",
+        "NOMBRE": "SUAVIZANTE BALDE CONC, 10 KG AZUL ACTIVE",
         "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
         "PRECIO1": "U x $21038 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": "10 + 30"
+        "DILUCION": "RINDE 30 LTS"
     },
     {
-        "CODIGO": 800,
-        "NOMBRE": "CONCENTR, SUAVIZANTE P/50LTS AZUL ACTIVE",
+        "CODIGO": 803,
+        "NOMBRE": "SUAVIZANTE BALDE CONC, 10 KG DAUNIE ROSA",
         "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
-        "PRECIO1": "U x $29700 c/u",
+        "PRECIO1": "U x $21038 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": "10 + 40 AGUA"
-    },
-    {
-        "CODIGO": 801,
-        "NOMBRE": "CONCENTR, SUAVIZANTE P/50LTS ROSA DAUNIE",
-        "CATEGORIA": "SUAVIZANTES CONCENTRADOS",
-        "PRECIO1": "U x $29700 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": "10 + 40"
+        "DILUCION": "RINDE 30 LTS"
     },
     {
         "CODIGO": 5212,
@@ -2829,8 +2847,8 @@
         "CODIGO": 225,
         "NOMBRE": "REJILLA AUTO DOBLE NACIONAL",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $3016 c/u",
-        "PRECIO2": "6U x $2262 c/u",
+        "PRECIO1": "U x $3168 c/u",
+        "PRECIO2": "6U x $2376 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4026,8 +4044,8 @@
         "CODIGO": 1324,
         "NOMBRE": "CANASTO ROPA CON TAPA REDONDO",
         "CATEGORIA": "PLASTICOS",
-        "PRECIO1": "U x $11304 c/u",
-        "PRECIO2": "4U x $9693 c/u",
+        "PRECIO1": "U x $6748 c/u",
+        "PRECIO2": "4U x $5786 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5025,8 +5043,8 @@
         "CODIGO": 231,
         "NOMBRE": "TRAPO DE PISO JULIETA GRIS",
         "CATEGORIA": "TRAPOS Y ART, PARA PISO",
-        "PRECIO1": "U x $771 c/u",
-        "PRECIO2": "6U x $578 c/u",
+        "PRECIO1": "U x $869 c/u",
+        "PRECIO2": "6U x $652 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
