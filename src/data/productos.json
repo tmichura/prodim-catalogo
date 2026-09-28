@@ -198,93 +198,75 @@
         "DILUCION": "1/2 + 4,5 AGUA"
     },
     {
-        "CODIGO": 5241,
-        "NOMBRE": "BIDON X 5LTS CERA ACRILICA NATURAL",
-        "CATEGORIA": "CERAS ENVASADAS",
-        "PRECIO1": "U x $12994 c/u",
-        "PRECIO2": "4U x $11142 c/u",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 5260,
-        "NOMBRE": "BIDON X 5LTS CERA AUTOBRILLO NATURAL",
+        "NOMBRE": "BIDON X 5LTS CERA LPU AUTOBRILLO NATURAL",
         "CATEGORIA": "CERAS ENVASADAS",
-        "PRECIO1": "U x $11117 c/u",
-        "PRECIO2": "4U x $9533 c/u",
+        "PRECIO1": "U x $14438 c/u",
+        "PRECIO2": "4U x $12380 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
     {
         "CODIGO": 5220,
-        "NOMBRE": "BIDON X 5LTS CERA AUTOBRILLO NEGRA",
+        "NOMBRE": "BIDON X 5LTS CERA LPU AUTOBRILLO NEGRA",
         "CATEGORIA": "CERAS ENVASADAS",
-        "PRECIO1": "U x $12994 c/u",
-        "PRECIO2": "4U x $11142 c/u",
+        "PRECIO1": "U x $16170 c/u",
+        "PRECIO2": "4U x $13866 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
     {
         "CODIGO": 5209,
-        "NOMBRE": "BIDON X 5LTS CERA AUTOBRILLO ROJA",
+        "NOMBRE": "BIDON X 5LTS CERA LPU AUTOBRILLO ROJA",
         "CATEGORIA": "CERAS ENVASADAS",
-        "PRECIO1": "U x $12994 c/u",
-        "PRECIO2": "4U x $11142 c/u",
+        "PRECIO1": "U x $16170 c/u",
+        "PRECIO2": "4U x $13866 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
     {
         "CODIGO": 5210,
-        "NOMBRE": "BIDON X 5LTS CERA P/ECHAR EN EL BALDE",
+        "NOMBRE": "BIDON X 5LTS CERA LPU P/ECHAR EN EL BALD",
         "CATEGORIA": "CERAS ENVASADAS",
-        "PRECIO1": "U x $11550 c/u",
-        "PRECIO2": "4U x $9904 c/u",
+        "PRECIO1": "U x $12128 c/u",
+        "PRECIO2": "4U x $10399 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
     {
-        "CODIGO": 18,
-        "NOMBRE": "CERA ACRILICA NATURAL",
+        "CODIGO": 1515,
+        "NOMBRE": "CERA AUTOBRILLO COLOR NATURAL SILICONADA",
         "CATEGORIA": "CERAS SUELTAS",
-        "PRECIO1": "LT x $4331 c/lt",
-        "PRECIO2": "5LT x $3682 c/lt",
-        "PRECIO3": "20LT x $3248 c/lt",
-        "DILUCION": "1 + 1 AGUA"
+        "PRECIO1": "LT x $4793 c/lt",
+        "PRECIO2": "5LT x $4074 c/lt",
+        "PRECIO3": "20LT x $3595 c/lt",
+        "DILUCION": "1 + 1"
     },
     {
         "CODIGO": 19,
-        "NOMBRE": "CERA AUTOBRILLO COLOR NEGRO",
+        "NOMBRE": "CERA AUTOBRILLO COLOR NEGRO SILICONADA",
         "CATEGORIA": "CERAS SUELTAS",
-        "PRECIO1": "LT x $4331 c/lt",
-        "PRECIO2": "5LT x $3682 c/lt",
-        "PRECIO3": "20LT x $3248 c/lt",
+        "PRECIO1": "LT x $5486 c/lt",
+        "PRECIO2": "5LT x $4663 c/lt",
+        "PRECIO3": "20LT x $4115 c/lt",
         "DILUCION": "1 + 1 AGUA"
     },
     {
         "CODIGO": 16,
-        "NOMBRE": "CERA AUTOBRILLO COLOR ROJO",
+        "NOMBRE": "CERA AUTOBRILLO COLOR ROJO SILICONADA",
         "CATEGORIA": "CERAS SUELTAS",
-        "PRECIO1": "LT x $4331 c/lt",
-        "PRECIO2": "5LT x $3682 c/lt",
-        "PRECIO3": "20LT x $3248 c/lt",
-        "DILUCION": "1 + 1 AGUA"
-    },
-    {
-        "CODIGO": 15,
-        "NOMBRE": "CERA AUTOBRILLO NATURAL",
-        "CATEGORIA": "CERAS SUELTAS",
-        "PRECIO1": "LT x $3581 c/lt",
-        "PRECIO2": "5LT x $3043 c/lt",
-        "PRECIO3": "20LT x $2685 c/lt",
+        "PRECIO1": "LT x $5486 c/lt",
+        "PRECIO2": "5LT x $4663 c/lt",
+        "PRECIO3": "20LT x $4115 c/lt",
         "DILUCION": "1 + 1 AGUA"
     },
     {
         "CODIGO": 17,
         "NOMBRE": "CERA PARA ECHAR EN EL BALDE C/ DESENGRAS",
         "CATEGORIA": "CERAS SUELTAS",
-        "PRECIO1": "LT x $3465 c/lt",
-        "PRECIO2": "5LT x $2945 c/lt",
-        "PRECIO3": "20LT x $2599 c/lt",
+        "PRECIO1": "LT x $3754 c/lt",
+        "PRECIO2": "5LT x $3191 c/lt",
+        "PRECIO3": "20LT x $2815 c/lt",
         "DILUCION": "1 + 1 AGUA"
     },
     {
@@ -615,7 +597,7 @@
         "CODIGO": 317,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 SUPER IMPORTADA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $5445 c/u",
+        "PRECIO1": "U x $5940 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -678,9 +660,9 @@
         "CODIGO": 440,
         "NOMBRE": "REVIVIDOR C/SILICONAS SUPER IMPORTADA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "LT x $18150 c/lt",
-        "PRECIO2": "2LT x $14520 c/lt",
-        "PRECIO3": "5LT x $12705 c/lt",
+        "PRECIO1": "LT x $19140 c/lt",
+        "PRECIO2": "2LT x $15312 c/lt",
+        "PRECIO3": "5LT x $13398 c/lt",
         "DILUCION": ""
     },
     {
@@ -2451,9 +2433,9 @@
         "CODIGO": 22,
         "NOMBRE": "SUAVIZANTE PARA ROPA CARICIAS DE BEBE",
         "CATEGORIA": "SUAVIZANTES PARA ROPA SUELTO",
-        "PRECIO1": "5LT x $980 c/lt",
-        "PRECIO2": "20LT x $892 c/lt",
-        "PRECIO3": "60LT x $686 c/lt",
+        "PRECIO1": "5LT x $1013 c/lt",
+        "PRECIO2": "20LT x $922 c/lt",
+        "PRECIO3": "60LT x $709 c/lt",
         "DILUCION": ""
     },
     {
@@ -2910,18 +2892,18 @@
         "CODIGO": 1342,
         "NOMBRE": "ESEN CONC P/ DIFU COLONIA BEBE X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 1345,
         "NOMBRE": "ESEN CONC P/ DIFUSOR ANDY X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
@@ -2937,36 +2919,36 @@
         "CODIGO": 1341,
         "NOMBRE": "ESEN CONC P/ DIFUSOR COCO VAI X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 1351,
         "NOMBRE": "ESEN CONC P/ DIFUSOR LAVANDA X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 1349,
         "NOMBRE": "ESEN CONC P/ DIFUSOR VICTORIA X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $10032 c/u",
-        "PRECIO2": "2U x $9530 c/u",
-        "PRECIO3": "10U x $9029 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
         "CODIGO": 1344,
         "NOMBRE": "ESEN CONC P/ DIFUSOR VIDA BELLA X 500 CC",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $9240 c/u",
-        "PRECIO2": "2U x $8778 c/u",
-        "PRECIO3": "10U x $8316 c/u",
+        "PRECIO1": "U x $9504 c/u",
+        "PRECIO2": "2U x $9029 c/u",
+        "PRECIO3": "10U x $8554 c/u",
         "DILUCION": ""
     },
     {
@@ -4719,8 +4701,8 @@
         "CODIGO": 1334,
         "NOMBRE": "PA¥O MAGICO",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $880 c/u",
-        "PRECIO2": "6U x $660 c/u",
+        "PRECIO1": "U x $1008 c/u",
+        "PRECIO2": "6U x $756 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4782,8 +4764,8 @@
         "CODIGO": 2272,
         "NOMBRE": "REPASADOR TOALLA A CUADROS",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $1120 c/u",
-        "PRECIO2": "4U x $960 c/u",
+        "PRECIO1": "U x $1204 c/u",
+        "PRECIO2": "4U x $1032 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5080,6 +5062,15 @@
         "NOMBRE": "A OTRA PARTE X 1 LT",
         "CATEGORIA": "VARIOS",
         "PRECIO1": "U x $17822 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 8317,
+        "NOMBRE": "ACIDO CITRICO X 1 KG",
+        "CATEGORIA": "VARIOS",
+        "PRECIO1": "KG x $8976 c/kg",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5574,7 +5565,7 @@
         "CODIGO": 1216,
         "NOMBRE": "FUYI INSECTICIDA X 360 CC MMM",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $6260 c/u",
+        "PRECIO1": "U x $5941 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5679,10 +5670,19 @@
         "DILUCION": ""
     },
     {
+        "CODIGO": 1215,
+        "NOMBRE": "OFF CREMA FAMILY X 60 GR",
+        "CATEGORIA": "VENENOS",
+        "PRECIO1": "U x $3640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 1214,
         "NOMBRE": "OFF FAMILY AEROSOL X 170",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $5740 c/u",
+        "PRECIO1": "U x $6446 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5763,7 +5763,7 @@
         "CODIGO": 1225,
         "NOMBRE": "RAID INSECTICIDA X 370 MM AZUL",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $6786 c/u",
+        "PRECIO1": "U x $7865 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5799,7 +5799,7 @@
         "CODIGO": 1298,
         "NOMBRE": "SOBRE ESPIRALES RAID X 4",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $1019 c/u",
+        "PRECIO1": "U x $1170 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5808,7 +5808,7 @@
         "CODIGO": 1219,
         "NOMBRE": "TABLETAS FUYI CAJA X 12 UNIDADES",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $4160 c/u",
+        "PRECIO1": "U x $3917 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
