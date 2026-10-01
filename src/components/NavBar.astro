@@ -8,7 +8,7 @@ const { activo } = Astro.props;
 const links = [
   { id: "inicio", label: "Inicio", href: "/" },
   { id: "catalogo", label: "Tienda", href: "/productos" },
-  { id: "quienes-somos", label: "Quiénes somos", href: "/quienes-somos" },
+  { id: "quienes-somos", label: "Quiénes somos", labelMobile: "Nosotros", href: "/quienes-somos" },
   { id: "carrito", label: "Carrito", href: "/carrito" },
 ];
 ---
@@ -25,7 +25,14 @@ const links = [
             : "text-ink-700 hover:bg-ink-50",
         ]}
       >
-        {link.label}
+        {link.labelMobile ? (
+          <>
+            <span class="sm:hidden">{link.labelMobile}</span>
+            <span class="hidden sm:inline">{link.label}</span>
+          </>
+        ) : (
+          link.label
+        )}
       </a>
     ))}
   </div>
