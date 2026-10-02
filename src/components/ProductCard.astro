@@ -2,6 +2,7 @@
 import { formatARS } from "../lib/pricing";
 import type { Producto } from "../lib/products";
 import { resolverImagenProducto } from "../lib/images";
+import { terminosImitacion } from "../lib/imitaciones";
 
 interface Props {
   producto: Producto;
@@ -11,6 +12,8 @@ const { producto } = Astro.props;
 const groupName = `escala-${producto.codigo}`;
 
 const imagenProducto = resolverImagenProducto(producto.codigo);
+const categoriaNombre = producto.categoria.replace(/^\d+\*\s*/, "");
+const terminosExtra = terminosImitacion(producto.nombre, producto.categoria).join(" ");
 
 // Payload que la card expone para que el JS del carrito lo lea sin
 // tener que volver a parsear nada ni pegarle al DOM de más.
@@ -26,6 +29,8 @@ const payload = JSON.stringify({
   class="product-card group flex flex-col rounded-lg border border-ink-100 bg-white font-comfortaa shadow-card transition-shadow hover:shadow-lg"
   data-categoria={producto.categoriaSlug}
   data-nombre={producto.nombre.toLowerCase()}
+  data-categoria-nombre={categoriaNombre.toLowerCase()}
+  data-terminos-extra={terminosExtra}
   data-codigo={producto.codigo}
   data-precio={producto.escalas[0]?.precioUnitario ?? 0}
   data-product={payload}
@@ -33,7 +38,7 @@ const payload = JSON.stringify({
   <!-- Encabezado: código estilo etiqueta de bidón -->
   <div class="flex items-center justify-between border-b border-dashed border-ink-100 px-4 py-2.5">
     <span class="stencil-tag">COD. {producto.codigo}</span>
-    <span class="stencil-tag truncate pl-2 text-ink-400">{producto.categoria.replace(/^\d+\*\s*/, "")}</span>
+    <span class="stencil-tag truncate pl-2 text-ink-400">{categoriaNombre}</span>
   </div>
 
   {imagenProducto && (

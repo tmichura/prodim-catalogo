@@ -2,6 +2,13 @@
  * Filtro de catálogo 100% cliente: combina categoría seleccionada + texto
  * de búsqueda para mostrar/ocultar las cards ya renderizadas en el servidor.
  * No hay fetch ni re-render: es solo togglear la clase "hidden".
+ *
+ * La búsqueda de texto matchea por substring exacto sobre nombre, categoría
+ * y "términos de imitación" (ver src/lib/imitaciones.ts, que a nivel de
+ * build le agrega a cada card data-terminos-extra con marcas como
+ * "ariel"/"skip" cuando el producto es nuestro equivalente), más una capa
+ * de tolerancia a errores de tipeo por distancia de edición (ver
+ * distanciaEdicion más abajo) sobre las palabras sueltas del nombre.
  */
 
 const cards = Array.from(document.querySelectorAll<HTMLElement>(".product-card"));
@@ -65,21 +72,101 @@ const cardInfos = cards.map((card) => ({
   categoria: card.dataset.categoria || "",
   codigo: card.dataset.codigo || "",
   nombreNormalizado: normalizar(card.dataset.nombre || ""),
+  categoriaNombreNormalizado: normalizar(card.dataset.categoriaNombre || ""),
+  terminosExtraNormalizado: normalizar(card.dataset.terminosExtra || ""),
+  // Palabras sueltas del nombre, para que el fuzzy compare "contra una
+  // palabra" (como cuando alguien tipea mal UNA palabra) y no contra la
+  // frase completa, que es lo que generaba falsos positivos (ver abajo).
+  palabras: normalizar(card.dataset.nombre || "").split(/\s+/).filter((p) => p.length >= 3),
   // Todas arrancan visibles (así las renderiza el servidor, sin "hidden")
   visible: true,
 }));
+
+type CardInfo = (typeof cardInfos)[number];
+
+/**
+ * Distancia de edición (Damerau-Levenshtein restringida): cuenta inserciones,
+ * borrados, sustituciones y transposiciones de dos letras adyacentes como
+ * un solo cambio cada una (esto último cubre el típo más común: "clroo"
+ * en vez de "cloro"). Se calcula una sola vez por par palabra/query.
+ */
+function distanciaEdicion(a: string, b: string): number {
+  const fila: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) fila[i][0] = i;
+  for (let j = 0; j <= b.length; j++) fila[0][j] = j;
+
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const costo = a[i - 1] === b[j - 1] ? 0 : 1;
+      fila[i][j] = Math.min(
+        fila[i - 1][j] + 1, // borrado
+        fila[i][j - 1] + 1, // inserción
+        fila[i - 1][j - 1] + costo // sustitución
+      );
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        fila[i][j] = Math.min(fila[i][j], fila[i - 2][j - 2] + 1); // transposición
+      }
+    }
+  }
+  return fila[a.length][b.length];
+}
+
+/** Cuántos errores de tipeo se toleran según el largo de la palabra
+ *  buscada (mismo criterio que usan buscadores tipo Algolia/Elasticsearch:
+ *  ninguno para palabras muy cortas, donde cualquier letra de más "pesa"
+ *  demasiado y generaría ruido). */
+function tolerancia(largo: number): number {
+  if (largo <= 4) return 0;
+  if (largo <= 7) return 1;
+  return 2;
+}
+
+function matchFuzzy(query: string, palabra: string): boolean {
+  const maxErrores = tolerancia(query.length);
+  if (maxErrores === 0) return false;
+  // Corte rápido: si la diferencia de largo ya supera lo tolerado, ni
+  // vale la pena calcular la distancia completa.
+  if (Math.abs(query.length - palabra.length) > maxErrores) return false;
+  return distanciaEdicion(query, palabra) <= maxErrores;
+}
+
+function buscarCoincidencias(query: string): Set<CardInfo> {
+  const coincidencias = new Set<CardInfo>();
+
+  for (const info of cardInfos) {
+    // Match exacto por substring: nombre, categoría, término de imitación
+    // (ver src/lib/imitaciones.ts) o código de producto. Es el caso de uso
+    // principal — preciso, sin sorpresas.
+    const matchExacto =
+      info.nombreNormalizado.includes(query) ||
+      info.categoriaNombreNormalizado.includes(query) ||
+      info.terminosExtraNormalizado.includes(query) ||
+      info.codigo.includes(query);
+
+    // Tolerancia a errores de tipeo: compara la query contra cada palabra
+    // suelta del nombre (no la frase completa, para no generar falsos
+    // positivos por coincidencias sueltas de letras entre palabras).
+    const matchFuzzyEnNombre = !matchExacto && info.palabras.some((palabra) => matchFuzzy(query, palabra));
+
+    if (matchExacto || matchFuzzyEnNombre) coincidencias.add(info);
+  }
+
+  return coincidencias;
+}
 
 function aplicarFiltros(): void {
   const query = normalizar(searchInput?.value.trim() || "");
   const buscando = query !== "";
   let visibles = 0;
 
+  const coincidenBusqueda = buscando ? buscarCoincidencias(query) : null;
+
   for (const info of cardInfos) {
     // Al buscar, se busca en TODO el catálogo sin importar la categoría
     // elegida en la barra lateral (no tiene sentido limitar la búsqueda
     // a la categoría en la que el usuario está parado).
     const coincideCategoria = buscando || categoriaActiva === "todas" || info.categoria === categoriaActiva;
-    const coincideBusqueda = query === "" || info.nombreNormalizado.includes(query) || info.codigo.includes(query);
+    const coincideBusqueda = !coincidenBusqueda || coincidenBusqueda.has(info);
 
     const visible = coincideCategoria && coincideBusqueda;
     // Tocar el DOM (classList) es lo caro acá: fuerza que el navegador
