@@ -8,7 +8,6 @@ import { formatARS } from "../lib/pricing";
 
 const STORAGE_KEY = "prodim:cart:v2";
 const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "";
-const EMPRESA_NOMBRE = import.meta.env.PUBLIC_EMPRESA_NOMBRE || "Prodim";
 
 interface ProductoPayload {
   codigo: number;
@@ -155,12 +154,6 @@ function refreshCardHighlight(card: HTMLElement): void {
 // ---------- Mensaje de WhatsApp ----------
 
 function buildWhatsAppMessage(cart: Cart, clienteNombre: string): string {
-  const fecha = new Date().toLocaleDateString("es-AR", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  });
-
   const lineas = cart.map((item, i) => {
     const subtotal = item.precioUnitario * item.cantidad;
     return [
@@ -172,14 +165,10 @@ function buildWhatsAppMessage(cart: Cart, clienteNombre: string): string {
   const total = getTotal(cart);
 
   const partes = [
-    `Hola ${EMPRESA_NOMBRE}! Quiero hacer el siguiente pedido (${fecha}):`,
-    "",
     ...(clienteNombre ? [`Cliente: ${clienteNombre}`, ""] : []),
     ...lineas,
     "",
     `TOTAL ESTIMADO: ${formatARS(total)}`,
-    "",
-    "Quedo atento/a para confirmar disponibilidad y forma de pago. Gracias!",
   ];
 
   return partes.join("\n");
