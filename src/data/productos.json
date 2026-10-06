@@ -552,7 +552,7 @@
         "CODIGO": 312,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 CC FRUTAL",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $4290 c/u",
+        "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -561,7 +561,7 @@
         "CODIGO": 319,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 CC LIMON",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $4290 c/u",
+        "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -570,7 +570,7 @@
         "CODIGO": 442,
         "NOMBRE": "REVIVIDOR C/SILIC X 250 CC VAINILLA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "U x $4554 c/u",
+        "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -633,18 +633,18 @@
         "CODIGO": 311,
         "NOMBRE": "REVIVIDOR C/SILICONAS INTERIOR FRUTAL",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "LT x $13860 c/lt",
-        "PRECIO2": "2LT x $11088 c/lt",
-        "PRECIO3": "5LT x $9702 c/lt",
+        "PRECIO1": "LT x $15180 c/lt",
+        "PRECIO2": "2LT x $12144 c/lt",
+        "PRECIO3": "5LT x $10626 c/lt",
         "DILUCION": ""
     },
     {
         "CODIGO": 310,
         "NOMBRE": "REVIVIDOR C/SILICONAS INTERIOR LIMON",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "LT x $13860 c/lt",
-        "PRECIO2": "2LT x $11088 c/lt",
-        "PRECIO3": "5LT x $9702 c/lt",
+        "PRECIO1": "LT x $15180 c/lt",
+        "PRECIO2": "2LT x $12144 c/lt",
+        "PRECIO3": "5LT x $10626 c/lt",
         "DILUCION": ""
     },
     {
@@ -867,7 +867,7 @@
         "CODIGO": 412,
         "NOMBRE": "FLUIDO ACAROINA X 1 LT",
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "LT x $6955 c/lt",
+        "PRECIO1": "LT x $7920 c/lt",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": "1 + 20 AGUA"
@@ -1002,9 +1002,9 @@
         "CODIGO": 48,
         "NOMBRE": "FLUIDO ACAROINA",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
-        "PRECIO1": "5LT x $6278 c/lt",
-        "PRECIO2": "10LT x $5901 c/lt",
-        "PRECIO3": "20LT x $5587 c/lt",
+        "PRECIO1": "5LT x $7115 c/lt",
+        "PRECIO2": "10LT x $6688 c/lt",
+        "PRECIO3": "20LT x $6332 c/lt",
         "DILUCION": "1 + 20 AGUA"
     },
     {
@@ -1137,8 +1137,8 @@
         "CODIGO": 65,
         "NOMBRE": "DESODORANTE X 1 LT FRESCO BACTERICIDA",
         "CATEGORIA": "DESODORANTES X 1 LT",
-        "PRECIO1": "U x $12623 c/u",
-        "PRECIO2": "5U x $11108 c/u",
+        "PRECIO1": "U x $13118 c/u",
+        "PRECIO2": "5U x $11543 c/u",
         "PRECIO3": "",
         "DILUCION": "1 + 80 AGUA"
     },
@@ -1353,8 +1353,8 @@
         "CODIGO": 765,
         "NOMBRE": "DESODORANTE X 250 FRESCO BACTERICIDA",
         "CATEGORIA": "DESODORANTES X 250 CC",
-        "PRECIO1": "U x $4604 c/u",
-        "PRECIO2": "2U x $4143 c/u",
+        "PRECIO1": "U x $4752 c/u",
+        "PRECIO2": "2U x $4277 c/u",
         "PRECIO3": "",
         "DILUCION": "1/4 + 20 AGUA"
     },
@@ -1458,90 +1458,9 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 122,
-        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $2640 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 276,
-        "NOMBRE": "DETERGENTE BIDON X 5LTS ESPECIAL MAGIC",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $12375 c/u",
-        "PRECIO2": "4U x $11138 c/u",
-        "PRECIO3": "12U x $8663 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5269,
-        "NOMBRE": "DETERGENTE BIDON X 5LTS LAVAVAJILL LIMON",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $7095 c/u",
-        "PRECIO2": "4U x $6386 c/u",
-        "PRECIO3": "12U x $5115 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5205,
-        "NOMBRE": "DETERGENTE BIDON X 5LTS ROSA NACARADO",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $7986 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5270,
-        "NOMBRE": "DETERGENTE BIDON X 5LTS VERDE 10% CONCEN",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $10824 c/u",
-        "PRECIO2": "4U x $9742 c/u",
-        "PRECIO3": "12U x $7577 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5215,
-        "NOMBRE": "DETERGENTE TIPO CAMEL BIDON X 5 LTS",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $11880 c/u",
-        "PRECIO2": "4U x $10692 c/u",
-        "PRECIO3": "12U x $10098 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 200,
-        "NOMBRE": "DETERGENTE TIPO CAMEL X 1 LT ALTA ESPUMA",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "LT x $3094 c/lt",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 4162,
-        "NOMBRE": "DETERGENTE VERDE X 2 LTS",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $4312 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 4161,
-        "NOMBRE": "LAVAVAJILLA AROMA LIMON X 2 LTS",
-        "CATEGORIA": "DETERGENTES ENVASADOS",
-        "PRECIO1": "U x $2614 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 7,
         "NOMBRE": "DETERGENTE 30% PLUS NATURAL",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES CONC SUELTOS",
         "PRECIO1": "5KG x $3375 c/kg",
         "PRECIO2": "20KG x $3150 c/kg",
         "PRECIO3": "100KG x $2700 c/kg",
@@ -1550,16 +1469,106 @@
     {
         "CODIGO": 5,
         "NOMBRE": "DETERGENTE 30% PLUS VERDE SODICO",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES CONC SUELTOS",
         "PRECIO1": "5KG x $3375 c/kg",
         "PRECIO2": "20KG x $3150 c/kg",
         "PRECIO3": "100KG x $2700 c/kg",
         "DILUCION": "1 + 2 AGUA"
     },
     {
+        "CODIGO": 2,
+        "NOMBRE": "DETERGENTE MAGIC ESPECIAL 30% VERDE",
+        "CATEGORIA": "DETERGENTES CONC SUELTOS",
+        "PRECIO1": "5KG x $3960 c/kg",
+        "PRECIO2": "20KG x $3696 c/kg",
+        "PRECIO3": "100KG x $3168 c/kg",
+        "DILUCION": "1 + 2 AGUA"
+    },
+    {
+        "CODIGO": 122,
+        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 276,
+        "NOMBRE": "DETERGENTE BIDON X 5LTS ESPECIAL MAGIC",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $12375 c/u",
+        "PRECIO2": "4U x $11138 c/u",
+        "PRECIO3": "12U x $8663 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5269,
+        "NOMBRE": "DETERGENTE BIDON X 5LTS LAVAVAJILL LIMON",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $7095 c/u",
+        "PRECIO2": "4U x $6386 c/u",
+        "PRECIO3": "12U x $5115 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5205,
+        "NOMBRE": "DETERGENTE BIDON X 5LTS ROSA NACARADO",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $7986 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5270,
+        "NOMBRE": "DETERGENTE BIDON X 5LTS VERDE 10% CONCEN",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $10824 c/u",
+        "PRECIO2": "4U x $9742 c/u",
+        "PRECIO3": "12U x $7577 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5215,
+        "NOMBRE": "DETERGENTE TIPO CAMEL BIDON X 5 LTS",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $11880 c/u",
+        "PRECIO2": "4U x $10692 c/u",
+        "PRECIO3": "12U x $10098 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 200,
+        "NOMBRE": "DETERGENTE TIPO CAMEL X 1 LT ALTA ESPUMA",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "LT x $3094 c/lt",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 4162,
+        "NOMBRE": "DETERGENTE VERDE X 2 LTS",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $4312 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 4161,
+        "NOMBRE": "LAVAVAJILLA AROMA LIMON X 2 LTS",
+        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
+        "PRECIO1": "U x $2614 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 6,
         "NOMBRE": "DETERGENTE LAVAVAJILLA AROMA LIMON",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES LISTOS SUELTOS",
         "PRECIO1": "10LT x $693 c/lt",
         "PRECIO2": "20LT x $624 c/lt",
         "PRECIO3": "60LT x $554 c/lt",
@@ -1568,7 +1577,7 @@
     {
         "CODIGO": 4,
         "NOMBRE": "DETERGENTE LAVAVAJILLAS VERDE",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES LISTOS SUELTOS",
         "PRECIO1": "10LT x $545 c/lt",
         "PRECIO2": "20LT x $490 c/lt",
         "PRECIO3": "60LT x $436 c/lt",
@@ -1577,28 +1586,109 @@
     {
         "CODIGO": 3502,
         "NOMBRE": "DETERGENTE MAGIC ESPECIAL 10% VERDE",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES LISTOS SUELTOS",
         "PRECIO1": "10LT x $1815 c/lt",
         "PRECIO2": "20LT x $1634 c/lt",
         "PRECIO3": "60LT x $1452 c/lt",
         "DILUCION": ""
     },
     {
-        "CODIGO": 2,
-        "NOMBRE": "DETERGENTE MAGIC ESPECIAL 30% VERDE",
-        "CATEGORIA": "DETERGENTES SUELTOS",
-        "PRECIO1": "5KG x $3960 c/kg",
-        "PRECIO2": "20KG x $3696 c/kg",
-        "PRECIO3": "100KG x $3168 c/kg",
-        "DILUCION": "1 + 2 AGUA"
-    },
-    {
         "CODIGO": 500,
         "NOMBRE": "DETERGENTE VERDE 10 %",
-        "CATEGORIA": "DETERGENTES SUELTOS",
+        "CATEGORIA": "DETERGENTES LISTOS SUELTOS",
         "PRECIO1": "10LT x $1584 c/lt",
         "PRECIO2": "20LT x $1426 c/lt",
         "PRECIO3": "60LT x $1267 c/lt",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5238,
+        "NOMBRE": "JABON LIQUI P/ MANOS X 1 LT DOVE",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5216,
+        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5 LTS DOVE",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $8910 c/u",
+        "PRECIO2": "4U x $8019 c/u",
+        "PRECIO3": "12U x $7128 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5251,
+        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS BRISA",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $7425 c/u",
+        "PRECIO2": "4U x $6683 c/u",
+        "PRECIO3": "12U x $5569 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5218,
+        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS COCO",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $9207 c/u",
+        "PRECIO2": "4U x $8286 c/u",
+        "PRECIO3": "12U x $6905 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5217,
+        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS FLOWERS",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $8910 c/u",
+        "PRECIO2": "4U x $8019 c/u",
+        "PRECIO3": "12U x $6683 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5213,
+        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS FRUTAL",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $8910 c/u",
+        "PRECIO2": "4U x $8019 c/u",
+        "PRECIO3": "12U x $6683 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5237,
+        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT BRISA",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $1815 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5214,
+        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT COCO",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5235,
+        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT FLOWER",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $2310 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5236,
+        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT FRUTAL",
+        "CATEGORIA": "JABONES DE MANO ENVASADOS",
+        "PRECIO1": "U x $2310 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
         "DILUCION": ""
     },
     {
@@ -1705,96 +1795,6 @@
         "NOMBRE": "JABON LIQ P/ROPA PET X 2 LTS SUPER MATIC",
         "CATEGORIA": "JABONES ENVASADOS",
         "PRECIO1": "U x $3014 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5238,
-        "NOMBRE": "JABON LIQUI P/ MANOS X 1 LT DOVE",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $2640 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5216,
-        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5 LTS DOVE",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $8910 c/u",
-        "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $7128 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5251,
-        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS BRISA",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $7425 c/u",
-        "PRECIO2": "4U x $6683 c/u",
-        "PRECIO3": "12U x $5569 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5218,
-        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS COCO",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $9207 c/u",
-        "PRECIO2": "4U x $8286 c/u",
-        "PRECIO3": "12U x $6905 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5217,
-        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS FLOWERS",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $8910 c/u",
-        "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $6683 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5213,
-        "NOMBRE": "JABON LIQUI P/MANOS BIDON X 5LTS FRUTAL",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $8910 c/u",
-        "PRECIO2": "4U x $8019 c/u",
-        "PRECIO3": "12U x $6683 c/u",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5237,
-        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT BRISA",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $1815 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5214,
-        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT COCO",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $2640 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5235,
-        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT FLOWER",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $2310 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 5236,
-        "NOMBRE": "JABON LIQUI P/MANOS X 1 LT FRUTAL",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $2310 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -2766,8 +2766,8 @@
         "CODIGO": 1328,
         "NOMBRE": "LIMPIA TAPIZADOS EN AEROSOL WALKER",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $5600 c/u",
-        "PRECIO2": "2U x $5040 c/u",
+        "PRECIO1": "U x $6160 c/u",
+        "PRECIO2": "2U x $5544 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2802,8 +2802,8 @@
         "CODIGO": 1329,
         "NOMBRE": "PERFUME PARA AUTOS LATA GEL",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $5733 c/u",
-        "PRECIO2": "6U x $5160 c/u",
+        "PRECIO1": "U x $6027 c/u",
+        "PRECIO2": "6U x $5424 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2847,8 +2847,8 @@
         "CODIGO": 46,
         "NOMBRE": "SILICONA EN AEROSOL PERFUMADA",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $6480 c/u",
-        "PRECIO2": "2U x $5184 c/u",
+        "PRECIO1": "U x $6720 c/u",
+        "PRECIO2": "2U x $5376 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -3765,8 +3765,8 @@
         "CODIGO": 3041,
         "NOMBRE": "ACIDO MURIATICO BIDON X 5 LTS",
         "CATEGORIA": "PILETAS",
-        "PRECIO1": "U x $10313 c/u",
-        "PRECIO2": "6U x $8353 c/u",
+        "PRECIO1": "U x $11344 c/u",
+        "PRECIO2": "6U x $9188 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4764,8 +4764,8 @@
         "CODIGO": 2272,
         "NOMBRE": "REPASADOR TOALLA A CUADROS",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $1204 c/u",
-        "PRECIO2": "4U x $1032 c/u",
+        "PRECIO1": "U x $1120 c/u",
+        "PRECIO2": "4U x $960 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5367,8 +5367,8 @@
         "CODIGO": 2118,
         "NOMBRE": "PATO PASTILLA CON RED",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $2618 c/u",
-        "PRECIO2": "6U x $1963 c/u",
+        "PRECIO1": "U x $2688 c/u",
+        "PRECIO2": "6U x $2016 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5682,7 +5682,7 @@
         "CODIGO": 1214,
         "NOMBRE": "OFF FAMILY AEROSOL X 170",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $6446 c/u",
+        "PRECIO1": "U x $6454 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
