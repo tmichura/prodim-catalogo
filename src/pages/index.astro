@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel.astro";
 import FeaturedCarousel from "../components/FeaturedCarousel.astro";
 import CartDrawer from "../components/CartDrawer.astro";
 import Footer from "../components/Footer.astro";
-import { getProductos } from "../lib/products";
+import { getProductos, getCategorias, getSuperCategorias, slugify } from "../lib/products";
 import { resolverImagenProducto } from "../lib/images";
 
 const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "";
@@ -29,6 +29,27 @@ const productosDestacados = productos
   .filter((p) => ordenDeCategoria(p.categoria) > 14 && resolverImagenProducto(p.codigo) !== null)
   .sort(() => Math.random() - 0.5)
   .slice(0, 10);
+
+// Accesos por categoría: cada grupo (Sueltos, Envasados...) con la foto
+// de uno de sus productos y la cantidad de productos que tiene.
+const grupos = getSuperCategorias(getCategorias(productos)).map((g) => {
+  const slugs = new Set(g.categorias.map((c) => c.slug));
+  const delGrupo = productos.filter((p) => slugs.has(p.categoriaSlug));
+  const conFoto = delGrupo.find((p) => resolverImagenProducto(p.codigo));
+  return {
+    nombre: g.nombre.charAt(0) + g.nombre.slice(1).toLowerCase(),
+    slug: slugify(g.nombre),
+    cantidad: delGrupo.length,
+    imagen: conFoto ? resolverImagenProducto(conFoto.codigo) : null,
+  };
+});
+
+const beneficios = [
+  { titulo: "Más de 35 años", texto: "fabricando y distribuyendo productos de limpieza", icono: "calidad" },
+  { titulo: "+600 productos", texto: "para hogar, comercio, industria y automotor", icono: "productos" },
+  { titulo: "Precio por cantidad", texto: "cuanto más llevás, menos pagás por unidad", icono: "precio" },
+  { titulo: "Pedido por WhatsApp", texto: "atención directa, sin intermediarios", icono: "whatsapp" },
+];
 ---
 
 <Layout>
@@ -39,7 +60,7 @@ const productosDestacados = productos
     <Carousel />
 
     <!-- Sección institucional / bienvenida -->
-    <section class="mx-auto max-w-4xl px-4 py-14 text-center" data-reveal>
+    <section class="mx-auto max-w-4xl px-4 py-10 text-center sm:py-14">
       <span class="stencil-tag">PRODIM · PRODUCTOS QUÍMICOS</span>
       <h1 class="mt-3 font-display text-2xl font-bold text-ink-900 sm:text-3xl">
         Productos de limpieza al por mayor, con la calidad que nos representa desde hace más de 35 años.
@@ -49,7 +70,7 @@ const productosDestacados = productos
         Armá tu pedido y coordinalo directo por WhatsApp.
       </p>
 
-      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row" data-reveal="stagger">
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
           href="/productos"
           class="focus-ring w-full rounded-md bg-ink-800 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-700 sm:w-auto"
@@ -72,6 +93,66 @@ const productosDestacados = productos
         >
           Catálogo
         </a>
+      </div>
+    </section>
+
+    <!-- Franja de confianza -->
+    <section class="border-y border-ink-100 bg-white">
+      <ul class="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-5 px-4 py-6 lg:grid-cols-4">
+        {beneficios.map((b) => (
+          <li class="flex items-start gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink-50 text-ink-700">
+              {b.icono === "calidad" && (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"></circle><path d="M8.2 13.4 7 22l5-3 5 3-1.2-8.6"></path></svg>
+              )}
+              {b.icono === "productos" && (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"></path><path d="m3 8 9 5 9-5M12 13v8"></path></svg>
+              )}
+              {b.icono === "precio" && (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg>
+              )}
+              {b.icono === "whatsapp" && (
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.3-5.1A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+              )}
+            </span>
+            <div>
+              <p class="text-sm font-bold text-ink-900">{b.titulo}</p>
+              <p class="text-xs leading-snug text-ink-600">{b.texto}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Accesos por categoría -->
+    <section class="mx-auto max-w-7xl px-4 pt-10" data-reveal>
+      <div class="mb-4 flex items-end justify-between gap-4">
+        <h2 class="font-display text-lg font-bold text-ink-900 sm:text-xl">Comprá por categoría</h2>
+        <a href="/productos" class="focus-ring shrink-0 rounded text-sm font-semibold text-ink-700 hover:underline">Ver todo →</a>
+      </div>
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
+        {grupos.map((g) => (
+          <a
+            href={`/productos?grupo=${g.slug}`}
+            class="focus-ring group flex flex-col overflow-hidden rounded-lg border border-ink-100 bg-white shadow-card transition-shadow hover:shadow-lg"
+          >
+            <div class="relative aspect-[4/3] overflow-hidden bg-white">
+              <img
+                src={g.imagen ?? "/images/sin-foto.webp"}
+                alt=""
+                width="300"
+                height="225"
+                loading="lazy"
+                decoding="async"
+                class:list={["absolute inset-0 h-full w-full object-contain transition-transform group-hover:scale-105", g.imagen ? "p-2" : "p-8 opacity-25"]}
+              />
+            </div>
+            <div class="flex items-center justify-between gap-2 border-t border-ink-100 px-3 py-2.5">
+              <span class="text-sm font-bold leading-tight text-ink-800">{g.nombre}</span>
+              <span class="shrink-0 font-mono text-[11px] text-ink-600">{g.cantidad}</span>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
 

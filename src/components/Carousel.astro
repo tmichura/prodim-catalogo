@@ -36,7 +36,7 @@ const slides: Slide[] = [
     type="button"
     id="carousel-prev"
     aria-label="Anterior"
-    class="focus-ring absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:h-10 sm:w-10"
+    class="focus-ring absolute left-2 top-1/2 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:flex sm:h-10 sm:w-10"
   >
     <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <polyline points="15 18 9 12 15 6"></polyline>
@@ -46,7 +46,7 @@ const slides: Slide[] = [
     type="button"
     id="carousel-next"
     aria-label="Siguiente"
-    class="focus-ring absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:h-10 sm:w-10"
+    class="focus-ring absolute right-2 top-1/2 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-white/70 text-ink-800 opacity-70 transition-opacity hover:opacity-100 sm:flex sm:h-10 sm:w-10"
   >
     <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <polyline points="9 18 15 12 9 6"></polyline>
@@ -117,6 +117,18 @@ const slides: Slide[] = [
         irA(parseInt(dot.dataset.index || "0", 10));
         iniciarAutoplay();
       });
+    });
+
+    // Deslizar con el dedo (en mobile no hay flechas: tapaban el texto del banner)
+    let inicioX: number | null = null;
+    track.addEventListener("touchstart", (e) => { inicioX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener("touchend", (e) => {
+      if (inicioX === null) return;
+      const delta = e.changedTouches[0].clientX - inicioX;
+      inicioX = null;
+      if (Math.abs(delta) < 40) return;
+      delta < 0 ? siguiente() : anterior();
+      iniciarAutoplay();
     });
 
     irA(0);

@@ -1,0 +1,76 @@
+---
+import { formatARS } from "../lib/pricing";
+import type { Producto } from "../lib/products";
+
+interface Props {
+  producto: Producto;
+  /** Versión más grande, para la página de detalle del producto */
+  grande?: boolean;
+}
+
+const { producto, grande = false } = Astro.props;
+
+const UNIDADES: Record<string, string> = { u: "u.", lt: "lt", kg: "kg" };
+const precioBase = producto.escalas[0]?.precioUnitario ?? 0;
+const cantidadMinima = producto.escalas[0]?.cantidadMinima ?? 1;
+
+const escalas = producto.escalas.map((escala, i) => {
+  const unidad = UNIDADES[escala.unidad] ?? escala.unidad;
+  const etiqueta = i === 0 && escala.cantidadMinima <= 1 ? `Por ${unidad}` : `Desde ${escala.cantidadMinima} ${unidad}`;
+  const ahorro = i > 0 && precioBase > 0 ? Math.round((1 - escala.precioUnitario / precioBase) * 100) : 0;
+  return { escala, etiqueta, ahorro };
+});
+---
+
+<!-- Precios por escala. Tocar una fila suma esa cantidad al pedido; la fila
+     vigente se resalta sola según la cantidad cargada (ver src/scripts/cart.ts). -->
+<div class="escala-list divide-y divide-ink-100 rounded-md border border-ink-100 bg-ink-50/50" data-escalas>
+  {escalas.map(({ escala, etiqueta, ahorro }, i) => (
+    <button
+      type="button"
+      class:list={[
+        "escala-row flex w-full cursor-pointer items-center justify-between gap-2 px-3 text-left transition-colors hover:bg-ink-100",
+        grande ? "py-3" : "py-1.5",
+      ]}
+      data-escala-index={i}
+      data-cantidad-minima={escala.cantidadMinima}
+      aria-label={`${etiqueta}: ${formatARS(escala.precioUnitario)} por ${escala.unidad}. Sumar ${escala.cantidadMinima} al pedido`}
+    >
+      <span class:list={["font-semibold", grande ? "text-sm" : "text-xs"]}>{etiqueta}</span>
+      <span class="flex items-center gap-2">
+        {ahorro > 0 && (
+          <span class="rounded-full bg-mint px-1.5 py-0.5 text-[10px] font-bold leading-none text-ink-900">-{ahorro}%</span>
+        )}
+        <span class:list={["font-mono font-semibold", grande ? "text-base" : "text-sm"]}>
+          {formatARS(escala.precioUnitario)}<span class="text-[11px] font-normal opacity-70">/{escala.unidad}</span>
+        </span>
+      </span>
+    </button>
+  ))}
+</div>
+
+<div class="mt-auto flex items-center gap-2 pt-1">
+  <label class="sr-only" for={`qty-${producto.codigo}${grande ? "-detalle" : ""}`}>Cantidad</label>
+  <input
+    id={`qty-${producto.codigo}${grande ? "-detalle" : ""}`}
+    type="number"
+    inputmode="numeric"
+    min="1"
+    step="1"
+    placeholder={String(cantidadMinima)}
+    class:list={[
+      "qty-input focus-ring w-16 rounded-md border border-ink-200 bg-white px-2 text-center font-mono text-sm text-ink-900 placeholder:text-ink-300",
+      grande ? "py-3" : "py-2",
+    ]}
+  />
+  <button
+    type="button"
+    data-add-to-cart
+    class:list={[
+      "focus-ring flex-1 rounded-md bg-ink-700 px-3 font-semibold uppercase text-white transition-colors hover:bg-ink-800 active:bg-ink-900",
+      grande ? "py-3 text-sm" : "py-2 text-xs sm:text-sm",
+    ]}
+  >
+    Agregar al pedido
+  </button>
+</div>

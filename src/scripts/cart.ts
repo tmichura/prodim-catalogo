@@ -296,14 +296,13 @@ document.addEventListener("click", (e) => {
   const producto = JSON.parse(productoJson) as ProductoPayload;
 
   const qtyInput = card.querySelector<HTMLInputElement>(".qty-input");
-  if (!qtyInput?.value) {
-    qtyInput?.focus();
-    return;
-  }
-
-  const cantidad = parseInt(qtyInput.value, 10);
+  // Sin cantidad cargada se agrega la mínima de la primera escala (lo que
+  // muestra el placeholder): antes el botón no hacía nada visible y era
+  // lo primero que tocaba la gente.
+  const cantidadMinima = producto.escalas[0]?.cantidadMinima || 1;
+  const cantidad = qtyInput?.value ? parseInt(qtyInput.value, 10) : cantidadMinima;
   if (!cantidad || cantidad < 1) {
-    qtyInput.focus();
+    qtyInput?.focus();
     return;
   }
 
@@ -312,15 +311,28 @@ document.addEventListener("click", (e) => {
 
   cart = addItem(cart, producto, escala, cantidad);
   persistAndRender();
+  if (qtyInput) {
+    qtyInput.value = "";
+    refreshCardHighlight(card);
+  }
 
-  // Micro-feedback: destello breve en el botón, sin animaciones invasivas
+  // Confirmación en el propio botón: queda claro que se agregó y cuánto
+  const textoOriginal = btn.textContent;
+  btn.textContent = `✓ Agregado (${cantidad})`;
   btn.classList.add("!bg-batch-500", "!text-ink-900");
-  window.setTimeout(() => btn.classList.remove("!bg-batch-500", "!text-ink-900"), 350);
+  window.setTimeout(() => {
+    btn.textContent = textoOriginal;
+    btn.classList.remove("!bg-batch-500", "!text-ink-900");
+  }, 1400);
+
+  // Pulso en el contador del header
+  els.countEl?.classList.add("animate-pulse-once");
+  window.setTimeout(() => els.countEl?.classList.remove("animate-pulse-once"), 600);
 
   // En mobile no abrimos el carrito (tapa toda la pantalla); mostramos
   // una leyenda breve en su lugar para no interrumpir la navegación.
   if (ES_MOBILE()) {
-    mostrarToast(`Se agregó ${producto.nombre}`);
+    mostrarToast(`Agregado: ${cantidad} × ${producto.nombre}`);
   } else {
     openDrawer();
   }

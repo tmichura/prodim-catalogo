@@ -21,6 +21,9 @@
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* Los saltos de scroll (anclas, scrollIntoView) frenan debajo del
+       header + barra de pestañas fijos en vez de quedar tapados por ellos */
+    scroll-padding-top: var(--topbars-height, 140px);
   }
   body {
     @apply bg-paper text-ink-900 font-body antialiased;
@@ -100,4 +103,14 @@
   [data-reveal="stagger"].is-visible > *:nth-child(2) { transition-delay: 90ms; }
   [data-reveal="stagger"].is-visible > *:nth-child(3) { transition-delay: 180ms; }
   [data-reveal="stagger"].is-visible > *:nth-child(4) { transition-delay: 270ms; }
+
+  /* Pulso corto del contador del carrito al agregar un producto */
+  .animate-pulse-once {
+    animation: pulso-contador 0.6s ease-out;
+  }
+  @keyframes pulso-contador {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.35); }
+    100% { transform: scale(1); }
+  }
 }

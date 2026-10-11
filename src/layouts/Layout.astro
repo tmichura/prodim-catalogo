@@ -4,15 +4,18 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  /** Imagen para la vista previa al compartir el link (ruta pública) */
+  image?: string;
 }
 
 const {
   title = "Prodim · Productos Químicos",
   description = "Prodim: fabricación y distribución de productos químicos de limpieza industrial y doméstica. Más de 600 productos, con precios según volumen de compra.",
+  image = "/og-image.jpg",
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
-const ogImageUrl = new URL("/og-image.jpg", Astro.site);
+const ogImageUrl = new URL(image, Astro.site);
 ---
 
 <!doctype html>

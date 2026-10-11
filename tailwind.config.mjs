@@ -25,6 +25,8 @@ export default {
           400: "#70d1db",
           500: "#3EBDC4",
           600: "#2e939e",
+          // Para texto chico sobre blanco (600 no llega al contraste mínimo 4.5:1)
+          700: "#24707a",
         },
         mint: "#AAE9D6",
         sun: "#FBDC08",
