@@ -4,6 +4,7 @@
     "categorias": [
       "ceras-sueltas",
       "cloro-y-lavandinas-sueltos",
+      "desodorantes-x-5-lts",
       "cremas-enjuague-sueltos",
       "desengrasantes-sueltos",
       "detergentes-listos-sueltos",
@@ -17,12 +18,12 @@
   {
     "nombre": "ENVASADOS",
     "categorias": [
+      "jabones-envasados",
       "ceras-envasadas",
       "cloro-y-lavandinas-envasados",
       "cremas-enjuague-envasada",
       "deseng-y-otros-envasados",
       "detergentes-listos-envasados",
-      "jabones-envasados",
       "jabones-de-mano-envasados",
       "perfumes-ropa-envasados",
       "shampoos-envasados",
@@ -41,12 +42,6 @@
     "categorias": [
       "desodorantes-x-1-lt",
       "desodorantes-x-250-cc"
-    ]
-  },
-  {
-    "nombre": "DESODORANTE X 5 LTS",
-    "categorias": [
-      "desodorantes-x-5-lts"
     ]
   },
   {
