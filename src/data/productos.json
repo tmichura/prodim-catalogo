@@ -400,7 +400,7 @@
         "NOMBRE": "CHAMPU PARA AUTOS ULTRA SILIC X 1 LITRO",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
         "PRECIO1": "U x $3326 c/u",
-        "PRECIO2": "",
+        "PRECIO2": "5U x $2994 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -838,12 +838,21 @@
     },
     {
         "CODIGO": 54,
-        "NOMBRE": "DESENGRASANTE NH3",
+        "NOMBRE": "DESENGRASANTE NH3 X 1 LT",
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
         "PRECIO1": "U x $12375 c/u",
         "PRECIO2": "5U x $10890 c/u",
         "PRECIO3": "",
         "DILUCION": "1 + 60 AGUA"
+    },
+    {
+        "CODIGO": 79,
+        "NOMBRE": "DESENGRASANTE NH3 X 250 CC",
+        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
+        "PRECIO1": "U x $4010 c/u",
+        "PRECIO2": "2U x $3609 c/u",
+        "PRECIO3": "",
+        "DILUCION": "1 + 15 AGUA"
     },
     {
         "CODIGO": 5203,
@@ -1516,8 +1525,8 @@
         "NOMBRE": "DETERGENTE BIDON X 5LTS ROSA NACARADO",
         "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
         "PRECIO1": "U x $7986 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
+        "PRECIO2": "4U x $7187 c/u",
+        "PRECIO3": "12U x $5590 c/u",
         "DILUCION": ""
     },
     {
@@ -1746,15 +1755,6 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 5226,
-        "NOMBRE": "JABON LIQ P/ROPA BIDON X 5 LTS KERU",
-        "CATEGORIA": "JABONES ENVASADOS",
-        "PRECIO1": "U x $5999 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 5227,
         "NOMBRE": "JABON LIQ P/ROPA BIDON X 5 LTS PREMIUM T",
         "CATEGORIA": "JABONES ENVASADOS",
@@ -1830,9 +1830,9 @@
         "CODIGO": 601,
         "NOMBRE": "JABON LIQUIDO 3 EN 1 LAVA/SUAVIZA/DESMAN",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
-        "PRECIO1": "5LT x $1089 c/lt",
-        "PRECIO2": "20LT x $871 c/lt",
-        "PRECIO3": "60LT x $762 c/lt",
+        "PRECIO1": "5LT x $1155 c/lt",
+        "PRECIO2": "20LT x $924 c/lt",
+        "PRECIO3": "60LT x $809 c/lt",
         "DILUCION": ""
     },
     {
@@ -2602,7 +2602,7 @@
     },
     {
         "CODIGO": 113,
-        "NOMBRE": "CABO MADERA C/ROSCA 1,20/1,30",
+        "NOMBRE": "CABO MADERA C/ROSCA 1,20",
         "CATEGORIA": "CABOS",
         "PRECIO1": "U x $1101 c/u",
         "PRECIO2": "6U x $826 c/u",
@@ -2620,10 +2620,10 @@
     },
     {
         "CODIGO": 117,
-        "NOMBRE": "CABO MADERA C/ROSCA 2,00 MTS",
+        "NOMBRE": "CABO MADERA C/ROSCA 1,80 MTS",
         "CATEGORIA": "CABOS",
-        "PRECIO1": "U x $1336 c/u",
-        "PRECIO2": "6U x $1002 c/u",
+        "PRECIO1": "U x $1667 c/u",
+        "PRECIO2": "6U x $1250 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2631,8 +2631,8 @@
         "CODIGO": 112,
         "NOMBRE": "CABO MADERA C/ROSCA P/ESCOB BARRENDERO",
         "CATEGORIA": "CABOS",
-        "PRECIO1": "U x $2464 c/u",
-        "PRECIO2": "4U x $2113 c/u",
+        "PRECIO1": "U x $2624 c/u",
+        "PRECIO2": "4U x $2250 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2793,8 +2793,8 @@
         "CODIGO": 1522,
         "NOMBRE": "MICROFIBRA LAFITTE 40 X 60",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $3220 c/u",
-        "PRECIO2": "2U x $2962 c/u",
+        "PRECIO1": "U x $3394 c/u",
+        "PRECIO2": "2U x $3122 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2820,7 +2820,7 @@
         "CODIGO": 134,
         "NOMBRE": "PULVERIZADOR LAFFITE ESPUMADOR 2 LTS",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $11696 c/u",
+        "PRECIO1": "U x $11936 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -2856,8 +2856,8 @@
         "CODIGO": 2244,
         "NOMBRE": "TARJETA PERFUMADA PARA AUTO",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $400 c/u",
-        "PRECIO2": "2U x $360 c/u",
+        "PRECIO1": "U x $416 c/u",
+        "PRECIO2": "2U x $374 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2883,8 +2883,8 @@
         "CODIGO": 1015,
         "NOMBRE": "DIFUSOR AUTOMATICO",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $12995 c/u",
-        "PRECIO2": "2U x $11955 c/u",
+        "PRECIO1": "U x $13910 c/u",
+        "PRECIO2": "2U x $12797 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2964,8 +2964,8 @@
         "CODIGO": 1335,
         "NOMBRE": "REPUESTO MAX AROMA",
         "CATEGORIA": "DIFUSORES Y AROMATIZANTES",
-        "PRECIO1": "U x $2600 c/u",
-        "PRECIO2": "2U x $2340 c/u",
+        "PRECIO1": "U x $2730 c/u",
+        "PRECIO2": "2U x $2457 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -3182,6 +3182,15 @@
         "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
         "PRECIO1": "U x $11620 c/u",
         "PRECIO2": "2U x $9964 c/u",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 259,
+        "NOMBRE": "BARREDOR 1 MT ALGODON COMPLETO",
+        "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
+        "PRECIO1": "U x $38067 c/u",
+        "PRECIO2": "2U x $35022 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4710,8 +4719,8 @@
         "CODIGO": 2241,
         "NOMBRE": "REJILLA EXTRA FRANCIOTEX 40 X 40",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $944 c/u",
-        "PRECIO2": "6U x $708 c/u",
+        "PRECIO1": "U x $1040 c/u",
+        "PRECIO2": "6U x $780 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4719,8 +4728,8 @@
         "CODIGO": 2242,
         "NOMBRE": "REJILLA MULTIUSO PESADA 40 X 50 FRANCIOT",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $1408 c/u",
-        "PRECIO2": "6U x $1056 c/u",
+        "PRECIO1": "U x $1552 c/u",
+        "PRECIO2": "6U x $1164 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5034,8 +5043,8 @@
         "CODIGO": 231,
         "NOMBRE": "TRAPO DE PISO JULIETA GRIS",
         "CATEGORIA": "TRAPOS Y ART, PARA PISO",
-        "PRECIO1": "U x $869 c/u",
-        "PRECIO2": "6U x $652 c/u",
+        "PRECIO1": "U x $898 c/u",
+        "PRECIO2": "6U x $673 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5052,8 +5061,8 @@
         "CODIGO": 2143,
         "NOMBRE": "TRAPO DE PISO RAYADO 50 X 60",
         "CATEGORIA": "TRAPOS Y ART, PARA PISO",
-        "PRECIO1": "U x $2064 c/u",
-        "PRECIO2": "6U x $1548 c/u",
+        "PRECIO1": "U x $2272 c/u",
+        "PRECIO2": "6U x $1704 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5466,7 +5475,7 @@
         "CODIGO": 1252,
         "NOMBRE": "ANTIPARASITARIO ECTHOL 70 CC",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $3380 c/u",
+        "PRECIO1": "U x $3640 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5700,7 +5709,7 @@
         "CODIGO": 467,
         "NOMBRE": "PIPETA PERROS HECTOPAR 40 A 60 KGS",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $2236 c/u",
+        "PRECIO1": "U x $2275 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5709,7 +5718,7 @@
         "CODIGO": 495,
         "NOMBRE": "PIPETA PERROS HECTOPAR DE 10 A 25",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $2236 c/u",
+        "PRECIO1": "U x $2275 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5718,7 +5727,7 @@
         "CODIGO": 466,
         "NOMBRE": "PIPETA PERROS HECTOPAR DE 25 A 40 KGS",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $2236 c/u",
+        "PRECIO1": "U x $2275 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5727,7 +5736,7 @@
         "CODIGO": 479,
         "NOMBRE": "PIPETA PERROS HECTOPAR DE 4 A 10 KGS",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $2236 c/u",
+        "PRECIO1": "U x $2275 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5736,8 +5745,8 @@
         "CODIGO": 118,
         "NOMBRE": "PULVERIZADOR FUMIGADOR",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $9600 c/u",
-        "PRECIO2": "6U x $7200 c/u",
+        "PRECIO1": "U x $12270 c/u",
+        "PRECIO2": "6U x $9203 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5790,7 +5799,7 @@
         "CODIGO": 1232,
         "NOMBRE": "RATICIDA ULTRA PLUS 50 GRS",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $1372 c/u",
+        "PRECIO1": "U x $1400 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
