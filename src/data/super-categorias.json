@@ -26,7 +26,6 @@
       "deseng-y-otros-envasados",
       "detergentes-listos-envasados",
       "jabones-de-mano-envasados",
-      "perfumes-ropa-envasados",
       "shampoos-envasados",
       "suavizantes-envasados"
     ]
@@ -47,7 +46,7 @@
   },
   {
     "nombre": "TEXTIL Y AROMATIZANTES",
-    "categorias": ["aromatizante-textil-concentr", "cosmetica-textil", "difusores-y-aromatizantes"]
+    "categorias": ["aromatizante-textil-concentr", "cosmetica-textil","perfumes-ropa-envasados", "difusores-y-aromatizantes"]
   },
   {
     "nombre": "ACCESORIOS DE LIMPIEZA",
