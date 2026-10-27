@@ -7,6 +7,14 @@ on:
 permissions:
   contents: write
 
+# Si se suben cambios seguidos (ej. dos tandas de fotos con un minuto de
+# diferencia), los deploys corren de a uno y en orden. En paralelo, un
+# deploy más viejo podía terminar último y pisar las páginas con su
+# versión anterior.
+concurrency:
+  group: deploy-cpanel
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
