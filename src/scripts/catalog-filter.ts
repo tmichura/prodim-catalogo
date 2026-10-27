@@ -57,6 +57,23 @@ type CardInfo = (typeof cardInfos)[number];
 const ordenOriginal = [...cardInfos];
 let ordenActual = [...cardInfos];
 
+// ---------- Acordeón lateral: un solo grupo abierto a la vez ----------
+
+const sidebarToggles = Array.from(document.querySelectorAll<HTMLElement>("aside .super-categoria-toggle"));
+
+function cerrarGrupo(toggle: HTMLElement): void {
+  toggle.classList.remove("open");
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.nextElementSibling?.classList.add("hidden");
+}
+
+function abrirSoloGrupo(toggle: HTMLElement): void {
+  sidebarToggles.forEach((t) => { if (t !== toggle) cerrarGrupo(t); });
+  toggle.classList.add("open");
+  toggle.setAttribute("aria-expanded", "true");
+  toggle.nextElementSibling?.classList.remove("hidden");
+}
+
 // ---------- Estado del filtro ----------
 
 /** Clave del filtro activo: "todas", "cat:<slug>" o "grupo:<slug>" */
@@ -91,14 +108,13 @@ function activarChip(chip: HTMLElement | undefined): void {
     chip?.dataset.grupo || chips.find((c) => claveDeChip(c) === claveActiva && c.dataset.grupo)?.dataset.grupo;
   panelesSubgrupo.forEach((p) => p.classList.toggle("abierto", !!grupo && p.dataset.grupoPanel === grupo));
 
-  // En desktop, abre el grupo del acordeón que contiene la selección.
-  const panelPadre = chips
-    .find((c) => claveDeChip(c) === claveActiva && c.closest(".super-categoria-panel"))
-    ?.closest(".super-categoria-panel");
-  if (panelPadre) {
-    panelPadre.classList.remove("hidden");
-    panelPadre.previousElementSibling?.classList.add("open");
-  }
+  // En desktop, abre el grupo del acordeón lateral que contiene la
+  // selección (y cierra los demás). Se busca solo en la barra lateral:
+  // el dropdown del header tiene los mismos chips y aparece antes en la página.
+  const toggleDelActivo = chips
+    .find((c) => claveDeChip(c) === claveActiva && c.closest("aside .super-categoria-panel"))
+    ?.closest(".super-categoria-panel")?.previousElementSibling as HTMLElement | null | undefined;
+  if (toggleDelActivo) abrirSoloGrupo(toggleDelActivo);
 
   if (categoriaActualEl) {
     categoriaActualEl.textContent =
@@ -289,11 +305,9 @@ aplicarFiltros();
 // header-dropdown.ts; si se enganchan acá también, cada clic los abre y
 // los vuelve a cerrar)
 
-Array.from(document.querySelectorAll<HTMLButtonElement>("aside .super-categoria-toggle")).forEach((toggle) => {
+sidebarToggles.forEach((toggle) => {
   toggle.addEventListener("click", () => {
-    const panel = toggle.nextElementSibling as HTMLElement | null;
-    const abierto = toggle.classList.toggle("open");
-    panel?.classList.toggle("hidden", !abierto);
-    toggle.setAttribute("aria-expanded", String(abierto));
+    if (toggle.classList.contains("open")) cerrarGrupo(toggle);
+    else abrirSoloGrupo(toggle);
   });
 });
