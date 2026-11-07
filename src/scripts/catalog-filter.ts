@@ -187,9 +187,9 @@ function aplicarFiltros(): void {
   let mostradas = 0;
 
   for (const info of ordenActual) {
-    // Al buscar, se busca en TODO el catálogo sin importar la categoría
-    // elegida (no tiene sentido limitar la búsqueda a donde está parado).
-    const pasaCategoria = buscando || !categoriasActivas || categoriasActivas.has(info.categoria);
+    // Búsqueda y categoría nunca quedan activas a la vez: tipear vuelve la
+    // categoría a "Todos" y elegir una categoría vacía el buscador (ver Eventos).
+    const pasaCategoria = !categoriasActivas || categoriasActivas.has(info.categoria);
     const pasa = pasaCategoria && (!buscando || coincideBusqueda(info, query));
 
     let visible = false;
@@ -249,8 +249,18 @@ function aplicarOrden(): void {
 
 // ---------- Eventos ----------
 
+const searchClearBtn = document.getElementById("search-clear");
+
+/** Elegir una categoría es empezar a navegar de nuevo: se vacía el buscador. */
+function vaciarBuscador(): void {
+  if (!searchInput || searchInput.value === "") return;
+  searchInput.value = "";
+  searchClearBtn?.classList.add("hidden");
+}
+
 chips.forEach((chip) => {
   chip.addEventListener("click", () => {
+    vaciarBuscador();
     activarChip(chip);
     reiniciarYFiltrar();
     // Lleva el scroll al inicio de los resultados (html tiene
@@ -263,6 +273,15 @@ chips.forEach((chip) => {
   });
 });
 
+// Escribir en el buscador busca en todo el catálogo: la categoría vuelve a
+// "Todos" en el momento (sin esperar el debounce, así se ve enseguida).
+searchInput?.addEventListener("input", () => {
+  const texto = searchInput.value.trim();
+  if (texto && claveActiva !== "todas") activarChip(undefined);
+  if (categoriaActualEl && claveActiva === "todas") {
+    categoriaActualEl.textContent = texto ? `Resultados para "${texto}"` : "Tienda";
+  }
+});
 searchInput?.addEventListener("input", debounce(reiniciarYFiltrar, 120));
 sortSelect?.addEventListener("change", aplicarOrden);
 
@@ -298,6 +317,9 @@ const chipInicial = grupoInicial
     ? chips.find((c) => c.dataset.categoria === categoriaInicial)
     : undefined;
 activarChip(chipInicial);
+if (queryInicial && !chipInicial && categoriaActualEl) {
+  categoriaActualEl.textContent = `Resultados para "${queryInicial}"`;
+}
 aplicarFiltros();
 
 // ---------- Acordeón de súper categorías en la barra lateral ----------
