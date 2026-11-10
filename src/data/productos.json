@@ -18,15 +18,6 @@
         "DILUCION": "1/2 + 4,5 AGUA"
     },
     {
-        "CODIGO": 2820,
-        "NOMBRE": "PERFUME P/ROPA X 500 CC CONC ARPEGE",
-        "CATEGORIA": "AROMATIZANTE TEXTIL CONCENTR",
-        "PRECIO1": "U x $10032 c/u",
-        "PRECIO2": "2U x $9430 c/u",
-        "PRECIO3": "4U x $8828 c/u",
-        "DILUCION": "1/2 + 4,5 AGUA"
-    },
-    {
         "CODIGO": 2813,
         "NOMBRE": "PERFUME P/ROPA X 500 CC CONC CHICLE",
         "CATEGORIA": "AROMATIZANTE TEXTIL CONCENTR",
@@ -615,9 +606,9 @@
         "CODIGO": 44,
         "NOMBRE": "REVIVIDOR C/SILICONAS EXTERIOR IMPORTADA",
         "CATEGORIA": "COSMETICA AUTOMOTOR",
-        "PRECIO1": "LT x $12210 c/lt",
-        "PRECIO2": "2LT x $9768 c/lt",
-        "PRECIO3": "5LT x $8547 c/lt",
+        "PRECIO1": "LT x $12540 c/lt",
+        "PRECIO2": "2LT x $10032 c/lt",
+        "PRECIO3": "5LT x $8778 c/lt",
         "DILUCION": ""
     },
     {
@@ -700,6 +691,24 @@
         "PRECIO2": "2U x $8168 c/u",
         "PRECIO3": "4U x $7260 c/u",
         "DILUCION": "1 + 4 AGUA"
+    },
+    {
+        "CODIGO": 1002,
+        "NOMBRE": "QUITAMANCHAS TIPO TREN BIDON X 5 LTS",
+        "CATEGORIA": "COSMETICA TEXTIL",
+        "PRECIO1": "U x $11385 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 21,
+        "NOMBRE": "QUITAMANCHAS TIPO TREN LPU",
+        "CATEGORIA": "COSMETICA TEXTIL",
+        "PRECIO1": "LT x $2904 c/lt",
+        "PRECIO2": "",
+        "PRECIO3": "",
+        "DILUCION": ""
     },
     {
         "CODIGO": 274,
@@ -918,15 +927,6 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 5204,
-        "NOMBRE": "LIMPIADOR LISO CLASICO BIDON X 5 LTS",
-        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "U x $4950 c/u",
-        "PRECIO2": "4U x $4455 c/u",
-        "PRECIO3": "12U x $4208 c/u",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 5233,
         "NOMBRE": "LIMPIAVIDRIOS BIDON X 5 LTS",
         "CATEGORIA": "DESENG Y OTROS ENVASADOS",
@@ -963,24 +963,6 @@
         "DILUCION": "1 + 9 AGUA"
     },
     {
-        "CODIGO": 1002,
-        "NOMBRE": "QUITAMANCHAS TIPO TREN BIDON X 5 LTS",
-        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "U x $11385 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 21,
-        "NOMBRE": "QUITAMANCHAS TIPO TREN LPU",
-        "CATEGORIA": "DESENG Y OTROS ENVASADOS",
-        "PRECIO1": "LT x $2904 c/lt",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 551,
         "NOMBRE": "AMARILLO DESENGRASANTE ULTRA PRO IND",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
@@ -999,15 +981,6 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 480,
-        "NOMBRE": "FLIT INSECTICIDA LIQUIDO",
-        "CATEGORIA": "DESENGRASANTES SUELTOS",
-        "PRECIO1": "5LT x $6435 c/lt",
-        "PRECIO2": "10LT x $6049 c/lt",
-        "PRECIO3": "20LT x $5727 c/lt",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 48,
         "NOMBRE": "FLUIDO ACAROINA",
         "CATEGORIA": "DESENGRASANTES SUELTOS",
@@ -1023,6 +996,15 @@
         "PRECIO1": "5LT x $2406 c/lt",
         "PRECIO2": "10LT x $2093 c/lt",
         "PRECIO3": "20LT x $1756 c/lt",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 122,
+        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
+        "CATEGORIA": "DESENGRASANTES Y LIMPIADORES",
+        "PRECIO1": "U x $2640 c/u",
+        "PRECIO2": "",
+        "PRECIO3": "",
         "DILUCION": ""
     },
     {
@@ -1073,15 +1055,6 @@
     {
         "CODIGO": 73,
         "NOMBRE": "DESODORANTE X 1 LT CITRONELA AMARILLA",
-        "CATEGORIA": "DESODORANTES X 1 LT",
-        "PRECIO1": "U x $14652 c/u",
-        "PRECIO2": "5U x $12894 c/u",
-        "PRECIO3": "",
-        "DILUCION": "1 + 80 AGUA"
-    },
-    {
-        "CODIGO": 81,
-        "NOMBRE": "DESODORANTE X 1 LT CITRONELA BLANCA",
         "CATEGORIA": "DESODORANTES X 1 LT",
         "PRECIO1": "U x $14652 c/u",
         "PRECIO2": "5U x $12894 c/u",
@@ -1215,15 +1188,6 @@
         "DILUCION": "1 + 80 AGUA"
     },
     {
-        "CODIGO": 82,
-        "NOMBRE": "DESODORANTE X 1 LT PRUEBA 2 COL",
-        "CATEGORIA": "DESODORANTES X 1 LT",
-        "PRECIO1": "U x $12210 c/u",
-        "PRECIO2": "5U x $10745 c/u",
-        "PRECIO3": "",
-        "DILUCION": "1 + 80"
-    },
-    {
         "CODIGO": 69,
         "NOMBRE": "DESODORANTE X 1 LT TROPICAL BACT",
         "CATEGORIA": "DESODORANTES X 1 LT",
@@ -1289,15 +1253,6 @@
     {
         "CODIGO": 773,
         "NOMBRE": "DESODORANTE X 250 CITRONELA AMARILLA",
-        "CATEGORIA": "DESODORANTES X 250 CC",
-        "PRECIO1": "U x $5346 c/u",
-        "PRECIO2": "2U x $4811 c/u",
-        "PRECIO3": "",
-        "DILUCION": "1/4 + 20 AGUA"
-    },
-    {
-        "CODIGO": 781,
-        "NOMBRE": "DESODORANTE X 250 CITRONELA BLANCA",
         "CATEGORIA": "DESODORANTES X 250 CC",
         "PRECIO1": "U x $5346 c/u",
         "PRECIO2": "2U x $4811 c/u",
@@ -1431,15 +1386,6 @@
         "DILUCION": "1/4 + 20 AGUA"
     },
     {
-        "CODIGO": 782,
-        "NOMBRE": "DESODORANTE X 250 PRUEBA 2 COL",
-        "CATEGORIA": "DESODORANTES X 250 CC",
-        "PRECIO1": "U x $14850 c/u",
-        "PRECIO2": "2U x $13365 c/u",
-        "PRECIO3": "",
-        "DILUCION": "1/4 + 20 AGUA"
-    },
-    {
         "CODIGO": 769,
         "NOMBRE": "DESODORANTE X 250 TROPICAL BACTERICIDA",
         "CATEGORIA": "DESODORANTES X 250 CC",
@@ -1460,10 +1406,19 @@
     {
         "CODIGO": 511,
         "NOMBRE": "DESODORANTE PARA PISOS BIDON X 5 LTS",
-        "CATEGORIA": "DESODORANTES X 5 LTS",
+        "CATEGORIA": "DESODORANTES Y DESINFECTANTE",
         "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "4U x $4158 c/u",
         "PRECIO3": "12U x $3927 c/u",
+        "DILUCION": ""
+    },
+    {
+        "CODIGO": 5204,
+        "NOMBRE": "LIMPIADOR LISO CLASICO BIDON X 5 LTS",
+        "CATEGORIA": "DESODORANTES Y DESINFECTANTE",
+        "PRECIO1": "U x $4950 c/u",
+        "PRECIO2": "4U x $4455 c/u",
+        "PRECIO3": "12U x $4208 c/u",
         "DILUCION": ""
     },
     {
@@ -1492,15 +1447,6 @@
         "PRECIO2": "20KG x $4158 c/kg",
         "PRECIO3": "100KG x $3564 c/kg",
         "DILUCION": "1 + 2 AGUA"
-    },
-    {
-        "CODIGO": 122,
-        "NOMBRE": "DESENGRASANTE MULTIUSO X 1 LT LPU",
-        "CATEGORIA": "DETERGENTES LISTOS ENVASADOS",
-        "PRECIO1": "U x $2640 c/u",
-        "PRECIO2": "",
-        "PRECIO3": "",
-        "DILUCION": ""
     },
     {
         "CODIGO": 276,
@@ -1845,8 +1791,17 @@
         "DILUCION": ""
     },
     {
+        "CODIGO": 600,
+        "NOMBRE": "JABON LIQUIDO ARY ULTRA",
+        "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
+        "PRECIO1": "5LT x $1287 c/lt",
+        "PRECIO2": "20LT x $1030 c/lt",
+        "PRECIO3": "60LT x $901 c/lt",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 608,
-        "NOMBRE": "JABON LIQUIDO CON BICARBONATO",
+        "NOMBRE": "JABON LIQUIDO CON BICARBONATO BICA",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
         "PRECIO1": "5LT x $924 c/lt",
         "PRECIO2": "20LT x $739 c/lt",
@@ -1864,7 +1819,7 @@
     },
     {
         "CODIGO": 602,
-        "NOMBRE": "JABON LIQUIDO SKY P ESQUIPY BAJA ESPUMA",
+        "NOMBRE": "JABON LIQUIDO SKY P ESQUIPY",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
         "PRECIO1": "5LT x $1155 c/lt",
         "PRECIO2": "20LT x $924 c/lt",
@@ -1873,7 +1828,7 @@
     },
     {
         "CODIGO": 39,
-        "NOMBRE": "JABON LIQUIDO SUPER MATIC BAJA ESPU",
+        "NOMBRE": "JABON LIQUIDO SUPER MATIC",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
         "PRECIO1": "5LT x $726 c/lt",
         "PRECIO2": "20LT x $581 c/lt",
@@ -1881,17 +1836,8 @@
         "DILUCION": ""
     },
     {
-        "CODIGO": 600,
-        "NOMBRE": "JABON LIQUIDO TIPO ARY ULTRA",
-        "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
-        "PRECIO1": "5LT x $1287 c/lt",
-        "PRECIO2": "20LT x $1030 c/lt",
-        "PRECIO3": "60LT x $901 c/lt",
-        "DILUCION": ""
-    },
-    {
         "CODIGO": 605,
-        "NOMBRE": "JABON LIQUIDO TIPO HIDROGEL VERDE BAJA E",
+        "NOMBRE": "JABON LIQUIDO TIPO HIDROGEL VERDE",
         "CATEGORIA": "JABONES LIQUIDOS SUELTOS",
         "PRECIO1": "5LT x $825 c/lt",
         "PRECIO2": "20LT x $660 c/lt",
@@ -1955,15 +1901,6 @@
     {
         "CODIGO": 3829,
         "NOMBRE": "PERFUME PARA ROPA X 1 LT ARMANI",
-        "CATEGORIA": "PERFUMES ROPA ENVASADOS",
-        "PRECIO1": "U x $4356 c/u",
-        "PRECIO2": "3U x $3920 c/u",
-        "PRECIO3": "",
-        "DILUCION": ""
-    },
-    {
-        "CODIGO": 3820,
-        "NOMBRE": "PERFUME PARA ROPA X 1 LT ARPEGE",
         "CATEGORIA": "PERFUMES ROPA ENVASADOS",
         "PRECIO1": "U x $4356 c/u",
         "PRECIO2": "3U x $3920 c/u",
@@ -2676,8 +2613,8 @@
         "CODIGO": 2246,
         "NOMBRE": "BRUJITA CHICA ROQ",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $4800 c/u",
-        "PRECIO2": "6U x $3888 c/u",
+        "PRECIO1": "U x $6400 c/u",
+        "PRECIO2": "6U x $5184 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -2784,7 +2721,7 @@
         "CODIGO": 2228,
         "NOMBRE": "MICROFIBRA GUANTE AUTO",
         "CATEGORIA": "CUIDADOS PARA EL AUTO",
-        "PRECIO1": "U x $2800 c/u",
+        "PRECIO1": "U x $4480 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -3315,8 +3252,8 @@
         "CODIGO": 1153,
         "NOMBRE": "ESCOBETA SUPER EXTERIOR",
         "CATEGORIA": "ESCOBAS Y ESCOBILLONES",
-        "PRECIO1": "U x $7328 c/u",
-        "PRECIO2": "6U x $5496 c/u",
+        "PRECIO1": "U x $7552 c/u",
+        "PRECIO2": "6U x $5664 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -3540,8 +3477,8 @@
         "CODIGO": 395,
         "NOMBRE": "ESPONJA PLATEADA ACERO 30 GR LARGE",
         "CATEGORIA": "ESPONJAS Y ESTROPAJOS",
-        "PRECIO1": "U x $872 c/u",
-        "PRECIO2": "6U x $706 c/u",
+        "PRECIO1": "U x $890 c/u",
+        "PRECIO2": "6U x $721 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -3567,8 +3504,8 @@
         "CODIGO": 181,
         "NOMBRE": "VIRULANA / OVILLITOS 50 GRS",
         "CATEGORIA": "ESPONJAS Y ESTROPAJOS",
-        "PRECIO1": "U x $803 c/u",
-        "PRECIO2": "6U x $651 c/u",
+        "PRECIO1": "U x $826 c/u",
+        "PRECIO2": "6U x $669 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -3786,7 +3723,7 @@
         "PRECIO1": "U x $22572 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": ""
+        "DILUCION": "1L CADA 40,000"
     },
     {
         "CODIGO": 206,
@@ -3795,7 +3732,7 @@
         "PRECIO1": "U x $5346 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": ""
+        "DILUCION": "1L CADA 40,000"
     },
     {
         "CODIGO": 565,
@@ -3858,7 +3795,7 @@
         "PRECIO1": "U x $6788 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": "1 EN 200000"
+        "DILUCION": "1L CADA 200,000"
     },
     {
         "CODIGO": 520,
@@ -3867,7 +3804,7 @@
         "PRECIO1": "LT x $31037 c/lt",
         "PRECIO2": "4LT x $24829 c/lt",
         "PRECIO3": "",
-        "DILUCION": ""
+        "DILUCION": "1L CADA 200,000"
     },
     {
         "CODIGO": 3994,
@@ -3894,7 +3831,7 @@
         "PRECIO1": "U x $4620 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
-        "DILUCION": ""
+        "DILUCION": "1L CADA 20,000"
     },
     {
         "CODIGO": 2504,
@@ -3903,7 +3840,7 @@
         "PRECIO1": "U x $17820 c/u",
         "PRECIO2": "4U x $14256 c/u",
         "PRECIO3": "",
-        "DILUCION": ""
+        "DILUCION": "1L CADA 20,000"
     },
     {
         "CODIGO": 569,
@@ -3981,7 +3918,7 @@
         "CODIGO": 228,
         "NOMBRE": "BALDE CENTRIFUGO MOPA",
         "CATEGORIA": "PLASTICOS",
-        "PRECIO1": "U x $14238 c/u",
+        "PRECIO1": "U x $15120 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -4044,8 +3981,8 @@
         "CODIGO": 2404,
         "NOMBRE": "CORTINA BA¥O PREMIUM CON GANCHOS",
         "CATEGORIA": "PLASTICOS",
-        "PRECIO1": "U x $6342 c/u",
-        "PRECIO2": "6U x $4757 c/u",
+        "PRECIO1": "U x $7136 c/u",
+        "PRECIO2": "6U x $5352 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4746,8 +4683,8 @@
         "CODIGO": 227,
         "NOMBRE": "REJILLA PABILO ALGOD LM SINA 40 X 45",
         "CATEGORIA": "REJILLAS Y REPASADORES",
-        "PRECIO1": "U x $909 c/u",
-        "PRECIO2": "6U x $682 c/u",
+        "PRECIO1": "U x $939 c/u",
+        "PRECIO2": "6U x $704 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4935,8 +4872,8 @@
         "CODIGO": 2142,
         "NOMBRE": "SECADOR SAMANTHA TWIN 34",
         "CATEGORIA": "SECADORES",
-        "PRECIO1": "U x $5200 c/u",
-        "PRECIO2": "6U x $3900 c/u",
+        "PRECIO1": "U x $5861 c/u",
+        "PRECIO2": "6U x $4396 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -4944,8 +4881,8 @@
         "CODIGO": 217,
         "NOMBRE": "SECADOR SAMANTHA TWIN 43",
         "CATEGORIA": "SECADORES",
-        "PRECIO1": "U x $6675 c/u",
-        "PRECIO2": "6U x $5006 c/u",
+        "PRECIO1": "U x $7142 c/u",
+        "PRECIO2": "6U x $5357 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5040,6 +4977,15 @@
         "DILUCION": ""
     },
     {
+        "CODIGO": 1520,
+        "NOMBRE": "TRAPO DE PISO COSTURADO",
+        "CATEGORIA": "TRAPOS Y ART, PARA PISO",
+        "PRECIO1": "U x $1005 c/u",
+        "PRECIO2": "6U x $754 c/u",
+        "PRECIO3": "",
+        "DILUCION": ""
+    },
+    {
         "CODIGO": 231,
         "NOMBRE": "TRAPO DE PISO JULIETA GRIS",
         "CATEGORIA": "TRAPOS Y ART, PARA PISO",
@@ -5079,7 +5025,7 @@
         "CODIGO": 8317,
         "NOMBRE": "ACIDO CITRICO X 1 KG",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "KG x $8976 c/kg",
+        "PRECIO1": "KG x $7854 c/kg",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5115,7 +5061,7 @@
         "CODIGO": 203,
         "NOMBRE": "BICARBONATO DE SODIO X 1 KGS",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $5122 c/u",
+        "PRECIO1": "U x $4481 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5178,8 +5124,8 @@
         "CODIGO": 1566,
         "NOMBRE": "CORTINA MOSQUERA CON BARRAL 80",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $7378 c/u",
-        "PRECIO2": "4U x $6327 c/u",
+        "PRECIO1": "U x $8022 c/u",
+        "PRECIO2": "4U x $6879 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5187,8 +5133,8 @@
         "CODIGO": 2166,
         "NOMBRE": "CORTINA MOSQUERA CON BARRAL 90",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $8099 c/u",
-        "PRECIO2": "4U x $6945 c/u",
+        "PRECIO1": "U x $8820 c/u",
+        "PRECIO2": "4U x $7563 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5268,8 +5214,8 @@
         "CODIGO": 2114,
         "NOMBRE": "JABON EN PAN ARGENTINO 200 GRS",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $1064 c/u",
-        "PRECIO2": "6U x $798 c/u",
+        "PRECIO1": "U x $1136 c/u",
+        "PRECIO2": "6U x $852 c/u",
         "PRECIO3": "",
         "DILUCION": ""
     },
@@ -5394,7 +5340,7 @@
         "CODIGO": 202,
         "NOMBRE": "PERCARBONATO DE SODIO X 1 KG",
         "CATEGORIA": "VARIOS",
-        "PRECIO1": "U x $13200 c/u",
+        "PRECIO1": "U x $11550 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5502,7 +5448,7 @@
         "CODIGO": 456,
         "NOMBRE": "CUCARACHICIDA CHINO SOBRE",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $333 c/u",
+        "PRECIO1": "U x $350 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
@@ -5556,7 +5502,7 @@
         "CODIGO": 486,
         "NOMBRE": "DROP VERDE INSECTICIDA",
         "CATEGORIA": "VENENOS",
-        "PRECIO1": "U x $2600 c/u",
+        "PRECIO1": "U x $2777 c/u",
         "PRECIO2": "",
         "PRECIO3": "",
         "DILUCION": ""
